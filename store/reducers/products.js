@@ -3,3 +3,6 @@ const initialState = {
     userProducts: []
 };
 
+export default (state = initialState, action) => {
+    return state;
+};
