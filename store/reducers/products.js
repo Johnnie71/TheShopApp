@@ -1,5 +1,7 @@
+import PRODUCTS from '../../data/dummy-data';
+
 const initialState = {
-    avalailableProducts: [],
+    avalailableProducts: PRODUCTS,
     userProducts: []
 };
 
