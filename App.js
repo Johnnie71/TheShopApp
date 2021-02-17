@@ -6,6 +6,11 @@ import { Provider } from 'react-redux';
 
 import productsReducer from './store/reducers/products';
 
+const rootReducer = combineReducers({
+  products: productsReducer,
+  
+})
+
 export default function App() {
   return (
     <View style={styles.container}>
