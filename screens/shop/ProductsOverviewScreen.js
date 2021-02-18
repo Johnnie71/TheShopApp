@@ -7,7 +7,7 @@ const ProductsOverviewScreen = props => {
     const products = useSelector(state => state.products.availableProducts);
 
     return(
-        <FlatList />
+        <FlatList data={products} />
     );
 };
 
