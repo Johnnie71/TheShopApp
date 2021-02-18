@@ -9,6 +9,7 @@ const ProductsNavigator = createStackNavigator({
     defaultNavigationOptions: {
         headerStyle: {
             backgroundColor: Colors.primary
-        }
+        },
+        headerTintColor: 'white'
     }
 });
