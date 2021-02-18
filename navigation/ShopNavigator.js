@@ -1,3 +1,7 @@
 import { createStackNavigator } from 'react-navigation';
 
-const ProductsNavigator = createStackNavigator();
+import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
+
+const ProductsNavigator = createStackNavigator({
+
+});
