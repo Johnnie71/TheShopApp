@@ -14,3 +14,5 @@ const ProductsNavigator = createStackNavigator({
         headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
     }
 });
+
+export default createAppContainer(ProductsNavigator);
