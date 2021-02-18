@@ -4,6 +4,10 @@ import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
 
 const ProductsNavigator = createStackNavigator({
     ProductsOverview: ProductsOverviewScreen
-} {
-    
+}, {
+    defaultNavigationOptions: {
+        headerStyle: {
+            backgroundColor: 
+        }
+    }
 });
