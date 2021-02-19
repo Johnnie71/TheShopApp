@@ -4,9 +4,6 @@ import { useSelector } from 'react-redux';
 
 import ProductItem from '../../components/shop/ProductItem';
 
-const ProductItem = props => {
-
-};
 
 const ProductsOverviewScreen = props => {
 
@@ -15,7 +12,7 @@ const ProductsOverviewScreen = props => {
         <FlatList 
         data={products} 
         // keyExtractor={item => item.id} 
-        renderItem={itemData => <Text>{itemData.item.title}</Text>}/>
+        renderItem={itemData => <ProductItem />}/>
     );
 };
 
