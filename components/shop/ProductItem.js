@@ -40,7 +40,9 @@ const styles = StyleSheet.create({
         color: '#888'
     },
     actions: {
-
+        flexDirection: 'row',
+        justifyContent:'space-between',
+        alignItems: 'center'
     }
 });
 
