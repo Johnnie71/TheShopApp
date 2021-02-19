@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
     },
     price: {
 
+    },
+    actions: {
+        
     }
 });
 
