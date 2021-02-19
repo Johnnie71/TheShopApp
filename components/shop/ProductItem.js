@@ -9,7 +9,7 @@ const ProductItem = props => {
             <Text>${props.price.toFixed(2)}</Text>
             <View>
                 <Button title ="View Details" onPress={props.onViewDetail} />
-                <Button title ="To Cart" />
+                <Button title ="To Cart" onPress={props.onAddToCart} />
             </View>
         </View>
     )
