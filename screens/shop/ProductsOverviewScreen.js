@@ -1,6 +1,10 @@
 import React from 'react';
-import { FlatList, Text } from 'react-native';
+import { FlatList } from 'react-native';
 import { useSelector } from 'react-redux';
+
+const ProductItem = props => {
+    
+};
 
 const ProductsOverviewScreen = props => {
 
