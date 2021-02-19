@@ -1,4 +1,4 @@
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation'
 import { Platform } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 
