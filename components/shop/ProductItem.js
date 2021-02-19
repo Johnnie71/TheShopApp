@@ -32,13 +32,14 @@ const styles = StyleSheet.create({
         height: '60%'
     },
     title: {
-
+        fontSize: 18,
+        marginVertical: 4
     },
     price: {
 
     },
     actions: {
-        
+
     }
 });
 
