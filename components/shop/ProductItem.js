@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 const ProductItem = props => {
     return (
         <View style={styles.product}>
-            <Image source={{uri: props.image}} />
+            <Image style={styles.image} source={{uri: props.image}} />
             <Text>{props.title}</Text>
             <Text>${props.price.toFixed(2)}</Text>
             <View>
