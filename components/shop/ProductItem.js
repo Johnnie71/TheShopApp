@@ -4,9 +4,9 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 const ProductItem = props => {
     return (
         <View style={styles.product}>
-            <Image />
-            <Text>TITLE</Text>
-            <Text>PRICE</Text>
+            <Image source={{uri: props.image}} />
+            <Text>{props.title}</Text>
+            <Text>{props.price}</Text>
             <View>
                 <Button title ="View Details" />
                 <Button title ="To Cart" />
