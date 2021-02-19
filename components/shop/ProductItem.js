@@ -8,3 +8,5 @@ const ProductItem = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default ProductItem;
