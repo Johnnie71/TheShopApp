@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
         marginVertical: 4
     },
     price: {
-
+        fontSize: 14,
+        color: '#888'
     },
     actions: {
 
