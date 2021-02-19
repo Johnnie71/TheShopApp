@@ -5,8 +5,8 @@ const ProductItem = props => {
     return (
         <View style={styles.product}>
             <Image style={styles.image} source={{uri: props.image}} />
-            <Text>{props.title}</Text>
-            <Text>${props.price.toFixed(2)}</Text>
+            <Text style={styles.title}>{props.title}</Text>
+            <Text style={styles.price}>${props.price.toFixed(2)}</Text>
             <View>
                 <Button title ="View Details" onPress={props.onViewDetail} />
                 <Button title ="To Cart" onPress={props.onAddToCart} />
