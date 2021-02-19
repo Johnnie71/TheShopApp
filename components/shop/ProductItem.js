@@ -7,7 +7,7 @@ const ProductItem = props => {
             <Image style={styles.image} source={{uri: props.image}} />
             <Text style={styles.title}>{props.title}</Text>
             <Text style={styles.price}>${props.price.toFixed(2)}</Text>
-            <View>
+            <View style={styles.actions}>
                 <Button title ="View Details" onPress={props.onViewDetail} />
                 <Button title ="To Cart" onPress={props.onAddToCart} />
             </View>
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
     },
     price: {
-        
+
     }
 });
 
