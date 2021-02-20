@@ -11,13 +11,13 @@ const ProductsOverviewScreen = props => {
     return(
         <FlatList 
         data={products} 
-        // keyExtractor={item => item.id} 
+        keyExtractor={item => item.id} 
         renderItem={itemData => (
             <ProductItem image={itemData.item.imageUrl} 
             title={itemData.item.title} 
             price={itemData.item.price} 
             onViewDetail={() => {
-                props.navigation.navigate('ProductDetail');
+                props.navigation.navigate('ProductDetail', { productId: itemData.item.id });
             }} 
             onAddToCart={() => {}} 
             />
