@@ -1,2 +1,2 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { ScrollView, View, Text, Image, Button, StyleSheet } from 'react-native';
