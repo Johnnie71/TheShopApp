@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux';
 const ProductDetailsScreen = props => {
 
     const productId = props.navigation.getParam('productId');
-    const selectedProduct = useSelector(state => state.products)
+    const selectedProduct = useSelector(state => state.products.availableProducts.find(prod => prod.id === productId))
 
 
     return (
