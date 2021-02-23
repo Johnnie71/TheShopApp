@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, Button, TouchableOpacity } from 'react-native';
-import Colors from '../../constants/Colors'
+import { View, Text, Image, StyleSheet, Button, TouchableOpacity, TouchableNativeFeedback } from 'react-native';
+import Colors from '../../constants/Colors';
+
 
 const ProductItem = props => {
     return (
