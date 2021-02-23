@@ -6,7 +6,7 @@ import { ScrollView,
     Button, 
     StyleSheet, 
 } from 'react-native';
-
+import { useSelector } from 'react-redux';
 
 const ProductDetailsScreen = props => {
 
