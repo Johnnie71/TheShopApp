@@ -16,7 +16,7 @@ const ProductDetailsScreen = props => {
 
     return (
         <View>
-            <Text>The Product Detail Screen!</Text>
+            <Text>{selectedProduct.title}</Text>
         </View>
     )
 };
