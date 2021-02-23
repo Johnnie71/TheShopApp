@@ -4,7 +4,7 @@ import Colors from '../../constants/Colors'
 
 const ProductItem = props => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={props.onViewDetail} >
         <View style={styles.product}>
             <View style={styles.imageContainer}>
              <Image style={styles.image} source={{uri: props.image}} />
