@@ -7,7 +7,11 @@ const ProductItem = props => {
 
     let TouchableCmp = TouchableOpacity;
 
-    
+    if(Platform.OS === 'android' && Platform.Version >= 21){
+        TouchableCmp = TouchableNativeFeedback;
+    }
+
+
     return (
         <TouchableOpacity onPress={props.onViewDetail} >
         <View style={styles.product}>
