@@ -75,6 +75,9 @@ const styles = StyleSheet.create({
         height: '60%',
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
+        
+    },
+    touchable: {
         overflow: 'hidden'
     }
 });
