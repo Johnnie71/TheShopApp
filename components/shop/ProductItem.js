@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
         
     },
     touchable: {
-        overflow: 'hidden'
+        overflow: 'hidden',
+        borderRadius: 10
     }
 });
 
