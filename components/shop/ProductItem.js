@@ -4,6 +4,10 @@ import Colors from '../../constants/Colors';
 
 
 const ProductItem = props => {
+
+    let TouchableCmp = TouchableOpacity;
+
+    
     return (
         <TouchableOpacity onPress={props.onViewDetail} >
         <View style={styles.product}>
