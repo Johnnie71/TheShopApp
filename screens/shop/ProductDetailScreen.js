@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     },
     actions: {
         marginVertical: 10,
+        alignItems: 'center'
     }
 });
 
