@@ -19,7 +19,7 @@ const ProductDetailsScreen = props => {
     return (
        <ScrollView>
            <Image source={{ uri: selectedProduct.imageUrl }}/>
-           <Button />
+           <Button title="Add To Cart" />
            <Text></Text>
            <Text></Text>
        </ScrollView>
