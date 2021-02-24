@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
     },
     description: {
         fontSize: 14,
-        textAlign: 'center'
+        textAlign: 'center',
+        marginHorizontal: 20
     },
     actions: {
         marginVertical: 10,
