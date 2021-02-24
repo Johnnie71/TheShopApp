@@ -43,6 +43,10 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginVertical: 20
     },
+    description: {
+        fontSize: 14,
+        textAlign: 'center'
+    }
 });
 
 export default ProductDetailsScreen;
