@@ -7,6 +7,7 @@ import { ScrollView,
     StyleSheet, 
 } from 'react-native';
 import { useSelector } from 'react-redux';
+import Colors from '../../constants/Colors';
 
 const ProductDetailsScreen = props => {
 
