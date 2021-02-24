@@ -20,7 +20,7 @@ const ProductDetailsScreen = props => {
     return (
        <ScrollView>
            <Image style={styles.image} source={{ uri: selectedProduct.imageUrl }}/>
-           <View>
+           <View style={styles.actions}>
              <Button color={Colors.primary} title="Add To Cart" onPress={() => {}} />
            </View>
            <Text style={styles.price} >${selectedProduct.price.toFixed(2)}</Text>
