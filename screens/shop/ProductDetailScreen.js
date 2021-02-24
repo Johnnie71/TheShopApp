@@ -37,6 +37,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 300
     },
+    price: {
+        fontSize: 20,
+        color: '#888',
+        textAlign: 'center',
+        marginVertical: 20
+    },
 });
 
 export default ProductDetailsScreen;
