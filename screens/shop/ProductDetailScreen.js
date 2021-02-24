@@ -19,7 +19,7 @@ const ProductDetailsScreen = props => {
     return (
        <ScrollView>
            <Image />
-           
+           <Button />
        </ScrollView>
     )
 };
