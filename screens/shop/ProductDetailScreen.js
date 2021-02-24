@@ -21,7 +21,7 @@ const ProductDetailsScreen = props => {
            <Image source={{ uri: selectedProduct.imageUrl }}/>
            <Button title="Add To Cart" onPress={() => {}} />
            <Text>${selectedProduct.price.toFixed(2)}</Text>
-           <Text></Text>
+           <Text>{selectedProduct.description}</Text>
        </ScrollView>
     )
 };
