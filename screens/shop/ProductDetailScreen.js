@@ -17,9 +17,9 @@ const ProductDetailsScreen = props => {
 
 
     return (
-        <View>
-            <Text>{selectedProduct.title}</Text>
-        </View>
+       <ScrollView>
+           
+       </ScrollView>
     )
 };
 
