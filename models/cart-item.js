@@ -1,5 +1,5 @@
 class CartItem {
-    constructor(){
+    constructor(quantity, productPrice, productTitle, sum){
 
     }
 }
