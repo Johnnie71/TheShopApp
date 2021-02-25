@@ -27,7 +27,12 @@ export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
 
   if(!fontLoaded){
-    return <AppLoading startAsync={fetchFonts} />
+    return <AppLoading 
+              startAsync={fetchFonts} 
+              onFinish={() => {
+                setFontLoaded(true);
+              }} 
+            />
   }
 
 
