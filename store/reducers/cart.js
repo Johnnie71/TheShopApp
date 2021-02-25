@@ -10,6 +10,7 @@ export default (state = initialState, action) => {
         case ADD_TO_CART: 
             const addedProduct = action.product;
             const prodPrice = addedProduct.price;
+            const prodTitle = addedProduct.title;
     }
     return state;
 };
