@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
         fontFamily: 'open-sans-bold'
     },
     description: {
+        fontFamily: 'open-sans',
         fontSize: 14,
         textAlign: 'center',
         marginHorizontal: 20
