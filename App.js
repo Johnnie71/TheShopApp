@@ -15,12 +15,10 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer);
 
-const fetchFonts = () => {
-  return Font.loadAsync({
+const fetchFonts = () => Font.loadAsync({
     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
-  })
-}
+  });
 
 export default function App() {
 
@@ -34,7 +32,7 @@ export default function App() {
                 setFontLoaded(true);
               }} 
             />
-  }
+  };
 
 
   return (
