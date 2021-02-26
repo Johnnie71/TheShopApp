@@ -16,6 +16,9 @@ export default (state = initialState, action) => {
             if(state.items[addedProduct.id]){
                 const updatedCartItem = new CartItem(
                     state.items[addedProduct.id].quantity + 1,
+                    prodPrice,
+                    prodTitle,
+                    state.items[addedProduct.id].sum + prodPrice
                 );
             } else {
                 const newCartItem = new CartItem(1, prodPrice, prodTitle, prodPrice);
