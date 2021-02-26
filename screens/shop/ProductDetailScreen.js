@@ -17,6 +17,8 @@ const ProductDetailsScreen = props => {
         state.products.availableProducts.find(prod => prod.id === productId)
         );
 
+    const dispatch = useDispatch();
+
     return (
        <ScrollView>
            <Image style={styles.image} source={{ uri: selectedProduct.imageUrl }}/>
