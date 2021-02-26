@@ -8,6 +8,7 @@ import { ScrollView,
 } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import Colors from '../../constants/Colors';
+import * as cartActions from '../../store/actions/cart';
 
 
 const ProductDetailsScreen = props => {
@@ -24,7 +25,7 @@ const ProductDetailsScreen = props => {
            <Image style={styles.image} source={{ uri: selectedProduct.imageUrl }}/>
            <View style={styles.actions}>
              <Button color={Colors.primary} title="Add To Cart" onPress={() => {
-                 dispatch();
+                 dispatch(cartActions.addToCart(selectedProduct));
              }} />
            </View>
            <Text style={styles.price} >${selectedProduct.price.toFixed(2)}</Text>
