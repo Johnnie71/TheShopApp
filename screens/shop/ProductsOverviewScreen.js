@@ -3,6 +3,7 @@ import { FlatList } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 
 import ProductItem from '../../components/shop/ProductItem';
+import * as cartActions from '../../store/actions/cart';
 
 
 const ProductsOverviewScreen = props => {
