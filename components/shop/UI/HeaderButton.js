@@ -7,3 +7,5 @@ import Colors from '../../../constants/Colors';
 const CustomHeaderButton = props => {
 
 };
+
+export default CustomHeaderButton;
