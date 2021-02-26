@@ -22,7 +22,8 @@ export default (state = initialState, action) => {
                 );
                 return {
                     ...state,
-                    items: { ...state.items, [addedProduct.id]: updatedCartItem }
+                    items: { ...state.items, [addedProduct.id]: updatedCartItem },
+                    totalAmount: state.totalAmount + prodPrice
                 }
             } else {
                 const newCartItem = new CartItem(1, prodPrice, prodTitle, prodPrice);
