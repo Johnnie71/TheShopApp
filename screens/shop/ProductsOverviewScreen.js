@@ -8,6 +8,8 @@ import ProductItem from '../../components/shop/ProductItem';
 const ProductsOverviewScreen = props => {
 
     const products = useSelector(state => state.products.availableProducts);
+    const dispatch = useDispatch();
+
     return(
         <FlatList 
         data={products} 
@@ -22,7 +24,9 @@ const ProductsOverviewScreen = props => {
                     productTitle: itemData.item.title
                 });
             }} 
-            onAddToCart={() => {}} 
+            onAddToCart={() => {
+                dispatch()
+            }} 
             />
         )}/>
     );
