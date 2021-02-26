@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
             const prodPrice = addedProduct.price;
             const prodTitle = addedProduct.title;
 
-            if(items[addedProduct.id]){
+            if(state.items[addedProduct.id]){
 
             } else {
                 const newCartItem = new CartItem(1, prodPrice, prodTitle, prodPrice);
