@@ -20,6 +20,10 @@ export default (state = initialState, action) => {
                     prodTitle,
                     state.items[addedProduct.id].sum + prodPrice
                 );
+                return {
+                    ...state,
+                    items: { ...state.items, [addedProduct.id]: updatedCartItem }
+                }
             } else {
                 const newCartItem = new CartItem(1, prodPrice, prodTitle, prodPrice);
                 return {
