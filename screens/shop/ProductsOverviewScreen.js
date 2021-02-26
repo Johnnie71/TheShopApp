@@ -26,7 +26,7 @@ const ProductsOverviewScreen = props => {
                 });
             }} 
             onAddToCart={() => {
-                dispatch()
+                dispatch(cartActions.addToCart(itemData.item))
             }} 
             />
         )}/>
