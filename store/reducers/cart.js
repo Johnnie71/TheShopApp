@@ -16,7 +16,8 @@ export default (state = initialState, action) => {
             if(items[addedProduct.id]){
 
             } else {
-                
+                const newCartItem = new CartItem(1, prodPrice, prodTitle, prodPrice);
+
             }
     }
     return state;
