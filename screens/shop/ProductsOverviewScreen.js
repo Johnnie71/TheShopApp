@@ -38,7 +38,7 @@ const ProductsOverviewScreen = props => {
 ProductsOverviewScreen.navigationOptions = {
     headerTitle: 'All Products',
     headerRight: <HeaderButtons HeaderButtonComponent={HeaderButton}>
-        <Item title="Cart" iconName={} />
+        <Item title="Cart" iconName={ Platform.OS === 'android' ? 'md-cart' : 'ios-cart' } />
     </HeaderButtons>
 };
 
