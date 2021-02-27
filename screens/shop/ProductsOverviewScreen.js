@@ -35,6 +35,7 @@ const ProductsOverviewScreen = props => {
 
 ProductsOverviewScreen.navigationOptions = {
     headerTitle: 'All Products',
+    headerRight: 
 };
 
 export default ProductsOverviewScreen;
