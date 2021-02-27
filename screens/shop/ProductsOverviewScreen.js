@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, Platform } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
@@ -38,7 +38,7 @@ const ProductsOverviewScreen = props => {
 ProductsOverviewScreen.navigationOptions = {
     headerTitle: 'All Products',
     headerRight: <HeaderButtons HeaderButtonComponent={HeaderButton}>
-        <Item title="Cart" />
+        <Item title="Cart" iconName={} />
     </HeaderButtons>
 };
 
