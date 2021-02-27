@@ -37,7 +37,7 @@ const ProductsOverviewScreen = props => {
 
 ProductsOverviewScreen.navigationOptions = {
     headerTitle: 'All Products',
-    headerRight: <HeaderButtons>
+    headerRight: <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item />
     </HeaderButtons>
 };
