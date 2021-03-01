@@ -26,7 +26,7 @@ const CartScreen = props => {
                 <Text style={styles.summaryText}>
                     Total: <Text style={styles.amount}>${cartTotalAmount.toFixed(2)}</Text>
                 </Text>
-                <Button color='#5499C7' title='Order Now' />
+                <Button color='#5499C7' title='Order Now' disabled={cartItems.length === 0} />
             </View>
             <View>
                 <Text>CART ITEMS</Text>
