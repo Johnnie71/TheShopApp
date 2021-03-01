@@ -7,7 +7,7 @@ const CartScreen = props => {
         const cartTotalAmount = useSelector(state => state.cart.totalAmount);
     return (
         <View style={styles.screen}>
-            <View>
+            <View style={styles.summary}>
                 <Text>Total: <Text>${cartTotalAmount}</Text></Text>
                 <Button title='Order Now' />
             </View>
