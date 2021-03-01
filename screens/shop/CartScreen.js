@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Flatlist, Button } from 'react-native';
+import { Colors } from '../../constants/Colors';
 import { useSelector } from 'react-redux';
 
 const CartScreen = props => {
@@ -42,7 +43,9 @@ const styles = StyleSheet.create({
         fontFamily: 'open-sans-bold',
         fontSize: 18
     },
-    amount: {}
+    amount: {
+        color: Colors.accent
+    }
 });
 
 export default CartScreen;
