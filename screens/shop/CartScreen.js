@@ -38,7 +38,9 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: 'white',
     },
-    summaryText: {},
+    summaryText: {
+        fontFamily: 'open-sans-bold',
+    },
     amount: {}
 });
 
