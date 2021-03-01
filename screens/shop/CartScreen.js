@@ -24,7 +24,11 @@ const styles = StyleSheet.create({
     screen: {
         margin: 20,
     },
-    summary: {},
+    summary: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
     summaryText: {},
     amount: {}
 });
