@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     },
     summaryText: {
         fontFamily: 'open-sans-bold',
+        fontSize: 18
     },
     amount: {}
 });
