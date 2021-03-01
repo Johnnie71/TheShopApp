@@ -6,7 +6,22 @@ import { useSelector } from 'react-redux';
 const CartScreen = props => {
 
         const cartTotalAmount = useSelector(state => state.cart.totalAmount);
-        const cartItems = useSelector(state => state.cart.items)
+        const cartItems = useSelector(state => {
+            const transformedCartItems = [];
+            for (const key in state.cart.items){
+                transformedCartItems.push({
+                    productId: key,
+                    productTitle: state.cart.items[key].productTitle,
+                    productPrice: state.cart.items[key].productPrice,
+                    quantity: state.cart.items[key].quantity,
+                    sum: state.cart.items[key].sum
+                })
+            }
+            return(
+
+            )
+        });
+
     return (
         <View style={styles.screen}>
             <View style={styles.summary}>
