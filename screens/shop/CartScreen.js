@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 const CartScreen = props => {
 
         const cartTotalAmount = useSelector(state => state.cart.totalAmount);
+        const cartItems = useSelector(state => state.cart.items)
     return (
         <View style={styles.screen}>
             <View style={styles.summary}>
