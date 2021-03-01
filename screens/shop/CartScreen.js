@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Flatlist, Button } from 'react-native';
+import { useSelector } from 'react-redux';
 
 const CartScreen = props => {
     return (
