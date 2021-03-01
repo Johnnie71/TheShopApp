@@ -21,7 +21,12 @@ const CartScreen = props => {
 };
 
 const styles = StyleSheet.create({
-    
+    screen: {
+        margin: 20,
+    },
+    summary: {},
+    summaryText: {},
+    amount: {}
 });
 
 export default CartScreen;
