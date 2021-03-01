@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         fontSize: 18
     },
     amount: {
-        color: Colors.primary
+        color: '#E55E50'
     }
 });
 
