@@ -8,7 +8,7 @@ const CartScreen = props => {
     return (
         <View style={styles.screen}>
             <View style={styles.summary}>
-                <Text>Total: <Text>${cartTotalAmount}</Text></Text>
+                <Text style={styles.summaryText}>Total: <Text>${cartTotalAmount}</Text></Text>
                 <Button title='Order Now' />
             </View>
             <View>
