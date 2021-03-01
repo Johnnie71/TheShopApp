@@ -4,11 +4,11 @@ import { useSelector } from 'react-redux';
 
 const CartScreen = props => {
 
-        const cartTotalAmount = useSelector(state => state.cart.totalAmount)
+        const cartTotalAmount = useSelector(state => state.cart.totalAmount);
     return (
         <View>
             <View>
-                <Text>Total: <Text>${19.99}</Text></Text>
+                <Text>Total: <Text>${cartTotalAmount}</Text></Text>
                 <Button title='Order Now' />
             </View>
             <View>
