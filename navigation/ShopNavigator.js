@@ -9,7 +9,8 @@ import Colors from '../constants/Colors';
 
 const ProductsNavigator = createStackNavigator({
     ProductsOverview: ProductsOverviewScreen,
-    ProductDetail: ProductDetailsScreen
+    ProductDetail: ProductDetailsScreen,
+    Cart: CartScreen
 }, {
     defaultNavigationOptions: {
         headerStyle: {
