@@ -8,6 +8,7 @@ const CartScreen = props => {
                 <Text>Total: <Text>${19.99}</Text></Text>
                 <Button title='Order Now' />
             </View>
+            <Flatlist />
         </View>
     )
 };
