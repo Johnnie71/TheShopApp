@@ -5,9 +5,10 @@ import { Ionicons } from '@expo/vector-icons';
 const CartItem = props => {
     return (
         <View style={styles.cartItem}>
-            <Text style={styles.itemData}>
-                <Text style={styles.quantity}>QTY</Text><Text style={styles.title}>TITLE</Text>
-            </Text>
+            <View style={styles.itemData}>
+                <Text style={styles.quantity}>QTY</Text>
+                <Text style={styles.title}>TITLE</Text>
+            </View>
             <View style={styles.itemData}>
                 <Text style={styles.amount}>$AMT</Text>
                 <TouchableOpacity onPress={props.onRemove} style={styles.deleteButton}>
@@ -34,7 +35,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center'
     },
-    quantity: {},
+    quantity: {
+        
+    },
     title: {},
     amount: {},
     deleteButton: {
