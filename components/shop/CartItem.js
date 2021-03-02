@@ -10,7 +10,9 @@ const CartItem = props => {
             </Text>
             <View>
                 <Text>$AMT</Text>
-
+                <TouchableOpacity>
+                    <Ionicons />
+                </TouchableOpacity>
             </View>
         </View>
     )
