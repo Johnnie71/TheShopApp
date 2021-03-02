@@ -13,6 +13,7 @@ const CartItem = props => {
                 <TouchableOpacity>
                     <Ionicons name={Platform.OS === 'android' ? 'md-trash' : 'ios-trash'}
                     size={23} 
+                    color="red"
                     />
                 </TouchableOpacity>
             </View>
