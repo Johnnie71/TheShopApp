@@ -9,7 +9,7 @@ const CartItem = props => {
                 <Text style={styles.quantity}>QTY</Text><Text style={styles.title}>TITLE</Text>
             </Text>
             <View style={styles.itemData}>
-                <Text>$AMT</Text>
+                <Text style={styles.amount}>$AMT</Text>
                 <TouchableOpacity onPress={props.onRemove} style={styles.deleteButton}>
                     <Ionicons name={Platform.OS === 'android' ? 'md-trash' : 'ios-trash'}
                     size={23} 
