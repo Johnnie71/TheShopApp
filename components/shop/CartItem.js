@@ -30,7 +30,10 @@ const styles = StyleSheet.create({
         marginHorizontal: 20
 
     },
-    itemData: {},
+    itemData: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
     quantity: {},
     title: {},
     amount: {},
