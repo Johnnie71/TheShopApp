@@ -10,7 +10,7 @@ const CartItem = props => {
             </Text>
             <View>
                 <Text>$AMT</Text>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={}>
                     <Ionicons name={Platform.OS === 'android' ? 'md-trash' : 'ios-trash'}
                     size={23} 
                     color="red"
