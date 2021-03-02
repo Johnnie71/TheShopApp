@@ -6,7 +6,7 @@ const CartItem = props => {
     return (
         <View style={styles.cartItem}>
             <Text style={styles.itemData}>
-                <Text style={styles.quantity}>QTY</Text><Text>TITLE</Text>
+                <Text style={styles.quantity}>QTY</Text><Text style={styles.title}>TITLE</Text>
             </Text>
             <View>
                 <Text>$AMT</Text>
