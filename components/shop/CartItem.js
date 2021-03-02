@@ -40,7 +40,10 @@ const styles = StyleSheet.create({
         color: '#888',
         fontSize: 16,
     },
-    title: {},
+    title: {
+        fontFamily: 'open-sans-bold',
+        fontSize: 16,
+    },
     amount: {},
     deleteButton: {
         marginLeft: 20
