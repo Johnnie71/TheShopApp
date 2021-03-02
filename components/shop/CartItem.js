@@ -3,7 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const CartItem = props => {
     return (
-
+        <View>
+            
+        </View>
     )
 };
 
