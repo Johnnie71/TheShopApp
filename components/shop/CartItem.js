@@ -8,7 +8,7 @@ const CartItem = props => {
             <Text style={styles.itemData}>
                 <Text style={styles.quantity}>QTY</Text><Text style={styles.title}>TITLE</Text>
             </Text>
-            <View>
+            <View style={styles.itemData}>
                 <Text>$AMT</Text>
                 <TouchableOpacity onPress={props.onRemove} style={styles.deleteButton}>
                     <Ionicons name={Platform.OS === 'android' ? 'md-trash' : 'ios-trash'}
