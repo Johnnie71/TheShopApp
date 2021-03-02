@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     itemData: {},
     quantity: {},
     title: {},
+    amount: {},
 });
 
 export default CartItem;
