@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 const CartItem = props => {
@@ -11,7 +11,7 @@ const CartItem = props => {
             <View>
                 <Text>$AMT</Text>
                 <TouchableOpacity>
-                    <Ionicons />
+                    <Ionicons name="" />
                 </TouchableOpacity>
             </View>
         </View>
