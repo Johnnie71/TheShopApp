@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         color: '#888',
         fontSize: 16,
     },
-    title: {
+    mainText: {
         fontFamily: 'open-sans-bold',
         fontSize: 16,
     },
