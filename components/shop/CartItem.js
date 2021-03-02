@@ -22,7 +22,7 @@ const CartItem = props => {
 };
 
 const styles = StyleSheet.create({
-
+    cartItem: {},
 });
 
 export default CartItem;
