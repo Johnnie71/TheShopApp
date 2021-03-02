@@ -27,7 +27,9 @@ const styles = StyleSheet.create({
     quantity: {},
     title: {},
     amount: {},
-    deleteButton: {}
+    deleteButton: {
+        marginLeft: 20
+    }
 });
 
 export default CartItem;
