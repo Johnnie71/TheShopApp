@@ -31,7 +31,7 @@ export default (state = initialState, action) => {
                 totalAmount: state.totalAmount + prodPrice
             };
         case REMOVE_FROM_CART:
-            const currentQty = state.items[action.pid]
+            const currentQty = state.items[action.pid].quantity;
     }
     return state;
 };
