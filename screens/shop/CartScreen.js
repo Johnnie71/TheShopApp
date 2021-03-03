@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Flatlist, Button } from 'react-native';
 import { Colors } from '../../constants/Colors';
 import { useSelector, useDispatch } from 'react-redux';
 import CartItem from '../../components/shop/CartItem';
+import * as cartActions from '../../store/actions/cart';
 
 const CartScreen = props => {
 
@@ -38,7 +39,9 @@ const CartScreen = props => {
                                 quantity={itemData.item.quantity} 
                                 title={itemData.item.productTitle} 
                                 amount={itemData.item.productPrice} 
-                                onRemove={() => {}} 
+                                onRemove={() => {
+                                    dispatch
+                                }} 
                             />
                         )} 
             />
