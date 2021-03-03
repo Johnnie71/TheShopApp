@@ -33,10 +33,10 @@ export default (state = initialState, action) => {
         case REMOVE_FROM_CART:
             const currentQty = state.items[action.pid].quantity;
             if(currentQty > 1){
-
+                
             } else {
                 const updatedCartItems = {...state.items};
-                
+                delete updatedCartItems[action.pid];
             }
     }
     return state;
