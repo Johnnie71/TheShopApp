@@ -32,7 +32,7 @@ const CartScreen = props => {
             <Flatlist 
             data={cartItems} 
             keyExtractor={item => item.productId} 
-            renderItem={itemData => <CartItem quantity={itemData.item.quantity} title={itemData.item.productTitle} />} 
+            renderItem={itemData => <CartItem quantity={itemData.item.quantity} title={itemData.item.productTitle} amount={itemData.item.productPrice} />} 
             />
         </View>
     )
