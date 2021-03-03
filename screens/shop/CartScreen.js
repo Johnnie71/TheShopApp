@@ -40,7 +40,7 @@ const CartScreen = props => {
                                 title={itemData.item.productTitle} 
                                 amount={itemData.item.productPrice} 
                                 onRemove={() => {
-                                    dispatch
+                                    dispatch(cartActions.removeFromCart(itemData.item.productId));
                                 }} 
                             />
                         )} 
