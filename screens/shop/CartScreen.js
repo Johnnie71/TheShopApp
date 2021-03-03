@@ -28,7 +28,7 @@ const CartScreen = props => {
                 </Text>
                 <Button color='#5499C7' title='Order Now' disabled={cartItems.length === 0} />
             </View>
-            <Flatlist />
+            <Flatlist data={cartItems} />
         </View>
     )
 };
