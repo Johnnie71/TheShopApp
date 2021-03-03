@@ -34,7 +34,12 @@ export default (state = initialState, action) => {
             const selectedCartItem = state.items[action.pid]
             const currentQty = selectedCartItem.quantity;
             if(currentQty > 1){
-                const updatedCartItem = new CartItem(selectedCartItem.quantity - 1, selectedCartItem.productPrice, selectedCartItem.productTitle);
+                const updatedCartItem = new CartItem(
+                    selectedCartItem.quantity - 1, 
+                    selectedCartItem.productPrice, 
+                    selectedCartItem.productTitle, 
+                    selectedCartItem.sum - selectedCartItem.productPrice
+                    );
             } else {
                 const updatedCartItems = {...state.items};
                 delete updatedCartItems[action.pid];
