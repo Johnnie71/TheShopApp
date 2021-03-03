@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Flatlist, Button } from 'react-native';
 import { Colors } from '../../constants/Colors';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import CartItem from '../../components/shop/CartItem';
 
 const CartScreen = props => {
