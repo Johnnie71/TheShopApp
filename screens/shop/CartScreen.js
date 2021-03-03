@@ -20,6 +20,7 @@ const CartScreen = props => {
             }
             return transformedCartItems;
         });
+        const dispatch = useDispatch();
 
     return (
         <View style={styles.screen}>
