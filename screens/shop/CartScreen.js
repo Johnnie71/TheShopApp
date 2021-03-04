@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, Flatlist, Button } from 'react-native';
-import { Colors } from '../../constants/Colors';
+import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
+// import { Colors } from '../../constants/Colors';
 import { useSelector, useDispatch } from 'react-redux';
 import CartItem from '../../components/shop/CartItem';
 import * as cartActions from '../../store/actions/cart';
@@ -30,21 +30,25 @@ const CartScreen = props => {
                 <Text style={styles.summaryText}>
                     Total: <Text style={styles.amount}>${cartTotalAmount.toFixed(2)}</Text>
                 </Text>
-                <Button color='#5499C7' title='Order Now' disabled={cartItems.length === 0} />
+                <Button 
+                  color='yellow' 
+                  title="Order Now"
+                  disabled={cartItems.length === 0} 
+                />
             </View>
-            <Flatlist 
+            <FlatList 
             data={cartItems} 
             keyExtractor={item => item.productId} 
             renderItem={itemData => (
-                            <CartItem 
-                                quantity={itemData.item.quantity} 
-                                title={itemData.item.productTitle} 
-                                amount={itemData.item.productPrice} 
-                                onRemove={() => {
-                                    dispatch(cartActions.removeFromCart(itemData.item.productId));
-                                }} 
-                            />
-                        )} 
+                    <CartItem 
+                        quantity={itemData.item.quantity} 
+                        title={itemData.item.productTitle} 
+                        amount={itemData.item.sum} 
+                        onRemove={() => {
+                            dispatch(cartActions.removeFromCart(itemData.item.productId));
+                        }} 
+                    />
+            )} 
             />
         </View>
     )
