@@ -37,7 +37,8 @@ const OrdersNavigator = createStackNavigator({
 });
 
 const ShopNavigator = createDrawerNavigator({
-    
+    Products: ProductsNavigator,
+    Orders: OrdersNavigator
 });
 
 export default createAppContainer(ProductsNavigator);
