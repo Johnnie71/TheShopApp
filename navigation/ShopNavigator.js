@@ -34,6 +34,10 @@ const OrdersNavigator = createStackNavigator({
     Orders: OrdersScreen,
 }, {
     defaultNavigationOptions: defaultNavOptions
-})
+});
+
+const ShopNavigator = createDrawerNavigator({
+    
+});
 
 export default createAppContainer(ProductsNavigator);
