@@ -11,7 +11,8 @@ import OrdersScreen from '../screens/shop/OrdersScreen';
 const ProductsNavigator = createStackNavigator({
     ProductsOverview: ProductsOverviewScreen,
     ProductDetail: ProductDetailsScreen,
-    Cart: CartScreen
+    Cart: CartScreen,
+    Orders: OrdersScreen
 }, {
     defaultNavigationOptions: {
         headerStyle: {
