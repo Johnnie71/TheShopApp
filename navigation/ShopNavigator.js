@@ -45,4 +45,4 @@ const ShopNavigator = createDrawerNavigator({
     }
 });
 
-export default createAppContainer(ProductsNavigator);
+export default createAppContainer(ShopNavigator);
