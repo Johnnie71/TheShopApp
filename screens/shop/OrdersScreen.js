@@ -13,6 +13,11 @@ const OrdersScreen = props => {
      )
 };
 
+OrdersScreen.navigationOptions = {
+    headerTitle: 'Your Orders'
+};
+
+
 const styles = StyleSheet.create({
 
 });
