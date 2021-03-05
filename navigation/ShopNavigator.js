@@ -33,7 +33,7 @@ const ProductsNavigator = createStackNavigator({
 const OrdersNavigator = createStackNavigator({
     Orders: OrdersScreen,
 }, {
-
+    defaultNavigationOptions: defaultNavOptions
 })
 
 export default createAppContainer(ProductsNavigator);
