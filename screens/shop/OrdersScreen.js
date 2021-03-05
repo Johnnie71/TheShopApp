@@ -1,2 +1,2 @@
 import React from 'react';
-import {} from 'react-native';
+import { View, Text, StyleSheet, FlatList } from 'react-native';
