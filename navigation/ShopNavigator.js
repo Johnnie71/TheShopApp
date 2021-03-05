@@ -9,7 +9,7 @@ import CartScreen from '../screens/shop/CartScreen';
 import Colors from '../constants/Colors';
 import OrdersScreen from '../screens/shop/OrdersScreen';
 
-const defaultNavOptions ={
+const defaultNavOptions = {
     headerStyle: {
         backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
     },
