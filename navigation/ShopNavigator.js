@@ -9,29 +9,31 @@ import CartScreen from '../screens/shop/CartScreen';
 import Colors from '../constants/Colors';
 import OrdersScreen from '../screens/shop/OrdersScreen';
 
+const defaultNavOptions ={
+    headerStyle: {
+        backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
+    },
+    headerTitleStyle: {
+        fontFamily: 'open-sans-bold'
+    },
+    headerBackTitleStyle: {
+        fontFamily: 'open-sans'
+    },
+    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
+}
+
 const ProductsNavigator = createStackNavigator({
     ProductsOverview: ProductsOverviewScreen,
     ProductDetail: ProductDetailsScreen,
     Cart: CartScreen,
 }, {
-    defaultNavigationOptions: {
-        headerStyle: {
-            backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
-        },
-        headerTitleStyle: {
-            fontFamily: 'open-sans-bold'
-        },
-        headerBackTitleStyle: {
-            fontFamily: 'open-sans'
-        },
-        headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
-    }
+    defaultNavigationOptions: defaultNavOptions
 });
 
 const OrdersNavigator = createStackNavigator({
     Orders: OrdersScreen,
 }, {
-    
+
 })
 
 export default createAppContainer(ProductsNavigator);
