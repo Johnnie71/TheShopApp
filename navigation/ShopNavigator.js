@@ -43,4 +43,4 @@ const OrdersNavigator = createStackNavigator({
 //     Orders: OrdersNavigator
 // });
 
-export default createAppContainer(ProductsNavigator);
+export default createAppContainer(OrdersNavigator);
