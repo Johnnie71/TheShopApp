@@ -1,6 +1,6 @@
-import { createAppContainer } from 'react-navigation'
-import { createStackNavigator } from 'react-navigation-stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createAppContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack';
+// import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Platform } from 'react-native';
 
 import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
@@ -22,13 +22,15 @@ const defaultNavOptions = {
     headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
 }
 
-const ProductsNavigator = createStackNavigator({
+const ProductsNavigator = createStackNavigator(
+    {
     ProductsOverview: ProductsOverviewScreen,
     ProductDetail: ProductDetailsScreen,
     Cart: CartScreen,
-}, {
-    defaultNavigationOptions: defaultNavOptions
-});
+}, 
+    {
+        defaultNavigationOptions: defaultNavOptions
+    });
 
 const OrdersNavigator = createStackNavigator({
     Orders: OrdersScreen,
@@ -36,13 +38,9 @@ const OrdersNavigator = createStackNavigator({
     defaultNavigationOptions: defaultNavOptions
 });
 
-const ShopNavigator = createDrawerNavigator({
-    Products: ProductsNavigator,
-    Orders: OrdersNavigator
-}, {
-    contentOptions: {
-        activeTintColor: Colors.primary
-    }
-});
+// const ShopNavigator = createDrawerNavigator({
+//     Products: ProductsNavigator,
+//     Orders: OrdersNavigator
+// });
 
-export default createAppContainer(ShopNavigator);
+export default createAppContainer(ProductsNavigator);

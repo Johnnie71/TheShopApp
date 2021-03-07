@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 // import AppLoading  from 'expo-app-loading';
 import * as Font from 'expo-font';
 
+
 import productsReducer from './store/reducers/products';
 import ShopNavigator from './navigation/ShopNavigator';
 import ordersReducer from './store/reducers/orders';
@@ -40,7 +41,9 @@ export default function App() {
 
   return (
     <Provider store={store} >
+   
         <ShopNavigator />
+     
     </Provider>
   );
 }
