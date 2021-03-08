@@ -1,6 +1,6 @@
 import { createAppContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack';
-// import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator} from '@react-navigation/drawer';
 import { Platform } from 'react-native';
 
 import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
@@ -38,9 +38,9 @@ const OrdersNavigator = createStackNavigator({
     defaultNavigationOptions: defaultNavOptions
 });
 
-// const ShopNavigator = createDrawerNavigator({
-//     Products: ProductsNavigator,
-//     Orders: OrdersNavigator
-// });
+const ShopNavigator = createDrawerNavigator({
+    Products: ProductsNavigator,
+    Orders: OrdersNavigator
+});
 
-export default createAppContainer(ProductsNavigator);
+export default createAppContainer(ShopNavigator);
