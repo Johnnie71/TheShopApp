@@ -40,31 +40,31 @@ const ProductsNavigator = () => {
            </ProductsStackNavigator.Navigator>
 };
 
-// const ProductsNavigator = createStackNavigator(
-//     {
-//     ProductsOverview: ProductsOverviewScreen,
-//     ProductDetail: ProductDetailsScreen,
-//     Cart: CartScreen,
-// }, 
-//     {
-//         defaultNavigationOptions: defaultNavOptions
-//     });
+const ProductsNavigator = createStackNavigator(
+    {
+    ProductsOverview: ProductsOverviewScreen,
+    ProductDetail: ProductDetailsScreen,
+    Cart: CartScreen,
+}, 
+    {
+        defaultNavigationOptions: defaultNavOptions
+    });
 
-// const OrdersNavigator = createStackNavigator({
-//     Orders: OrdersScreen,
-// }, {
-//     defaultNavigationOptions: defaultNavOptions
-// });
+const OrdersNavigator = createStackNavigator({
+    Orders: OrdersScreen,
+}, {
+    defaultNavigationOptions: defaultNavOptions
+});
 
-// const ShopNavigator = createDrawerNavigator({
-//     Products: ProductsNavigator,
-//     Orders: OrdersNavigator
-// },
-//     {
-//      contentOptions: {
-//         activeTintColor: Colors.primary
-//      }
-//     }
-// );
+const ShopNavigator = createDrawerNavigator({
+    Products: ProductsNavigator,
+    Orders: OrdersNavigator
+},
+    {
+     contentOptions: {
+        activeTintColor: Colors.primary
+     }
+    }
+);
 
 export default createAppContainer(ProductsNavigator);
