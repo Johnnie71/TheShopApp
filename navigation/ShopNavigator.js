@@ -30,7 +30,7 @@ const ProductsNavigator = () => {
                     component={ProductsOverviewScreen}  
                 />
                 <ProductsStackNavigator.Screen 
-                    name="ProductDetailsScreen" 
+                    name="ProductDetail" 
                     component={ProductDetailsScreen} 
                 />
                 <ProductsStackNavigator.Screen />
