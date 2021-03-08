@@ -2,7 +2,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator} from '@react-navigation/drawer';
 import { Platform } from 'react-native';
 
-import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
+import ProductsOverviewScreen, { screenOptions } from '../screens/shop/ProductsOverviewScreen';
 import ProductDetailsScreen from '../screens/shop/ProductDetailScreen';
 import CartScreen from '../screens/shop/CartScreen';
 import Colors from '../constants/Colors';
@@ -28,7 +28,7 @@ const ProductsNavigator = () => {
                 <ProductsStackNavigator.Screen 
                     name="ProductsOverview" 
                     component={ProductsOverviewScreen}
-                    options={}  
+                    options={screenOptions}  
                 />
                 <ProductsStackNavigator.Screen 
                     name="ProductDetail" 
