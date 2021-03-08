@@ -25,7 +25,9 @@ const ProductsStackNavigator = createStackNavigator();
 
 const ProductsNavigator = () => {
     return <ProductsStackNavigator.Navigator>
-                <ProductsStackNavigator.Screen  />
+                <ProductsStackNavigator.Screen 
+                    name="ProductsOverview" 
+                    component={ProductsOverviewScreen}  />
                 <ProductsStackNavigator.Screen />
                 <ProductsStackNavigator.Screen />
            </ProductsStackNavigator.Navigator>
