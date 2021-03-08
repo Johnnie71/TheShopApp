@@ -33,7 +33,10 @@ const ProductsNavigator = () => {
                     name="ProductDetail" 
                     component={ProductDetailsScreen} 
                 />
-                <ProductsStackNavigator.Screen name="Cart" component={CartScreen} />
+                <ProductsStackNavigator.Screen 
+                    name="Cart" 
+                    component={CartScreen} 
+                />
            </ProductsStackNavigator.Navigator>
 };
 
