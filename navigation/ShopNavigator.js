@@ -27,7 +27,8 @@ const ProductsNavigator = () => {
     return <ProductsStackNavigator.Navigator>
                 <ProductsStackNavigator.Screen 
                     name="ProductsOverview" 
-                    component={ProductsOverviewScreen}  
+                    component={ProductsOverviewScreen}
+                    options={}  
                 />
                 <ProductsStackNavigator.Screen 
                     name="ProductDetail" 
