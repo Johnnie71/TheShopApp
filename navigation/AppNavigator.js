@@ -7,7 +7,7 @@ const AppNavigator = props => {
     
     return (
         <NavigationContainer>
-
+            <ProductsNavigator />
         </NavigationContainer>
     );
 };
