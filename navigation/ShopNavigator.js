@@ -1,5 +1,5 @@
 import { createAppContainer } from '@react-navigation/native'
-import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator} from '@react-navigation/drawer';
 import { Platform } from 'react-native';
 
@@ -41,6 +41,12 @@ const OrdersNavigator = createStackNavigator({
 const ShopNavigator = createDrawerNavigator({
     Products: ProductsNavigator,
     Orders: OrdersNavigator
-});
+},
+    {
+     contentOptions: {
+        activeTintColor: Colors.primary
+     }
+    }
+);
 
 export default createAppContainer(ShopNavigator);
