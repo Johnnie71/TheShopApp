@@ -43,4 +43,4 @@ const ShopNavigator = createDrawerNavigator({
     Orders: OrdersNavigator
 });
 
-export default createAppContainer(ShopNavigator)
+export default createAppContainer(ShopNavigator);
