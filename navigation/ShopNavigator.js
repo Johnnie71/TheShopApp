@@ -21,7 +21,15 @@ const defaultNavOptions = {
     headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
 };
 
-const ProductsNavigator = createStackNavigator();
+const ProductsStackNavigator = createStackNavigator();
+
+const ProductsNavigator = () => {
+    return <ProductsStackNavigator.Navigator>
+                <ProductsStackNavigator.Screen  />
+                <ProductsStackNavigator.Screen />
+                <ProductsStackNavigator.Screen />
+           </ProductsStackNavigator.Navigator>
+};
 
 const ProductsNavigator = createStackNavigator(
     {
