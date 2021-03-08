@@ -7,6 +7,7 @@ import ProductDetailsScreen from '../screens/shop/ProductDetailScreen';
 import CartScreen from '../screens/shop/CartScreen';
 import Colors from '../constants/Colors';
 import OrdersScreen from '../screens/shop/OrdersScreen';
+import { defaultOnOverflowMenuPress } from 'react-navigation-header-buttons';
 
 const defaultNavOptions = {
     headerStyle: {
@@ -24,7 +25,7 @@ const defaultNavOptions = {
 const ProductsStackNavigator = createStackNavigator();
 
 const ProductsNavigator = () => {
-    return <ProductsStackNavigator.Navigator>
+    return <ProductsStackNavigator.Navigator screenOptions={defaultNavOptions} >
                 <ProductsStackNavigator.Screen 
                     name="ProductsOverview" 
                     component={ProductsOverviewScreen}
@@ -41,15 +42,16 @@ const ProductsNavigator = () => {
            </ProductsStackNavigator.Navigator>
 };
 
-const ProductsNavigator = createStackNavigator(
-    {
-    ProductsOverview: ProductsOverviewScreen,
-    ProductDetail: ProductDetailsScreen,
-    Cart: CartScreen,
-}, 
-    {
-        defaultNavigationOptions: defaultNavOptions
-    });
+// const ProductsNavigator = createStackNavigator(
+//     {
+//     ProductsOverview: ProductsOverviewScreen,
+//     ProductDetail: ProductDetailsScreen,
+//     Cart: CartScreen,
+// }, 
+//     {
+//         defaultNavigationOptions: defaultNavOptions
+//     }
+// );
 
 const OrdersNavigator = createStackNavigator({
     Orders: OrdersScreen,
