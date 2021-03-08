@@ -1,4 +1,3 @@
-import { createAppContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator} from '@react-navigation/drawer';
 import { Platform } from 'react-native';
@@ -20,7 +19,9 @@ const defaultNavOptions = {
         fontFamily: 'open-sans'
     },
     headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
-}
+};
+
+
 
 const ProductsNavigator = createStackNavigator(
     {
