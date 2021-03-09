@@ -80,7 +80,7 @@ export const OrdersNavigator = () => {
             name="Orders" 
             component={OrdersScreen}
             options={orderScreenOptions}
-            />
+        />
     </OrdersStackNavigator.Navigator>
 };
 
