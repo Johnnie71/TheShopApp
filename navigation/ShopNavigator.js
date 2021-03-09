@@ -74,4 +74,10 @@ const ProductsNavigator = () => {
 
 const OrdersStackNavigator = createStackNavigator();
 
+export const OrdersNavigator = () => {
+    return <OrdersStackNavigator.Navigator>
+        <OrdersStackNavigator.Screen />
+    </OrdersStackNavigator.Navigator>
+};
+
 export default createAppContainer(ProductsNavigator);
