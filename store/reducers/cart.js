@@ -52,7 +52,8 @@ export default (state = initialState, action) => {
                 items: updatedCartItems,
                 totalAmount: state.totalAmount - selectedCartItem.productPrice
             };
-        case ADD_ORDER
+        case ADD_ORDER: 
+            return initialState;
     }
     return state;
 };
