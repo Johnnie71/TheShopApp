@@ -62,7 +62,7 @@ const ProductsNavigator = () => {
 //    navigationOptions: {
 //       drawerIcon: drawerConfig => (
 //                      <Ionicons 
-//                           name={Platform.OS === 'android' ? 'md-create' : 'ios-create'} 
+//                           name={Platform.OS === 'android' ? 'md-list' : 'ios-list'} 
 //                           size={23}
 //                           color={drawerConfig.tintColor}
 //                       />
