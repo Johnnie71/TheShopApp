@@ -50,7 +50,17 @@ const ProductsNavigator = () => {
 //     ProductsOverview: ProductsOverviewScreen,
 //     ProductDetail: ProductDetailsScreen,
 //     Cart: CartScreen,
-// }, 
+// }, {
+//     navigationOptions: {
+//       drawerIcon: drawerConfig => (
+//                      <Ionicons 
+//                           name={Platform.OS === 'android' ? 'md-list' : 'ios-list'} 
+//                           size={23}
+//                           color={drawerConfig.tintColor}
+//                       />
+//                   )
+// },
+// },
 //     {
 //         defaultNavigationOptions: defaultNavOptions
 //     }
