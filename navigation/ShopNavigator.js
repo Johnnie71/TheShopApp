@@ -76,7 +76,7 @@ const OrdersStackNavigator = createStackNavigator();
 
 export const OrdersNavigator = () => {
     return <OrdersStackNavigator.Navigator>
-        <OrdersStackNavigator.Screen />
+        <OrdersStackNavigator.Screen name="Orders" />
     </OrdersStackNavigator.Navigator>
 };
 
