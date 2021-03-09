@@ -6,7 +6,7 @@ import ProductsOverviewScreen, { screenOptions as productsOverviewScreenOptions 
 import ProductDetailsScreen, { screenOptions as productDetailScreenOptions } from '../screens/shop/ProductDetailScreen';
 import CartScreen, { screenOptions as cartScreenOptions} from '../screens/shop/CartScreen';
 import Colors from '../constants/Colors';
-// import OrdersScreen from '../screens/shop/OrdersScreen';
+import OrdersScreen from '../screens/shop/OrdersScreen';
 
 
 const defaultNavOptions = {
@@ -75,8 +75,8 @@ const ProductsNavigator = () => {
 const OrdersStackNavigator = createStackNavigator();
 
 export const OrdersNavigator = () => {
-    return <OrdersStackNavigator.Navigator>
-        <OrdersStackNavigator.Screen name="Orders" />
+    return <OrdersStackNavigator.Navigator screenOptions={defaultNavOptions}>
+        <OrdersStackNavigator.Screen name="Orders" component={OrdersScreen}/>
     </OrdersStackNavigator.Navigator>
 };
 
