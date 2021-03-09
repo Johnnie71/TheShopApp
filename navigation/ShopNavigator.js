@@ -1,5 +1,5 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator} from '@react-navigation/drawer';
+// import { createDrawerNavigator} from '@react-navigation/drawer';
 import { Platform } from 'react-native';
 
 import ProductsOverviewScreen, { screenOptions as productsOverviewScreenOptions } from '../screens/shop/ProductsOverviewScreen';
