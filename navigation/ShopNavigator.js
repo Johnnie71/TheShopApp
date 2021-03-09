@@ -58,6 +58,9 @@ const ProductsNavigator = () => {
 // const OrdersNavigator = createStackNavigator({
 //     Orders: OrdersScreen,
 // }, {
+//    navigationOptions: {
+//          drawerIcon: drawerConfig => <Ionicons />
+// },
 //     defaultNavigationOptions: defaultNavOptions
 // });
 
