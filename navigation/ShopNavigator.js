@@ -72,4 +72,6 @@ const ProductsNavigator = () => {
 //     }
 // );
 
+const OrdersStackNavigator = createStackNavigator();
+
 export default createAppContainer(ProductsNavigator);
