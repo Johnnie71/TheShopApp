@@ -5,7 +5,10 @@ import CartItem from './CartItem';
 const OrderItem = props => {
     return (
         <View>
-            
+            <View>
+                <Text>$TOTAL</Text>
+                <Text>DATE</Text>
+            </View>
         </View>
     )
 };
