@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 
 const OrderItem = props => {
     return (
-        <View>
+        <View style={styles.orderItem} >
             <View>
                 <Text>${props.amount.toFixed(2)}</Text>
                 <Text>{props.date}</Text>
