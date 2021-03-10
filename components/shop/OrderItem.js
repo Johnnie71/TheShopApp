@@ -5,3 +5,8 @@ const OrderItem = props => {
 
 };
 
+const styles = StyleSheet.create({
+
+});
+
+
