@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     totalAmount: {
-
+        fontFamily: 'open-sans-bold',
+        fontSize: 16
     },
     date: {
 
