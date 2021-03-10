@@ -9,6 +9,7 @@ const OrderItem = props => {
                 <Text>$TOTAL</Text>
                 <Text>DATE</Text>
             </View>
+            <Button title="Show Details" />
         </View>
     )
 };
