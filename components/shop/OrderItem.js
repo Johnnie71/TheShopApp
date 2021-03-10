@@ -1,15 +1,16 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
+import { Colors } from '../../constants/Colors';
 import CartItem from './CartItem';
 
 const OrderItem = props => {
     return (
         <View style={styles.orderItem} >
-            <View>
-                <Text>${props.amount.toFixed(2)}</Text>
-                <Text>{props.date}</Text>
+            <View style={styles.summary} >
+                <Text style={styles.totalAmount} >${props.amount.toFixed(2)}</Text>
+                <Text style={styles.date}>{props.date}</Text>
             </View>
-            <Button title="Show Details" />
+            <Button color={Colors.primary} title="Show Details" />
         </View>
     )
 };
