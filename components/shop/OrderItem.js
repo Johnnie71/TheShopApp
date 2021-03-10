@@ -38,7 +38,9 @@ const styles = StyleSheet.create({
         fontSize: 16
     },
     date: {
-
+        fontSize: 16,
+        fontFamily: 'open-sans',
+        color: '#888'
     }
 });
 
