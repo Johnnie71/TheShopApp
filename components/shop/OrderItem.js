@@ -28,7 +28,10 @@ const styles = StyleSheet.create({
         padding: 10
     },
     summary: {
-
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%'
     },
     totalAmount: {
 
