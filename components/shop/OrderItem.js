@@ -16,7 +16,18 @@ const OrderItem = props => {
 };
 
 const styles = StyleSheet.create({
+    orderItem: {
 
+    },
+    summary: {
+
+    },
+    totalAmount: {
+
+    },
+    date: {
+        
+    }
 });
 
 
