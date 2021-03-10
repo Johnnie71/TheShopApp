@@ -6,7 +6,7 @@ const OrderItem = props => {
     return (
         <View>
             <View>
-                <Text>$TOTAL</Text>
+                <Text>${props.amount.toFixed(2)}</Text>
                 <Text>DATE</Text>
             </View>
             <Button title="Show Details" />
