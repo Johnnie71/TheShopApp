@@ -21,7 +21,17 @@ const OrderItem = props => {
                     setShowDetails(prevState => !prevState)
                 }} 
             />
-            {showDetails && <View></View>}
+            {showDetails && <View>
+                    {props.items.map(cartItem => (
+                        <CartItem 
+                            quantity={cartItem.quantity} 
+                            amount={cartItem.sum} 
+                            title={cartItem.productTitle} 
+                        />
+                      )
+                     )
+                    }
+                </View>}
         </View>
     )
 };
