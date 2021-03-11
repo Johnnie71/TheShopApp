@@ -21,6 +21,7 @@ const OrderItem = props => {
                     setShowDetails(prevState => !prevState)
                 }} 
             />
+            {showDetails && <View></View>}
         </View>
     )
 };
