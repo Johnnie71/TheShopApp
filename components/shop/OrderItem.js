@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
+import { set } from 'react-native-reanimated';
 import { Colors } from '../../constants/Colors';
 import CartItem from './CartItem';
 
@@ -13,7 +14,13 @@ const OrderItem = props => {
                 <Text style={styles.totalAmount} >${props.amount.toFixed(2)}</Text>
                 <Text style={styles.date}>{props.date}</Text>
             </View>
-            <Button color={Colors.primary} title="Show Details" />
+            <Button 
+                color={Colors.primary} 
+                title="Show Details" 
+                onPress={() => {
+                    setShowDetails(prevState => !prevState)
+                }} 
+            />
         </View>
     )
 };
