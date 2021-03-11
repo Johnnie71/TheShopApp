@@ -16,7 +16,7 @@ const OrderItem = props => {
             </View>
             <Button 
                 color={Colors.primary} 
-                title="Show Details" 
+                title={showDetails ? "Hide Details" : "Show Details"} 
                 onPress={() => {
                     setShowDetails(prevState => !prevState)
                 }} 
@@ -65,6 +65,9 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontFamily: 'open-sans',
         color: '#888'
+    },
+    detailItems: {
+        width: '100%'
     }
 });
 
