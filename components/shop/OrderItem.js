@@ -21,7 +21,7 @@ const OrderItem = props => {
                     setShowDetails(prevState => !prevState)
                 }} 
             />
-            {showDetails && <View>
+            {showDetails && <View style={style.detailItems}>
                     {props.items.map(cartItem => (
                         <CartItem 
                             key={cartItem.productId}
