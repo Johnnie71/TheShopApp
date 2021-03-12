@@ -13,7 +13,13 @@ const UserProductsScreen = props => {
             data={userProducts} 
             keyExtractor={item => item.id} 
             renderItem={itemData => (
-                <ProductItem image={itemData.item.imageUrl} title={itemData.item.title} price={itemData.item.price} onViewDetail={() => {}} onAddToCart={() => {}} />
+                <ProductItem 
+                    image={itemData.item.imageUrl} 
+                    title={itemData.item.title} 
+                    price={itemData.item.price} 
+                    onViewDetail={() => {}} 
+                    onAddToCart={() => {}}
+                />
             )} 
         />
     )
