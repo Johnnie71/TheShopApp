@@ -25,4 +25,8 @@ const UserProductsScreen = props => {
     )
 };
 
+UserProductsScreen.navigationOptions = {
+    
+};
+
 export default UserProductsScreen;
