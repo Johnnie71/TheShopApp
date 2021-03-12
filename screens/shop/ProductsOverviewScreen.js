@@ -30,7 +30,18 @@ const ProductsOverviewScreen = props => {
             onAddToCart={() => {
                 dispatch(cartActions.addToCart(itemData.item));
             }} 
-            />
+            >
+                <Button 
+                    color={Colors.primary} 
+                    title ="View Details" 
+                    onPress={props.onViewDetail} 
+                />
+                <Button 
+                    color={Colors.primary} 
+                    title ="To Cart" 
+                    onPress={props.onAddToCart} 
+                />
+            </ProductItem>
         )}/>
     );
 };
