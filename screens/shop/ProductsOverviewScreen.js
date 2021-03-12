@@ -29,21 +29,22 @@ const ProductsOverviewScreen = props => {
             title={itemData.item.title} 
             price={itemData.item.price} 
             onSelect={() => {
-                selectItemHandler(itemData.item.id, itemData.item.title)
-            }} 
-            onAddToCart={() => {
-                dispatch(cartActions.addToCart(itemData.item));
+                selectItemHandler(itemData.item.id, itemData.item.title);
             }} 
             >
                 <Button 
                     color={Colors.primary} 
                     title ="View Details" 
-                    onPress={props.onViewDetail} 
+                    onPress={() => {
+                        selectItemHandler(itemData.item.id, itemData.item.title);
+                    }} 
                 />
                 <Button 
                     color={Colors.primary} 
                     title ="To Cart" 
-                    onPress={props.onAddToCart} 
+                    onPress={() => {
+                        dispatch(cartActions.addToCart(itemData.item));
+                    }} 
                 />
             </ProductItem>
         )}/>
