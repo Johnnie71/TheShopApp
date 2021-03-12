@@ -26,7 +26,7 @@ const UserProductsScreen = props => {
 };
 
 UserProductsScreen.navigationOptions = {
-    
+    headerTitle: "Your Products"
 };
 
 export default UserProductsScreen;
