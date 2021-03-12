@@ -3,7 +3,8 @@ import { FlatList } from 'react-native';
 import { useSelector } from 'react-redux';
 
 import ProductItem from '../../components/shop/ProductItem';
-import HeaderButtons from '../../components/shop/UI/HeaderButton';
+import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import HeaderButton from '../../components/shop/UI/HeaderButton';
 
 const UserProductsScreen = props => {
 
