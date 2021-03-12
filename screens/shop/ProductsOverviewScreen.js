@@ -13,6 +13,13 @@ const ProductsOverviewScreen = props => {
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
 
+    const selectItemHandler = (id, title) => {
+        props.navigation.navigate('ProductDetail', { 
+            productId: id,
+            productTitle: title
+        });
+    }
+
     return(
         <FlatList 
         data={products} 
@@ -22,10 +29,7 @@ const ProductsOverviewScreen = props => {
             title={itemData.item.title} 
             price={itemData.item.price} 
             onViewDetail={() => {
-                props.navigation.navigate('ProductDetail', { 
-                    productId: itemData.item.id,
-                    productTitle: itemData.item.title
-                });
+                
             }} 
             onAddToCart={() => {
                 dispatch(cartActions.addToCart(itemData.item));
