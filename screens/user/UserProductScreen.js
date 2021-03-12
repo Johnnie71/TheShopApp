@@ -1,10 +1,11 @@
 import React from 'react';
-import { FlatList, Platform } from 'react-native';
+import { FlatList, Button, Platform } from 'react-native';
 import { useSelector } from 'react-redux';
 
 import ProductItem from '../../components/shop/ProductItem';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/shop/UI/HeaderButton';
+import Colors from '../../constants/Colors';
 
 const UserProductsScreen = props => {
 
