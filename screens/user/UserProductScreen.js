@@ -20,20 +20,20 @@ const UserProductsScreen = props => {
                     image={itemData.item.imageUrl} 
                     title={itemData.item.title} 
                     price={itemData.item.price} 
-                    onSelect={}
+                    onSelect={() => {}}
                 >
                     <Button 
                     color={Colors.primary} 
                     title ="Edit" 
                     onPress={() => {
-                        selectItemHandler(itemData.item.id, itemData.item.title);
+                        
                     }} 
                 />
                 <Button 
                     color={Colors.primary} 
                     title ="Delete" 
                     onPress={() => {
-                        dispatch(cartActions.addToCart(itemData.item));
+                        
                     }} 
                 />
                 </ProductItem>
