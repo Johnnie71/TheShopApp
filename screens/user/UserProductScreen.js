@@ -3,6 +3,7 @@ import { FlatList } from 'react-native';
 import { useSelector } from 'react-redux';
 
 import ProductItem from '../../components/shop/ProductItem';
+import HeaderButtons from '../../components/shop/UI/HeaderButton';
 
 const UserProductsScreen = props => {
 
@@ -26,7 +27,18 @@ const UserProductsScreen = props => {
 };
 
 UserProductsScreen.navigationOptions = {
-    headerTitle: "Your Products"
+    headerTitle: "Your Products",
+    headerLeft: () => (
+    <HeaderButtons HeaderButtonComponent={HeaderButton}>
+        <Item 
+            title="Menu" 
+            iconName={ Platform.OS === 'android' ? 'md-menu' : 'ios-menu' } 
+            onPress={() => {
+                navData.navigation.toggleDrawer();
+            }} 
+        />
+    </HeaderButtons>
+    ),
 };
 
 export default UserProductsScreen;
