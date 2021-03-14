@@ -13,6 +13,9 @@ export default (state = initialState, action) => {
                 ...state,
                 userProducts: state.userProducts.filter(
                     product => product.id !== action.pid
+                 ),
+                 availableProducts: state.availableProducts.filter(
+                     product => product.id !== action.pid
                  )
             }
     }
