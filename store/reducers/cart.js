@@ -60,10 +60,12 @@ export default (state = initialState, action) => {
                 return state;
             }
             const updatedItems = {...state.items};
+            const itemTotal = state.items[action.pid].sum;
             delete updatedItems[action.pid];
             return {
                 ...state,
-                items: state.items
+                items: updatedItems, 
+                totalAmount: state.totalAmount - itemTotal
             }
     }
     return state;
