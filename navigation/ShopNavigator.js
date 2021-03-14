@@ -85,7 +85,8 @@ const ProductsNavigator = () => {
 // });
 
 const AdminNavigator = createStackNavigator({
-    UserProducts: UserProductsScreen
+    UserProducts: UserProductsScreen,
+    EditProduct: EditProductScreen
 }, {
    navigationOptions: {
       drawerIcon: drawerConfig => (
