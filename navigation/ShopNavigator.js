@@ -9,6 +9,7 @@ import ProductDetailsScreen, { screenOptions as productDetailScreenOptions } fro
 import CartScreen, { screenOptions as cartScreenOptions} from '../screens/shop/CartScreen';
 import OrdersScreen, { screenOptions as orderScreenOptions } from '../screens/shop/OrdersScreen';
 import UserProductsScreen from '../screens/user/UserProductScreen';
+import EditProductScreen from '../screens/user/EditProductScreen';
 import Colors from '../constants/Colors';
 
 
