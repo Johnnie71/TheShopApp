@@ -1,11 +1,13 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { View, ScrollView, Text, TextInput, StyleSheet } from 'react-native';
 
 const EditProductScreen = props => {
     return (
-        <View>
-            <Text>Edit Screen!</Text>
-        </View>
+        <ScrollView>
+            <View>
+                <Text>Edit Screen!</Text>
+            </View>
+        </ScrollView>
     )
 
 };
