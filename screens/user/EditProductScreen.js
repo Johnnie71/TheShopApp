@@ -15,7 +15,7 @@ const EditProductScreen = props => {
          <View style={styles.form}>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Title</Text>
-                <TextInput style={styles.input} />
+                <TextInput style={styles.input}  value={title} onChangeText={text => setTitle(text)}/>
             </View>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Image URL</Text>
