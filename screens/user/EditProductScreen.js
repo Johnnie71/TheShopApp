@@ -50,7 +50,20 @@ const styles = StyleSheet.create({
 
 EditProductScreen.navigationOptions = navData => {
     return {
-        headerTitle: navData.navigation.getParam('productId') ? 'Edit Product' : 'Add Product'
+        headerTitle: navData.navigation.getParam('productId')
+         ? 'Edit Product' 
+         : 'Add Product',
+         headerRight: () => (
+            <HeaderButtons HeaderButtonComponent={HeaderButton}>
+            <Item 
+                title="Add" 
+                iconName={ Platform.OS === 'android' ? 'md-create' : 'ios-create' } 
+                onPress={() => {
+                    navData.navigation.navigate('EditProduct');
+                }} 
+            />
+        </HeaderButtons>
+        ) 
     };
 };
 
