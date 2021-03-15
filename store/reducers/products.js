@@ -26,7 +26,15 @@ export default (state = initialState, action) => {
             const productIndex = state.userProducts.findIndex(
                 prod => prod.id === action.pid
                 );
-            
+            const updatedProduct = new Product(
+                    action.pid,
+                    state.userProducts[productIndex].ownerId,
+                    action.productData.title,
+                    action.productData.imageUrl,
+                    action.productData.description,
+                    state.userProducts[productIndex].price,
+
+                 )
         case DELETE_PRODUCT: 
             return {
                 ...state,
