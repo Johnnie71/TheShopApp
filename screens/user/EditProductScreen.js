@@ -20,7 +20,9 @@ const EditProductScreen = props => {
         
     });
 
-    
+    useEffect(() => {
+        props.navigation.setParams({submit: submitHandler })
+    },[submitHandler]);
 
 
     return (
@@ -66,6 +68,27 @@ const EditProductScreen = props => {
 
 };
 
+
+EditProductScreen.navigationOptions = navData => {
+
+        const submitFunction = navData.navigation.getParam('submit');
+
+    return {
+        headerTitle: navData.navigation.getParam('productId')
+         ? 'Edit Product' 
+         : 'Add Product',
+         headerRight: () => (
+            <HeaderButtons HeaderButtonComponent={HeaderButton}>
+            <Item 
+                title="Save" 
+                iconName={ Platform.OS === 'android' ? 'md-checkmark' : 'ios-checkmark' } 
+                onPress={submitFunction} 
+            />
+        </HeaderButtons>
+        ) 
+    };
+};
+
 const styles = StyleSheet.create({
     form: {
         margin: 20,
@@ -86,24 +109,5 @@ const styles = StyleSheet.create({
     }
 });
 
-
-EditProductScreen.navigationOptions = navData => {
-    return {
-        headerTitle: navData.navigation.getParam('productId')
-         ? 'Edit Product' 
-         : 'Add Product',
-         headerRight: () => (
-            <HeaderButtons HeaderButtonComponent={HeaderButton}>
-            <Item 
-                title="Save" 
-                iconName={ Platform.OS === 'android' ? 'md-checkmark' : 'ios-checkmark' } 
-                onPress={() => {
-                    
-                }} 
-            />
-        </HeaderButtons>
-        ) 
-    };
-};
 
 export default EditProductScreen;
