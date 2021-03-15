@@ -10,6 +10,12 @@ const EditProductScreen = props => {
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
 
+    const productId = props.navigation.getParam('productId');
+
+    if(productId) {
+
+    }
+
     return (
         <ScrollView>
          <View style={styles.form}>
