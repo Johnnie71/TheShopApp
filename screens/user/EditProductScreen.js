@@ -58,10 +58,10 @@ EditProductScreen.navigationOptions = navData => {
          headerRight: () => (
             <HeaderButtons HeaderButtonComponent={HeaderButton}>
             <Item 
-                title="Add" 
-                iconName={ Platform.OS === 'android' ? 'md-create' : 'ios-create' } 
+                title="Save" 
+                iconName={ Platform.OS === 'android' ? 'md-checkmark' : 'ios-checkmark' } 
                 onPress={() => {
-                    navData.navigation.navigate('EditProduct');
+                    
                 }} 
             />
         </HeaderButtons>
