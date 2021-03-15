@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 import { View, ScrollView, Text, TextInput, StyleSheet } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/shop/UI/HeaderButton';
+import { useSelector } from 'react-redux';
 
 const EditProductScreen = props => {
 
-    const [title, setTitle] = useState('');
+    const productId = props.navigation.getParam('productId');
+    const editedProduct = useSelector(state => 
+        state.products.userProducts.find(prod => prod.id === productId)
+    );
+
+    const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
     const [imageUrl, setImageUrl] = useState('');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
 
-    const productId = props.navigation.getParam('productId');
-
-    if(productId) {
-
-    }
 
     return (
         <ScrollView>
