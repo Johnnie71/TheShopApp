@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, ScrollView, Text, TextInput, StyleSheet } from 'react-native';
+import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import HeaderButton from '../../components/shop/UI/HeaderButton';
 
 const EditProductScreen = props => {
     return (
