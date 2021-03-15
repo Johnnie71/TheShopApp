@@ -18,7 +18,7 @@ const EditProductScreen = props => {
 
     const submitHandler = useCallback(() => {
         
-    });
+    }, []);
 
     useEffect(() => {
         props.navigation.setParams({submit: submitHandler })
