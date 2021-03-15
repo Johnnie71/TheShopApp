@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, ScrollView, Text, TextInput, StyleSheet } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/shop/UI/HeaderButton';
 
 const EditProductScreen = props => {
+
+    const [title, setTitle] = useState('');
+    const [imageUrl, setImageUrl] = useState('');
+    const [price, setPrice] = useState('');
+    const [description, setDescription] = useState('');
+
     return (
         <ScrollView>
          <View style={styles.form}>
