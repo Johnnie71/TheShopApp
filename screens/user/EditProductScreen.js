@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, ScrollView, Text, TextInput, StyleSheet } from 'react-native';
+import { View, ScrollView, Text, TextInput, StyleSheet, Platform } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/shop/UI/HeaderButton';
 import { useSelector } from 'react-redux';
@@ -36,14 +36,16 @@ const EditProductScreen = props => {
                     onChangeText={text => setImageUrl(text)}
                  />
             </View>
-            <View style={styles.formControl}>
-                <Text style={styles.label}>Price</Text>
-                <TextInput 
-                    style={styles.input}
-                    value={price} 
-                    onChangeText={text => setPrice(text)}
-                 />
-            </View>
+            {editedProduct ? null : (
+                <View style={styles.formControl}>
+                    <Text style={styles.label}>Price</Text>
+                    <TextInput 
+                        style={styles.input}
+                        value={price} 
+                        onChangeText={text => setPrice(text)}
+                    />
+                </View>
+            )}
             <View style={styles.formControl}>
                 <Text style={styles.label}>Description</Text>
                 <TextInput 
