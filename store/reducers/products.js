@@ -23,6 +23,10 @@ export default (state = initialState, action) => {
                 userProducts: state.userProducts.concat(newProduct)
             }
         case UPDATE_PRODUCT:
+            const productIndex = state.userProducts.findIndex(
+                prod => prod.id === action.pid
+                );
+            
         case DELETE_PRODUCT: 
             return {
                 ...state,
