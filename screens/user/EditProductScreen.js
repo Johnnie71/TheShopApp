@@ -47,4 +47,11 @@ const styles = StyleSheet.create({
     }
 });
 
+
+EditProductScreen.navigationOptions = navData => {
+    return {
+        headerTitle: navData.navigation.getParam('productId') ? 'Edit Product' : 'Add Product'
+    };
+};
+
 export default EditProductScreen;
