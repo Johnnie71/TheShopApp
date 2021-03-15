@@ -23,17 +23,27 @@ const EditProductScreen = props => {
             </View>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Image URL</Text>
-                <TextInput style={styles.input}
-                    value={imageUrl} onChangeText={text => setImageUrl(text)}
+                <TextInput 
+                    style={styles.input}
+                    value={imageUrl} 
+                    onChangeText={text => setImageUrl(text)}
                  />
             </View>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Price</Text>
-                <TextInput style={styles.input} />
+                <TextInput 
+                    style={styles.input}
+                    value={price} 
+                    onChangeText={text => setPrice(text)}
+                 />
             </View>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Description</Text>
-                <TextInput style={styles.input} />
+                <TextInput 
+                    style={styles.input}
+                    value={description} 
+                    onChangeText={text => setDescription(text)}
+                 />
             </View>
           </View>
         </ScrollView>
