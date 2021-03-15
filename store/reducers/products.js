@@ -35,6 +35,8 @@ export default (state = initialState, action) => {
                     state.userProducts[productIndex].price,
 
                  )
+                 const updatedUserProducts = [...state.userProducts];
+                 updatedUserProducts[productIndex] = updatedProduct;
         case DELETE_PRODUCT: 
             return {
                 ...state,
