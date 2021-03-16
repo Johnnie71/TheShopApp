@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Button, Platform } from 'react-native';
+import { FlatList, Button, Platform, Alert } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 
 import ProductItem from '../../components/shop/ProductItem';
@@ -15,6 +15,13 @@ const UserProductsScreen = props => {
 
     const editProductHandler = (id) => {
         props.navigation.navigate('EditProduct', { productId: id });
+    };
+
+    const deleteHandler = () => {
+        Alert.alert('Are you sure?', 'Do you really want to delete this item?', [
+            { text: "No", style: 'default' },
+            { text: 'Yes', style: 'destructive', onPress: () => {} }
+        ])
     };
 
     return (
