@@ -2,9 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { View, ScrollView, Text, TextInput, StyleSheet, Platform } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/shop/UI/HeaderButton';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import * as productActions from '../../store/actions/products';
 
 const EditProductScreen = props => {
+
+    const dipatch = useDispatch();
 
     const productId = props.navigation.getParam('productId');
     const editedProduct = useSelector(state => 
@@ -17,7 +20,15 @@ const EditProductScreen = props => {
     const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
 
     const submitHandler = useCallback(() => {
-        
+        if(editedProduct) {
+            dipatch(
+                productActions.updateProduct(productId, title, description, imageUrl)
+            );
+        } else {
+            dispatch(
+                productActions.createProduct(title, description, imageUrl, price)
+            );
+        }
     }, []);
 
     useEffect(() => {
