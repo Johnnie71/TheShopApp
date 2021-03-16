@@ -20,12 +20,7 @@ const EditProductScreen = props => {
         state.products.userProducts.find(prod => prod.id === productId)
     );
 
-    const deleteHandler = () => {
-        Alert.alert('Are you sure?', 'Do you really want to delete this item?', [
-            { text: "No", style: 'default' },
-            { text: 'Yes', style: 'destructive', onPress: () => {} }
-        ])
-    };
+    
 
     const submitHandler = useCallback(() => {
         if(editedProduct) {
