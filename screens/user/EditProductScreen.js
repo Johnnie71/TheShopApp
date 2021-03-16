@@ -26,7 +26,7 @@ const EditProductScreen = props => {
             );
         } else {
             dispatch(
-                productActions.createProduct(title, description, imageUrl, price)
+                productActions.createProduct(title, description, imageUrl, +price)
             );
         }
     }, []);
