@@ -7,6 +7,12 @@ import * as productActions from '../../store/actions/products';
 
 const EditProductScreen = props => {
 
+    
+    const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
+    const [imageUrl, setImageUrl] = useState(editedProduct ? editedProduct.imageUrl : '');
+    const [price, setPrice] = useState('');
+    const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
+    
     const dipatch = useDispatch();
 
     const productId = props.navigation.getParam('productId');
@@ -14,10 +20,12 @@ const EditProductScreen = props => {
         state.products.userProducts.find(prod => prod.id === productId)
     );
 
-    const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
-    const [imageUrl, setImageUrl] = useState(editedProduct ? editedProduct.imageUrl : '');
-    const [price, setPrice] = useState('');
-    const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
+    const deleteHandler = () => {
+        Alert.alert('Are you sure?', 'Do you really want to delete this item?', [
+            { text: "No", style: 'default' },
+            { text: 'Yes', style: 'destructive', onPress: () => {} }
+        ])
+    };
 
     const submitHandler = useCallback(() => {
         if(editedProduct) {
