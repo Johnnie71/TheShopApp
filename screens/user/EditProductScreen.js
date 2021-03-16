@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { View, ScrollView, Text, TextInput, StyleSheet, Platform, Alert } from 'react-native';
+import { View, ScrollView, Text, TextInput, StyleSheet, Platform } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/shop/UI/HeaderButton';
 import { useDispatch, useSelector } from 'react-redux';
@@ -19,8 +19,6 @@ const EditProductScreen = props => {
     const editedProduct = useSelector(state => 
         state.products.userProducts.find(prod => prod.id === productId)
     );
-
-    
 
     const submitHandler = useCallback(() => {
         if(editedProduct) {
