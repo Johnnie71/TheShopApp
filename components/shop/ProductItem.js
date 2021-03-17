@@ -1,5 +1,15 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, TouchableNativeFeedback, Platform } from 'react-native';
+import { 
+    View, 
+    Text, 
+    Image, 
+    StyleSheet, 
+    TouchableOpacity, 
+    TouchableNativeFeedback, 
+    Platform 
+} from 'react-native';
+
+import Card from '../UI/Card';
 
 
 const ProductItem = props => {
@@ -12,7 +22,7 @@ const ProductItem = props => {
 
 
     return (
-        <View style={styles.product}>
+        <Card style={styles.product}>
             <View style={styles.touchable}>
             <TouchableCmp onPress={props.onSelect} useForeground >
                 <View>
@@ -29,7 +39,7 @@ const ProductItem = props => {
                 </View>
             </TouchableCmp>
             </View>
-        </View>
+        </Card>
     )
 };
 
