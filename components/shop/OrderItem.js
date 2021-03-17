@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-import { set } from 'react-native-reanimated';
+
 import { Colors } from '../../constants/Colors';
 import CartItem from './CartItem';
+
 
 const OrderItem = props => {
 
