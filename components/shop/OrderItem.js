@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 import { Colors } from '../../constants/Colors';
 import CartItem from './CartItem';
-import Card from '../shop/UI/Card';
+import Card from '../UI/Card';
 
 
 const OrderItem = props => {
