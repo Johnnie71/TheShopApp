@@ -6,7 +6,7 @@ const Card = props => {
         <View style={{...styles.card, ...props.style}} >
             {props.children}
         </View>
-    )
+    );
 };
 
 const styles = StyleSheet.create({
