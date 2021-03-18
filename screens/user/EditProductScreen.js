@@ -46,7 +46,7 @@ const EditProductScreen = props => {
             );
         }
         props.navigation.goBack();
-    }, [dispatch, productId, title, description, imageUrl, price]);
+    }, [dispatch, productId, title, description, imageUrl, price, titleIsValid]);
 
     useEffect(() => {
         props.navigation.setParams({submit: submitHandler })
