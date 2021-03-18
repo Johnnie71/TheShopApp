@@ -30,7 +30,7 @@ const EditProductScreen = props => {
     
     const dipatch = useDispatch();
 
-        useReducer(formReducer, { 
+       const [formState, dispatch] = useReducer(formReducer, { 
             inputValues: {
                 title: editedProduct ? editedProduct.title : '',
                 imageUrl: editedProduct ? editedProduct.imageUrl : '',
@@ -73,11 +73,11 @@ const EditProductScreen = props => {
 
     const titleChangeHandler = (text) => {
         if(text.trim().length === 0){
-            setTitleIsValid(false);
+          
         } else {
-            setTitleIsValid(true);
+           
         }
-         setTitle(text);
+         REDUCER_UPDATE
     };
 
     return (
