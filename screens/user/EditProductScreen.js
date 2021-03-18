@@ -37,6 +37,9 @@ const EditProductScreen = props => {
         props.navigation.setParams({submit: submitHandler })
     },[submitHandler]);
 
+    const titleChangeHandler = (text) => {
+         setTitle(text);
+    };
 
     return (
         <ScrollView>
@@ -46,7 +49,7 @@ const EditProductScreen = props => {
                 <TextInput 
                     style={styles.input}  
                     value={title} 
-                    onChangeText={text => setTitle(text)}
+                    onChangeText={titleChangeHandler}
                     keyboardType='default'
                     autoCapitalize='sentences'
                     autoCorrect
