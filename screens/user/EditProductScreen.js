@@ -37,7 +37,13 @@ const EditProductScreen = props => {
                 description: editedProduct ? editedProduct.description : '',
                 price: ''
             }, 
-            inputValidities: {}, 
+            inputValidities: {
+                title: editedProduct ? true : false,
+                imageUrl: editedProduct ? true : false,
+                description: editedProduct ? true : false,
+                price: editedProduct ? true : false,
+
+            }, 
             formIsValid: false 
         });
 
