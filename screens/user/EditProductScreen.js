@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useReducer } from 'react';
 import { 
     View, 
     ScrollView, 
@@ -12,6 +12,12 @@ import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/UI/HeaderButton';
 import { useDispatch, useSelector } from 'react-redux';
 import * as productActions from '../../store/actions/products';
+
+const REDUCER_UPDATE = 'UPDATE'
+
+const formReducer = (state, action) => {
+    if(action.type === "UPDATE")
+};
 
 const EditProductScreen = props => {
 
