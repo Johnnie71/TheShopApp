@@ -32,12 +32,15 @@ const EditProductScreen = props => {
 
         useReducer(formReducer, { 
             inputValues: {
-                title: editedProduct ? editedProduct.title : ''
+                title: editedProduct ? editedProduct.title : '',
+                imageUrl: editedProduct ? editedProduct.imageUrl : '',
+                description: editedProduct ? editedProduct.description : '',
+                price: ''
             }, 
             inputValidities: {}, 
             formIsValid: false 
         });
-        
+
     const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
     const [titleIsValid, setTitleIsValid] = useState(false);
     const [imageUrl, setImageUrl] = useState(editedProduct ? editedProduct.imageUrl : '');
