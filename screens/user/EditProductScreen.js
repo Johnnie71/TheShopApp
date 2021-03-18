@@ -65,6 +65,7 @@ const EditProductScreen = props => {
                         style={styles.input}
                         value={price} 
                         onChangeText={text => setPrice(text)}
+                        keyboardType='decimal-pad'
                     />
                 </View>
             )}
