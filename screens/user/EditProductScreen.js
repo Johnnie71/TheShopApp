@@ -28,7 +28,7 @@ const EditProductScreen = props => {
         state.products.userProducts.find(prod => prod.id === productId)
     );
     
-    const dipatch = useDispatch();
+    const dispatch = useDispatch();
 
        const [formState, dispatchFormState] = useReducer(formReducer, { 
             inputValues: {
@@ -56,7 +56,7 @@ const EditProductScreen = props => {
             return;
         }
         if(editedProduct) {
-            dipatch(
+            dispatch(
                 productActions.updateProduct(productId, title, description, imageUrl)
             );
         } else {
