@@ -47,6 +47,7 @@ const EditProductScreen = props => {
                     style={styles.input}  
                     value={title} 
                     onChangeText={text => setTitle(text)}
+                    keyboardType='default'
                 />
             </View>
             <View style={styles.formControl}>
