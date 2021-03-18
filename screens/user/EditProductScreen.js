@@ -30,7 +30,7 @@ const EditProductScreen = props => {
     
     const dipatch = useDispatch();
 
-       const [formState, dispatch] = useReducer(formReducer, { 
+       const [formState, dispatchFormState] = useReducer(formReducer, { 
             inputValues: {
                 title: editedProduct ? editedProduct.title : '',
                 imageUrl: editedProduct ? editedProduct.imageUrl : '',
