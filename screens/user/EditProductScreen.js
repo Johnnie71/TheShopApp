@@ -47,13 +47,6 @@ const EditProductScreen = props => {
             formIsValid: editedProduct ? true : false,
         });
 
-    const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
-    const [titleIsValid, setTitleIsValid] = useState(false);
-    const [imageUrl, setImageUrl] = useState(editedProduct ? editedProduct.imageUrl : '');
-    const [price, setPrice] = useState('');
-    const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
-    
-
 
     const submitHandler = useCallback(() => {
         if(!titleIsValid) {
