@@ -61,6 +61,7 @@ const EditProductScreen = props => {
                     autoCorrect
                     returnKeyType='next'
                 />
+                {!titleIsValid && <Text>Please enter a valid title!</Text>}
             </View>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Image URL</Text>
