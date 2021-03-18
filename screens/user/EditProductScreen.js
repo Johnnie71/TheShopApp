@@ -48,6 +48,9 @@ const EditProductScreen = props => {
                     value={title} 
                     onChangeText={text => setTitle(text)}
                     keyboardType='default'
+                    autoCapitalize='sentences'
+                    autoCorrect
+                    returnKeyType='next'
                 />
             </View>
             <View style={styles.formControl}>
