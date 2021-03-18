@@ -31,6 +31,7 @@ const EditProductScreen = props => {
 
     const submitHandler = useCallback(() => {
         if(!titleIsValid) {
+            Alert.alert('Wrong input!')
             return;
         }
         if(editedProduct) {
