@@ -39,6 +39,11 @@ const EditProductScreen = props => {
     },[submitHandler]);
 
     const titleChangeHandler = (text) => {
+        if(text.trim().length === 0){
+            setTitleIsValid(false);
+        } else {
+            setTitleIsValid(true);
+        }
          setTitle(text);
     };
 
