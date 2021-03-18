@@ -44,7 +44,7 @@ const EditProductScreen = props => {
                 price: editedProduct ? true : false,
 
             }, 
-            formIsValid: false 
+            formIsValid: editedProduct ? true : false,
         });
 
     const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
