@@ -72,12 +72,16 @@ const EditProductScreen = props => {
     },[submitHandler]);
 
     const titleChangeHandler = (text) => {
-        if(text.trim().length === 0){
-          
-        } else {
-           
+        let isValid = false;
+        if(text.trim().length > 0){
+          isValid = true;
         }
-        dispatchFormState({type: FORM_INPUT_UPDATE});
+        dispatchFormState({
+            type: FORM_INPUT_UPDATE, 
+            value: text, 
+            isValid: isValid,
+            input: 'title'
+        });
     };
 
     return (
