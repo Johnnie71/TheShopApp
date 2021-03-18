@@ -13,10 +13,10 @@ import HeaderButton from '../../components/UI/HeaderButton';
 import { useDispatch, useSelector } from 'react-redux';
 import * as productActions from '../../store/actions/products';
 
-const REDUCER_UPDATE = 'UPDATE'
+const FORM_INPUT_UPDATE = 'FORM_INPUT_UPDATE'
 
 const formReducer = (state, action) => {
-    if(action.type === REDUCER_UPDATE){
+    if(action.type === FORM_INPUT_UPDATE){
 
     }
 };
@@ -77,7 +77,7 @@ const EditProductScreen = props => {
         } else {
            
         }
-         REDUCER_UPDATE
+        dispatchFormState({type: FORM_INPUT_UPDATE});
     };
 
     return (
