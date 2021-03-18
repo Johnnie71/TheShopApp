@@ -16,7 +16,9 @@ import * as productActions from '../../store/actions/products';
 const REDUCER_UPDATE = 'UPDATE'
 
 const formReducer = (state, action) => {
-    if(action.type === "UPDATE")
+    if(action.type === REDUCER_UPDATE){
+
+    }
 };
 
 const EditProductScreen = props => {
@@ -29,6 +31,12 @@ const EditProductScreen = props => {
     const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
     
     const dipatch = useDispatch();
+
+        useReducer(formReducer, { 
+            inputValues: {}, 
+            inputValidities: {}, 
+            formIsValid: false 
+        });
 
     const productId = props.navigation.getParam('productId');
     const editedProduct = useSelector(state => 
