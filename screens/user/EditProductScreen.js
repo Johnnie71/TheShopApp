@@ -23,25 +23,28 @@ const formReducer = (state, action) => {
 
 const EditProductScreen = props => {
 
+    const productId = props.navigation.getParam('productId');
+    const editedProduct = useSelector(state => 
+        state.products.userProducts.find(prod => prod.id === productId)
+    );
     
+    const dipatch = useDispatch();
+
+        useReducer(formReducer, { 
+            inputValues: {
+                title: editedProduct ? editedProduct.title : ''
+            }, 
+            inputValidities: {}, 
+            formIsValid: false 
+        });
+        
     const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
     const [titleIsValid, setTitleIsValid] = useState(false);
     const [imageUrl, setImageUrl] = useState(editedProduct ? editedProduct.imageUrl : '');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
     
-    const dipatch = useDispatch();
 
-        useReducer(formReducer, { 
-            inputValues: {}, 
-            inputValidities: {}, 
-            formIsValid: false 
-        });
-
-    const productId = props.navigation.getParam('productId');
-    const editedProduct = useSelector(state => 
-        state.products.userProducts.find(prod => prod.id === productId)
-    );
 
     const submitHandler = useCallback(() => {
         if(!titleIsValid) {
