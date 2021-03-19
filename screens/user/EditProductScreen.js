@@ -27,6 +27,7 @@ const formReducer = (state, action) => {
         };
         return {
             ...state,
+            inputValidities: updatedValidities,
             inputValues: updatedValues
         };
     };
