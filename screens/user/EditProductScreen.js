@@ -17,8 +17,11 @@ const FORM_INPUT_UPDATE = 'FORM_INPUT_UPDATE'
 
 const formReducer = (state, action) => {
     if(action.type === FORM_INPUT_UPDATE){
-
-    }
+        const updatedValues = {
+            ...state.inputValues,
+            [action.input]: action.value
+        };
+    };
 };
 
 const EditProductScreen = props => {
