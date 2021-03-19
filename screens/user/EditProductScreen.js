@@ -21,6 +21,10 @@ const formReducer = (state, action) => {
             ...state.inputValues,
             [action.input]: action.value
         };
+        const updatedValidities = {
+            ...state.inputValidities,
+            [action.input]: action.isValid
+        };
         return {
             ...state,
             inputValues: updatedValues
