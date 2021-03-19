@@ -71,7 +71,7 @@ const EditProductScreen = props => {
         props.navigation.setParams({submit: submitHandler })
     },[submitHandler]);
 
-    const titleChangeHandler = (text) => {
+    const textChangeHandler = (inputIdentifier, text) => {
         let isValid = false;
         if(text.trim().length > 0){
           isValid = true;
@@ -80,7 +80,7 @@ const EditProductScreen = props => {
             type: FORM_INPUT_UPDATE, 
             value: text, 
             isValid: isValid,
-            input: 'title'
+            input: inputIdentifier
         });
     };
 
