@@ -21,6 +21,10 @@ const formReducer = (state, action) => {
             ...state.inputValues,
             [action.input]: action.value
         };
+        return {
+            ...state,
+            inputValues: updatedValues
+        };
     };
 };
 
