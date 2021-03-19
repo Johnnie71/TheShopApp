@@ -31,7 +31,7 @@ const formReducer = (state, action) => {
             updatedFormIsValid = updatedFormIsValid && updatedValidities[key];
         }
         return {
-            updatedFormIsValid: updatedFormIsValid,
+            formIsValid: updatedFormIsValid,
             inputValidities: updatedValidities,
             inputValues: updatedValues
         };
