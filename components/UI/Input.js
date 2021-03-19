@@ -20,6 +20,20 @@ const Input = props => {
     )
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    formControl: {
+        width: '100%'
+    },
+    label: {
+        fontFamily: 'open-sans-bold',
+        marginVertical: 8
+    },
+    input: {
+        paddingHorizontal: 2,
+        paddingVertical: 5,
+        borderBottomColor: '#ccc',
+        borderBottomWidth: 1
+    }
+});
 
 export default Input;
