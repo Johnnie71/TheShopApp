@@ -105,7 +105,7 @@ const EditProductScreen = props => {
                 <TextInput 
                     style={styles.input}
                     value={imageUrl} 
-                    onChangeText={text => setImageUrl(text)}
+                    onChangeText={textChangeHandler}
                  />
             </View>
             {editedProduct ? null : (
