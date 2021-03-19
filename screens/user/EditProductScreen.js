@@ -126,7 +126,7 @@ const EditProductScreen = props => {
                     autoCorrect
                     returnKeyType='next'
                 />
-                {!titleIsValid && <Text>Please enter a valid title!</Text>}
+                {!formState.inputValidities.title && <Text>Please enter a valid title!</Text>}
             </View>
             <View style={styles.formControl}>
                 <Text style={styles.label}>Image URL</Text>
