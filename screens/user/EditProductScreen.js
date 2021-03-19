@@ -67,7 +67,7 @@ const EditProductScreen = props => {
 
 
     const submitHandler = useCallback(() => {
-        if(!titleIsValid) {
+        if(!formState.formIsValid) {
             Alert.alert('Wrong input!', 'Please check the errors in the form.', [
                 { text: "Okay" }
             ]);
