@@ -122,7 +122,7 @@ const EditProductScreen = props => {
                 <Text style={styles.label}>Image URL</Text>
                 <TextInput 
                     style={styles.input}
-                    value={imageUrl} 
+                    value={formState.inputValues.imageUrl} 
                     onChangeText={textChangeHandler.bind(this, 'imageUrl')}
                  />
             </View>
@@ -131,7 +131,7 @@ const EditProductScreen = props => {
                     <Text style={styles.label}>Price</Text>
                     <TextInput 
                         style={styles.input}
-                        value={price} 
+                        value={formState.inputValues.price} 
                         onChangeText={textChangeHandler.bind(this, 'price')}
                         keyboardType='decimal-pad'
                     />
@@ -141,7 +141,7 @@ const EditProductScreen = props => {
                 <Text style={styles.label}>Description</Text>
                 <TextInput 
                     style={styles.input}
-                    value={description} 
+                    value={formState.inputValues.description} 
                     onChangeText={textChangeHandler.bind(this, 'description')}
                  />
             </View>
