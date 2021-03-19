@@ -36,6 +36,7 @@ const formReducer = (state, action) => {
             inputValues: updatedValues
         };
     };
+    return state;
 };
 
 const EditProductScreen = props => {
