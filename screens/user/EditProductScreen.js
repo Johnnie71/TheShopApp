@@ -109,7 +109,7 @@ const EditProductScreen = props => {
                 <Text style={styles.label}>Title</Text>
                 <TextInput 
                     style={styles.input}  
-                    value={title} 
+                    value={formState.inputValues.title} 
                     onChangeText={textChangeHandler.bind(this, 'title')}
                     keyboardType='default'
                     autoCapitalize='sentences'
