@@ -114,7 +114,7 @@ const EditProductScreen = props => {
                     <TextInput 
                         style={styles.input}
                         value={price} 
-                        onChangeText={text => setPrice(text)}
+                        onChangeText={textChangeHandler.bind(this, 'price')}
                         keyboardType='decimal-pad'
                     />
                 </View>
@@ -124,7 +124,7 @@ const EditProductScreen = props => {
                 <TextInput 
                     style={styles.input}
                     value={description} 
-                    onChangeText={text => setDescription(text)}
+                    onChangeText={textChangeHandler.bind(this, 'description')}
                  />
             </View>
           </View>
