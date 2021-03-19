@@ -92,7 +92,7 @@ const EditProductScreen = props => {
                 <TextInput 
                     style={styles.input}  
                     value={title} 
-                    onChangeText={textChangeHandler}
+                    onChangeText={textChangeHandler.bind(this, 'title')}
                     keyboardType='default'
                     autoCapitalize='sentences'
                     autoCorrect
@@ -105,7 +105,7 @@ const EditProductScreen = props => {
                 <TextInput 
                     style={styles.input}
                     value={imageUrl} 
-                    onChangeText={textChangeHandler}
+                    onChangeText={textChangeHandler.bind(this, 'imageUrl')}
                  />
             </View>
             {editedProduct ? null : (
