@@ -92,7 +92,7 @@ const EditProductScreen = props => {
                 <TextInput 
                     style={styles.input}  
                     value={title} 
-                    onChangeText={titleChangeHandler}
+                    onChangeText={textChangeHandler}
                     keyboardType='default'
                     autoCapitalize='sentences'
                     autoCorrect
