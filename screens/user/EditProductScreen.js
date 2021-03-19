@@ -75,15 +75,25 @@ const EditProductScreen = props => {
         }
         if(editedProduct) {
             dispatch(
-                productActions.updateProduct(productId, title, description, imageUrl)
+                productActions.updateProduct(
+                    productId, 
+                    formState.inputValues.title, 
+                    formState.inputValues.description, 
+                    formState.inputValues.imageUrl
+                )
             );
         } else {
             dispatch(
-                productActions.createProduct(title, description, imageUrl, +price)
+                productActions.createProduct(
+                    formState.inputValues.title, 
+                    formState.inputValues.description, 
+                    formState.inputValues.imageUrl, 
+                    +formState.inputValues.price
+                )
             );
         }
         props.navigation.goBack();
-    }, [dispatch, productId, title, description, imageUrl, price, titleIsValid]);
+    }, [dispatch, productId, formState]);
 
     useEffect(() => {
         props.navigation.setParams({submit: submitHandler })
