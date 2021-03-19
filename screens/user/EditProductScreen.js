@@ -115,19 +115,7 @@ const EditProductScreen = props => {
     return (
         <ScrollView>
          <View style={styles.form}>
-            <View style={styles.formControl}>
-                <Text style={styles.label}>Title</Text>
-                <TextInput 
-                    style={styles.input}  
-                    value={formState.inputValues.title} 
-                    onChangeText={textChangeHandler.bind(this, 'title')}
-                    keyboardType='default'
-                    autoCapitalize='sentences'
-                    autoCorrect
-                    returnKeyType='next'
-                />
-                {!formState.inputValidities.title && <Text>Please enter a valid title!</Text>}
-            </View>
+            
             <View style={styles.formControl}>
                 <Text style={styles.label}>Image URL</Text>
                 <TextInput 
