@@ -7,6 +7,7 @@ const Input = props => {
         <View style={styles.formControl}>
                 <Text style={styles.label}>{props.label}</Text>
                 <TextInput 
+                    {...props}
                     style={styles.input}  
                     value={formState.inputValues.title} 
                     onChangeText={textChangeHandler.bind(this, 'title')}
