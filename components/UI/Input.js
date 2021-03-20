@@ -5,7 +5,7 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 const Input = props => {
     return (
         <View style={styles.formControl}>
-                <Text style={styles.label}>Title</Text>
+                <Text style={styles.label}>{props.label}</Text>
                 <TextInput 
                     style={styles.input}  
                     value={formState.inputValues.title} 
