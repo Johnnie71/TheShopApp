@@ -116,7 +116,12 @@ const EditProductScreen = props => {
     return (
         <ScrollView>
          <View style={styles.form}>
-            
+            <Input 
+                keyboardType='default'
+                autoCapitalize='sentences'
+                autoCorrect
+                returnKeyType='next'
+             />
             <View style={styles.formControl}>
                 <Text style={styles.label}>Image URL</Text>
                 <TextInput 
