@@ -11,7 +11,8 @@ const Input = props => {
                     style={styles.input}  
                     value={formState.inputValues.title} 
                     onChangeText={textChangeHandler.bind(this, 'title')}
-                    
+                    onEndEditing={() => {}}
+                    onSubmitEditing={() => {}}
                 />
                 {!formState.inputValidities.title && <Text>Please enter a valid title!</Text>}
             </View>
