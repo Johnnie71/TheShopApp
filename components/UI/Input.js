@@ -12,7 +12,7 @@ const Input = props => {
                     value={formState.inputValues.title} 
                     onChangeText={textChangeHandler.bind(this, 'title')}
                 />
-                {!formState.inputValidities.title && <Text>Please enter a valid title!</Text>}
+                {!formState.inputValidities.title && <Text>{props.errorText}</Text>}
             </View>
     )
 };
