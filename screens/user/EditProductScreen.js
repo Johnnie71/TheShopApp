@@ -124,14 +124,14 @@ const EditProductScreen = props => {
                 autoCorrect
                 returnKeyType='next'
              />
-            <View style={styles.formControl}>
-                <Text style={styles.label}>Image URL</Text>
-                <TextInput 
-                    style={styles.input}
-                    value={formState.inputValues.imageUrl} 
-                    onChangeText={textChangeHandler.bind(this, 'imageUrl')}
-                 />
-            </View>
+            <Input 
+                label="ImageUrl"
+                errorText="Please enter a valid image URL!"
+                keyboardType='default'
+                autoCapitalize='sentences'
+                autoCorrect
+                returnKeyType='next'
+             />
             {editedProduct ? null : (
                 <View style={styles.formControl}>
                     <Text style={styles.label}>Price</Text>
