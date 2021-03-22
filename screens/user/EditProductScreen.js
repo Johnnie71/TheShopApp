@@ -133,19 +133,18 @@ const EditProductScreen = props => {
             {editedProduct ? null : (
                 <Input 
                 label="Price"
-                errorText="Please enter a valid title!"
+                errorText="Please enter a valid price!"
                 keyboardType='decimal-pad'
                 returnKeyType='next'
              />
             )}
-            <View style={styles.formControl}>
-                <Text style={styles.label}>Description</Text>
-                <TextInput 
-                    style={styles.input}
-                    value={formState.inputValues.description} 
-                    onChangeText={textChangeHandler.bind(this, 'description')}
-                 />
-            </View>
+            <Input 
+                label="Description"
+                errorText="Please enter a valid description!"
+                keyboardType='default'
+                autoCapitalize='sentences'
+                autoCorrect
+             />
           </View>
         </ScrollView>
     )
