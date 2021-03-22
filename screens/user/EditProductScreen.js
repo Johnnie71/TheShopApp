@@ -128,8 +128,6 @@ const EditProductScreen = props => {
                 label="ImageUrl"
                 errorText="Please enter a valid image URL!"
                 keyboardType='default'
-                autoCapitalize='sentences'
-                autoCorrect
                 returnKeyType='next'
              />
             {editedProduct ? null : (
