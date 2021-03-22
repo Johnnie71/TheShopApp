@@ -144,6 +144,8 @@ const EditProductScreen = props => {
                 keyboardType='default'
                 autoCapitalize='sentences'
                 autoCorrect
+                multiline
+                numberOfLines={3}
              />
           </View>
         </ScrollView>
