@@ -131,15 +131,14 @@ const EditProductScreen = props => {
                 returnKeyType='next'
              />
             {editedProduct ? null : (
-                <View style={styles.formControl}>
-                    <Text style={styles.label}>Price</Text>
-                    <TextInput 
-                        style={styles.input}
-                        value={formState.inputValues.price} 
-                        onChangeText={textChangeHandler.bind(this, 'price')}
-                        keyboardType='decimal-pad'
-                    />
-                </View>
+                <Input 
+                label="Title"
+                errorText="Please enter a valid title!"
+                keyboardType='default'
+                autoCapitalize='sentences'
+                autoCorrect
+                returnKeyType='next'
+             />
             )}
             <View style={styles.formControl}>
                 <Text style={styles.label}>Description</Text>
