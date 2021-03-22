@@ -132,11 +132,9 @@ const EditProductScreen = props => {
              />
             {editedProduct ? null : (
                 <Input 
-                label="Title"
+                label="Price"
                 errorText="Please enter a valid title!"
-                keyboardType='default'
-                autoCapitalize='sentences'
-                autoCorrect
+                keyboardType='decimal-pad'
                 returnKeyType='next'
              />
             )}
