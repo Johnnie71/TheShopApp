@@ -3,6 +3,11 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 
 const Input = props => {
+
+    const textChangeHandler = text => {
+        
+    };
+
     return (
         <View style={styles.formControl}>
                 <Text style={styles.label}>{props.label}</Text>
@@ -10,7 +15,7 @@ const Input = props => {
                     {...props}
                     style={styles.input}  
                     value={formState.inputValues.title} 
-                    onChangeText={textChangeHandler.bind(this, 'title')}
+                    onChangeText={textChangeHandler}
                 />
                 {!formState.inputValidities.title && <Text>{props.errorText}</Text>}
             </View>
