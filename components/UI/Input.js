@@ -32,8 +32,10 @@ const Input = props => {
     });
 
     useEffect(() => {
-        props.onInputChange(inputState.value, inputState.isValid)
-    })
+        if(inputState.touched) {
+            props.onInputChange(inputState.value, inputState.isValid)
+        }
+    }, [inputState])
 
     const textChangeHandler = text => {
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
