@@ -2,6 +2,7 @@ import React, { useReducer } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 const INPUT_CHANGE = 'INPUT_CHANGE';
+const INPUT_BLUR = 'INPUT_BLUR'
 
 const inputReducer = (state, action) => {
     switch (action.type) {
@@ -44,6 +45,10 @@ const Input = props => {
         isValid = false;
         }
         dispatch({type: INPUT_CHANGE, value: text, isValid: isValid})
+    };
+
+    const lostFocusHandler = () => {
+        dispatch()
     };
 
     return (
