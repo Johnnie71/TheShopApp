@@ -1,10 +1,16 @@
 import React, { useReducer } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
-    const inoutReducer = (state, action) => {};
+    const inputReducer = (state, action) => {};
 
 
 const Input = props => {
+
+    const [inputState, dispatch] = useReducer(inputReducer, {
+        value: props.initialValue ? props.initialValue : '',
+        isValid: props.initiallyValid,
+        touched: false
+    });
 
     const textChangeHandler = text => {
         
