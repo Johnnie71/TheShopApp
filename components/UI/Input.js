@@ -6,6 +6,10 @@ const INPUT_CHANGE = 'INPUT_CHANGE';
 const inputReducer = (state, action) => {
     switch (action.type) {
         case INPUT_CHANGE: 
+            return {
+                ...state,
+                value: action.value
+            }
             default:
                 return state;
     }
