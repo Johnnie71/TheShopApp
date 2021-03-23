@@ -14,6 +14,11 @@ const inputReducer = (state, action) => {
             }
             default:
                 return state;
+        case INPUT_BLUR:
+            return {
+                ...state,
+                touched: true
+            }
     }
 };
 
