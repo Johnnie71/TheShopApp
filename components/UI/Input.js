@@ -8,7 +8,8 @@ const inputReducer = (state, action) => {
         case INPUT_CHANGE: 
             return {
                 ...state,
-                value: action.value
+                value: action.value,
+                isValid: action.isValid
             }
             default:
                 return state;
