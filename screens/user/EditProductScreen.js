@@ -100,15 +100,11 @@ const EditProductScreen = props => {
         props.navigation.setParams({submit: submitHandler })
     },[submitHandler]);
 
-    const inputChangeHandler = (inputIdentifier, text) => {
-        let isValid = false;
-        if(text.trim().length > 0){
-          isValid = true;
-        }
+    const inputChangeHandler = (inputIdentifier, inputValue, inputValidities) => {
         dispatchFormState({
             type: FORM_INPUT_UPDATE, 
-            value: text, 
-            isValid: isValid,
+            value: inputValue, 
+            isValid: inputValidities,
             input: inputIdentifier
         });
     };
