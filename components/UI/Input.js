@@ -64,6 +64,7 @@ const Input = props => {
                     style={styles.input}  
                     value={formState.inputValues.title} 
                     onChangeText={textChangeHandler}
+                    onBlur={lostFocusHandler}
                 />
                 {!formState.inputValidities.title && <Text>{props.errorText}</Text>}
             </View>
