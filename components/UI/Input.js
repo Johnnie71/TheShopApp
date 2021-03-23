@@ -15,7 +15,7 @@ const Input = props => {
     });
 
     const textChangeHandler = text => {
-        
+        dispatch({type: INPUT_CHANGE})
     };
 
     return (
