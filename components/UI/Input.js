@@ -3,7 +3,13 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 const INPUT_CHANGE = 'INPUT_CHANGE';
 
-const inputReducer = (state, action) => {};
+const inputReducer = (state, action) => {
+    switch (action.type) {
+        case INPUT_CHANGE: 
+            default:
+                return state;
+    }
+};
 
 
 const Input = props => {
