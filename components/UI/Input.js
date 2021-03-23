@@ -1,6 +1,8 @@
 import React, { useReducer } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
+    const inoutReducer = (state, action) => {};
+
 
 const Input = props => {
 
