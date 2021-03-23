@@ -100,7 +100,7 @@ const EditProductScreen = props => {
         props.navigation.setParams({submit: submitHandler })
     },[submitHandler]);
 
-    const textChangeHandler = (inputIdentifier, text) => {
+    const inputChangeHandler = (inputIdentifier, text) => {
         let isValid = false;
         if(text.trim().length > 0){
           isValid = true;
@@ -123,6 +123,7 @@ const EditProductScreen = props => {
                 autoCapitalize='sentences'
                 autoCorrect
                 returnKeyType='next'
+                onInputChange={inputChangeHandler.bind(this, 'title')}
              />
             <Input 
                 label="ImageUrl"
