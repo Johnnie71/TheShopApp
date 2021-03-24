@@ -153,6 +153,8 @@ const EditProductScreen = props => {
                 numberOfLines={3}
                 initialValue={editedProduct ? editedProduct.description : ''}
                 initiallyValid={!!editedProduct}
+                required
+                minLength={5}
              />
           </View>
         </ScrollView>
