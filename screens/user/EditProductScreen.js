@@ -126,6 +126,7 @@ const EditProductScreen = props => {
                 required
              />
             <Input 
+                id="imageUrl"
                 label="ImageUrl"
                 errorText="Please enter a valid image URL!"
                 keyboardType='default'
