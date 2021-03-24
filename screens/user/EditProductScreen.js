@@ -120,6 +120,7 @@ const EditProductScreen = props => {
                 autoCorrect
                 returnKeyType='next'
                 onInputChange={inputChangeHandler.bind(this, 'title')}
+                initialValue={editedProduct ? editedProduct.title : ''}
              />
             <Input 
                 label="ImageUrl"
