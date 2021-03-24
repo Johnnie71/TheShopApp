@@ -149,6 +149,7 @@ const EditProductScreen = props => {
              />
             )}
             <Input 
+                id="description"
                 label="Description"
                 errorText="Please enter a valid description!"
                 keyboardType='default'
