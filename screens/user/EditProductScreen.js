@@ -131,6 +131,7 @@ const EditProductScreen = props => {
                 returnKeyType='next'
                 initialValue={editedProduct ? editedProduct.imageUrl : ''}
                 initiallyValid={!!editedProduct}
+                required
              />
             {editedProduct ? null : (
                 <Input 
