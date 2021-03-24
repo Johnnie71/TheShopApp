@@ -140,7 +140,7 @@ const EditProductScreen = props => {
                 keyboardType='decimal-pad'
                 returnKeyType='next'
                 required
-                min={0}
+                min={0.1}
              />
             )}
             <Input 
