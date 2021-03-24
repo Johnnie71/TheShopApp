@@ -153,6 +153,7 @@ const EditProductScreen = props => {
                 autoCorrect
                 multiline
                 numberOfLines={3}
+                onInputChange={inputChangeHandler.bind(this, 'description')}
                 initialValue={editedProduct ? editedProduct.description : ''}
                 initiallyValid={!!editedProduct}
                 required
