@@ -113,6 +113,7 @@ const EditProductScreen = props => {
         <ScrollView>
          <View style={styles.form}>
             <Input 
+                id="title"
                 label="Title"
                 errorText="Please enter a valid title!"
                 keyboardType='default'
