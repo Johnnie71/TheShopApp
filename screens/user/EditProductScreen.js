@@ -147,6 +147,8 @@ const EditProductScreen = props => {
                 autoCorrect
                 multiline
                 numberOfLines={3}
+                initialValue={editedProduct ? editedProduct.description : ''}
+                initiallyValid={!!editedProduct}
              />
           </View>
         </ScrollView>
