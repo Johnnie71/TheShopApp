@@ -49,7 +49,7 @@ const EditProductScreen = props => {
     
     const dispatch = useDispatch();
 
-       const [formState, dispatchFormState] = useReducer(formReducer, { 
+       const [ formState, dispatchFormState ] = useReducer(formReducer, { 
             inputValues: {
                 title: editedProduct ? editedProduct.title : '',
                 imageUrl: editedProduct ? editedProduct.imageUrl : '',
@@ -119,7 +119,7 @@ const EditProductScreen = props => {
                 autoCapitalize='sentences'
                 autoCorrect
                 returnKeyType='next'
-                onInputChange={inputChangeHandler.bind(this, 'title')}
+                onInputChange={inputChangeHandler}
                 initialValue={editedProduct ? editedProduct.title : ''}
                 initiallyValid={!!editedProduct}
                 required
