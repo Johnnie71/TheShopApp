@@ -140,6 +140,7 @@ const EditProductScreen = props => {
                 errorText="Please enter a valid price!"
                 keyboardType='decimal-pad'
                 returnKeyType='next'
+                onInputChange={inputChangeHandler.bind(this, 'price')}
                 required
                 min={0.1}
              />
