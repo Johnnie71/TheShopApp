@@ -138,6 +138,7 @@ const EditProductScreen = props => {
              />
             {editedProduct ? null : (
                 <Input 
+                id='price'
                 label="Price"
                 errorText="Please enter a valid price!"
                 keyboardType='decimal-pad'
