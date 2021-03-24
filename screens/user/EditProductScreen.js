@@ -122,6 +122,7 @@ const EditProductScreen = props => {
                 onInputChange={inputChangeHandler.bind(this, 'title')}
                 initialValue={editedProduct ? editedProduct.title : ''}
                 initiallyValid={!!editedProduct}
+                required
              />
             <Input 
                 label="ImageUrl"
