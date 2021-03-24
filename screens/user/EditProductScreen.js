@@ -121,6 +121,7 @@ const EditProductScreen = props => {
                 returnKeyType='next'
                 onInputChange={inputChangeHandler.bind(this, 'title')}
                 initialValue={editedProduct ? editedProduct.title : ''}
+                initiallyValid={!!editedProduct}
              />
             <Input 
                 label="ImageUrl"
