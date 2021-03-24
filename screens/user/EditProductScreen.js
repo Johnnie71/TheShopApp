@@ -128,6 +128,8 @@ const EditProductScreen = props => {
                 errorText="Please enter a valid image URL!"
                 keyboardType='default'
                 returnKeyType='next'
+                initialValue={editedProduct ? editedProduct.imageUrl : ''}
+                initiallyValid={!!editedProduct}
              />
             {editedProduct ? null : (
                 <Input 
