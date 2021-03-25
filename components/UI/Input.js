@@ -76,7 +76,7 @@ const Input = props => {
                 />
                 {!inputState.isValid && (
                 <View style={styles.errorContainer}>
-                    <Text>{props.errorText}</Text>
+                    <Text style={styles.errorText}>{props.errorText}</Text>
                 </View>
                 )
                 }
