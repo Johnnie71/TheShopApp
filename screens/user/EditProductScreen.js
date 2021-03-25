@@ -106,7 +106,7 @@ const EditProductScreen = props => {
             isValid: inputValidity,
             input: inputIdentifier
         });
-    }), [dispatchFormState];
+    },[dispatchFormState]);
 
     return (
         <KeyboardAvoidingView 
