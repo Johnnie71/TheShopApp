@@ -109,6 +109,7 @@ const EditProductScreen = props => {
     }), [dispatchFormState];
 
     return (
+        <KeyboardAvoidingView>
         <ScrollView>
          <View style={styles.form}>
             <Input 
@@ -164,6 +165,7 @@ const EditProductScreen = props => {
              />
           </View>
         </ScrollView>
+        </KeyboardAvoidingView>
     )
 
 };
