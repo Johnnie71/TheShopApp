@@ -100,6 +100,11 @@ const styles = StyleSheet.create({
     },
     errorContainer: {
         marginVertical: 5,
+    },
+    errorText: {
+        fontFamily: 'open-sans',
+        color: "red",
+        fontSize: 13
     }
 });
 
