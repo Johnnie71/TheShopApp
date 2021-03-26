@@ -7,11 +7,13 @@ export const deleteProduct = productId => {
 };
 
 export const createProduct = (title, description, imageUrl, price) => {
-    return { type: CREATE_PRODUCT, productData: {
-        title,
-        description,
-        imageUrl,
-        price
+    return { 
+        type: CREATE_PRODUCT,
+        productData: {
+          title,
+          description,
+          imageUrl,
+          price
     }
   };
 };
