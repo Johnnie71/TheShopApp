@@ -15,7 +15,16 @@ export const fetchProducts = () => {
     const loadedProducts = [];
 
     for(const key in responseData){
-      loadedProducts.push(new Product )
+      loadedProducts.push(
+        new Product(
+          key, 
+          'u1', 
+          responseData[key].title, 
+          responseData[key].imageUrl, 
+          responseData[key].description, 
+          responseData[key].price
+        ) 
+      )
     }
 
     dispatch({ type: SET_PRODUCTS, products: [] })
