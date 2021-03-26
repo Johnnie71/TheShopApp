@@ -20,10 +20,13 @@ export const createProduct = (title, description, imageUrl, price) => {
           price
         })
       });
+
+      const responseData = await response.json();
       
       dispatch({ 
           type: CREATE_PRODUCT,
           productData: {
+            id: responseData.name,
             title,
             description,
             imageUrl,
