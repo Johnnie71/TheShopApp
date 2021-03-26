@@ -13,6 +13,8 @@ const ProductsOverviewScreen = props => {
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
 
+    useEffect();
+
     const selectItemHandler = (id, title) => {
         props.navigation.navigate('ProductDetail', { 
             productId: id,
