@@ -10,6 +10,8 @@ export const fetchProducts = () => {
     );
 
     const responseData = await response.json();
+    const loadedProducts = [];
+    
     dispatch({ type: SET_PRODUCTS, products: [] })
   }
 }
