@@ -1,3 +1,5 @@
+import Product from '../../models/product';
+
 export const DELETE_PRODUCT = 'DELETE_PRODUCT';
 export const CREATE_PRODUCT = 'CREATE_PRODUCT';
 export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
@@ -13,7 +15,7 @@ export const fetchProducts = () => {
     const loadedProducts = [];
 
     for(const key in responseData){
-      loadedProducts.push(key)
+      loadedProducts.push(new Product )
     }
 
     dispatch({ type: SET_PRODUCTS, products: [] })
