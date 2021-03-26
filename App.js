@@ -20,7 +20,7 @@ const rootReducer = combineReducers({
   orders: ordersReducer
 });
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
 
 // const fetchFonts = () => Font.loadAsync({
 //     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
