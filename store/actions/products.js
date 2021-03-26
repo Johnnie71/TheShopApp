@@ -11,7 +11,11 @@ export const fetchProducts = () => {
 
     const responseData = await response.json();
     const loadedProducts = [];
-    
+
+    for(const key in responseData){
+      loadedProducts.push(key)
+    }
+
     dispatch({ type: SET_PRODUCTS, products: [] })
   }
 }
