@@ -20,6 +20,7 @@ export const createProduct = (title, description, imageUrl, price) => {
           price
         })
       });
+      
       dispatch({ 
           type: CREATE_PRODUCT,
           productData: {
