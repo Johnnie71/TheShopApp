@@ -24,10 +24,10 @@ export const fetchProducts = () => {
           responseData[key].description, 
           responseData[key].price
         ) 
-      )
+      );
     }
 
-    dispatch({ type: SET_PRODUCTS, products: [] })
+    dispatch({ type: SET_PRODUCTS, products: loadedProducts })
   }
 }
 
