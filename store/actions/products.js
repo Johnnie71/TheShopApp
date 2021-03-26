@@ -10,7 +10,7 @@ export const fetchProducts = () => {
     );
 
     const responseData = await response.json();
-    dispatch({type: SET_PRODUCTS, products: []})
+    dispatch({ type: SET_PRODUCTS, products: [] })
   }
 }
 
