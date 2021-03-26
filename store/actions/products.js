@@ -8,7 +8,7 @@ export const deleteProduct = productId => {
 
 export const createProduct = (title, description, imageUrl, price) => {
     return dispatch => {
-
+      fetch('https://shopapp-759b2-default-rtdb.firebaseio.com/products.json');
       dispatch({ 
           type: CREATE_PRODUCT,
           productData: {
