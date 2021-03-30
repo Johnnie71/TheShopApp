@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FlatList, Button, Platform, ActivityIndicator } from 'react-native';
+import { View, FlatList, Button, Platform, ActivityIndicator } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/UI/HeaderButton';
@@ -8,6 +8,7 @@ import ProductItem from '../../components/shop/ProductItem';
 import * as cartActions from '../../store/actions/cart';
 import * as productActions from '../../store/actions/products';
 import Colors from '../../constants/Colors';
+import { isLoading } from 'expo-font';
 
 const ProductsOverviewScreen = props => {
 
@@ -29,6 +30,12 @@ const ProductsOverviewScreen = props => {
             productId: id,
             productTitle: title
         });
+    };
+
+    if (isLoading) {
+        <View>
+            <ActivityIndicator />
+        </View>
     }
 
     return(
