@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, FlatList, Button, Platform, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, FlatList, Button, Platform, ActivityIndicator, StyleSheet, Text } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/UI/HeaderButton';
@@ -35,6 +35,12 @@ const ProductsOverviewScreen = props => {
     if (isLoading) {
         <View style={styles.loading}>
             <ActivityIndicator size='large' color={Colors.primary} />
+        </View>
+    }
+
+    if (!isLoading && products.length === 0) {
+        <View style={styles.loading}>
+            <Text>No products found. Maybe start adding some!</Text>
         </View>
     }
 
