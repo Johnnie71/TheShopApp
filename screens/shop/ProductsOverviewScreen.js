@@ -12,7 +12,7 @@ import { isLoading } from 'expo-font';
 
 const ProductsOverviewScreen = props => {
 
-    const [loading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
 
@@ -34,7 +34,7 @@ const ProductsOverviewScreen = props => {
 
     if (isLoading) {
         <View>
-            <ActivityIndicator size='large' />
+            <ActivityIndicator size='large' color={Colors.primary} />
         </View>
     }
 
