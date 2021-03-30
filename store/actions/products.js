@@ -13,6 +13,10 @@ export const fetchProducts = () => {
       const response = await fetch(
         'https://shopapp-759b2-default-rtdb.firebaseio.com/products.json'
       );
+
+      if (!response.ok)  {
+        
+      }
   
       const responseData = await response.json();
       const loadedProducts = [];
