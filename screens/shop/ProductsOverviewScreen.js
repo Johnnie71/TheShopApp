@@ -33,7 +33,7 @@ const ProductsOverviewScreen = props => {
     };
 
     if (isLoading) {
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <View style={}>
             <ActivityIndicator size='large' color={Colors.primary} />
         </View>
     }
@@ -93,5 +93,14 @@ export const screenOptions = navData => {
     </HeaderButtons>
     };
 };
+
+const styles = StyleSheet.create({
+    loading: {
+        flex: 1, 
+        justifyContent: 
+        'center', 
+        alignItems: 'center'
+    }
+})
 
 export default ProductsOverviewScreen;
