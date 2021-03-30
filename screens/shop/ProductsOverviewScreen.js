@@ -11,11 +11,12 @@ import Colors from '../../constants/Colors';
 
 const ProductsOverviewScreen = props => {
 
-    const [loading, isLoading] = useState(false);
+    const [loading, setIsLoading] = useState(false);
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
 
     useEffect(() => {
+        setIsLoading(true);
         dispatch(productActions.fetchProducts());
     }, [dispatch]);
 
