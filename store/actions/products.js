@@ -8,27 +8,35 @@ export const SET_PRODUCTS = 'SET_PRODUCTS'
 export const fetchProducts = () => {
 
   return async dispatch => {
-    const response = await fetch('https://shopapp-759b2-default-rtdb.firebaseio.com/products.json'
-    );
 
-    const responseData = await response.json();
-    const loadedProducts = [];
-
-    for(const key in responseData){
-      loadedProducts.push(
-        new Product(
-          key, 
-          'u1', 
-          responseData[key].title, 
-          responseData[key].imageUrl, 
-          responseData[key].description, 
-          responseData[key].price
-        ) 
+    try {
+      const response = await fetch(
+        'https://shopapp-759b2-default-rtdb.firebaseio.com/products.json'
       );
+  
+      const responseData = await response.json();
+      const loadedProducts = [];
+  
+      for(const key in responseData){
+        loadedProducts.push(
+          new Product(
+            key, 
+            'u1', 
+            responseData[key].title, 
+            responseData[key].imageUrl, 
+            responseData[key].description, 
+            responseData[key].price
+          ) 
+        );
+      }
+  
+      dispatch({ type: SET_PRODUCTS, products: loadedProducts })
+    } catch (error) {
+      //sends to custom analytics server
+      throw error;
     }
-
-    dispatch({ type: SET_PRODUCTS, products: loadedProducts })
-  }
+    }
+    
 }
 
 export const deleteProduct = productId => {
