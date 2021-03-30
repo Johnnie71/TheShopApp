@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FlatList, Button, Platform } from 'react-native';
+import { FlatList, Button, Platform, ActivityIndicator } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/UI/HeaderButton';
@@ -19,6 +19,7 @@ const ProductsOverviewScreen = props => {
         const loadProducts = async () => {
             setIsLoading(true);
             await dispatch(productActions.fetchProducts());
+            setIsLoading(false);
         };
         loadProducts();
     }, [dispatch]);
