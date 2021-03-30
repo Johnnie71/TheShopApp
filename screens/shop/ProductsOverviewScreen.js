@@ -18,7 +18,7 @@ const ProductsOverviewScreen = props => {
     useEffect(() => {
         const loadProducts = async () => {
             setIsLoading(true);
-            dispatch(productActions.fetchProducts());
+            await dispatch(productActions.fetchProducts());
         }
     }, [dispatch]);
 
