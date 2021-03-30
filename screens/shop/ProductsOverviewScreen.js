@@ -16,8 +16,10 @@ const ProductsOverviewScreen = props => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        setIsLoading(true);
-        dispatch(productActions.fetchProducts());
+        const loadProducts = async () => {
+            setIsLoading(true);
+            dispatch(productActions.fetchProducts());
+        }
     }, [dispatch]);
 
     const selectItemHandler = (id, title) => {
