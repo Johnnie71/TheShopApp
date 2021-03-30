@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, FlatList, Button, Platform, ActivityIndicator } from 'react-native';
+import { View, FlatList, Button, Platform, ActivityIndicator, StyleSheet } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/UI/HeaderButton';
@@ -33,7 +33,7 @@ const ProductsOverviewScreen = props => {
     };
 
     if (isLoading) {
-        <View style={}>
+        <View style={styles.loading}>
             <ActivityIndicator size='large' color={Colors.primary} />
         </View>
     }
@@ -97,8 +97,7 @@ export const screenOptions = navData => {
 const styles = StyleSheet.create({
     loading: {
         flex: 1, 
-        justifyContent: 
-        'center', 
+        justifyContent: 'center', 
         alignItems: 'center'
     }
 })
