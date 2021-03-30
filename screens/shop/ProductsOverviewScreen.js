@@ -34,7 +34,7 @@ const ProductsOverviewScreen = props => {
 
     if (isLoading) {
         <View>
-            <ActivityIndicator />
+            <ActivityIndicator size='large' />
         </View>
     }
 
