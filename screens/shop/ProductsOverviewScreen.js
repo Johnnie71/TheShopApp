@@ -20,13 +20,18 @@ import { isLoading } from 'expo-font';
 const ProductsOverviewScreen = props => {
 
     const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState();
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
 
     useEffect(() => {
         const loadProducts = async () => {
             setIsLoading(true);
-            await dispatch(productActions.fetchProducts());
+            try {
+                await dispatch(productActions.fetchProducts());
+            } catch (err) {
+
+            }
             setIsLoading(false);
         };
         loadProducts();
