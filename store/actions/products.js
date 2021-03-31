@@ -90,8 +90,7 @@ export const updateProduct = (id, title, description, imageUrl) => {
         body: JSON.stringify({
           title,
           description,
-          imageUrl,
-          price
+          imageUrl
         })
       });
 
