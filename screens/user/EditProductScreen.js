@@ -76,6 +76,7 @@ const EditProductScreen = props => {
             ]);
             return;
         }
+        setError(null);
         setIsLoading(true);
         if(editedProduct) {
             dispatch(
