@@ -24,9 +24,19 @@ const ProductsOverviewScreen = props => {
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
 
+    const loadProducts = async () => {
+        setIsLoading(true);
+        try {
+            await dispatch(productActions.fetchProducts());
+        } catch (err) {
+            setError(err.message);
+        }
+        setIsLoading(false);
+    };
+
     useEffect(() => {
         loadProducts();
-    }, [dispatch]);
+    }, [dispatch, loadProducts]);
 
     const selectItemHandler = (id, title) => {
         props.navigation.navigate('ProductDetail', { 
