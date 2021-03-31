@@ -81,9 +81,9 @@ export const updateProduct = (id, title, description, imageUrl) => {
     return async dispatch => {
 
       const response = await fetch(
-        `https://shopapp-759b2-default-rtdb.firebaseio.com/products${id}.json`, 
+        `https://shopapp-759b2-default-rtdb.firebaseio.com/products/${id}.json`, 
         {
-        method: "POST",
+        method: "PATCH",
         headers: {
           'Content-Type': 'application/json'
         },
