@@ -76,6 +76,7 @@ const EditProductScreen = props => {
             ]);
             return;
         }
+        setIsLoading(true);
         if(editedProduct) {
             dispatch(
                 productActions.updateProduct(
