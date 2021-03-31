@@ -5,7 +5,8 @@ import { View,
     Platform, 
     ActivityIndicator, 
     StyleSheet, 
-    Text 
+    Text,
+    Button
 } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
@@ -15,7 +16,6 @@ import ProductItem from '../../components/shop/ProductItem';
 import * as cartActions from '../../store/actions/cart';
 import * as productActions from '../../store/actions/products';
 import Colors from '../../constants/Colors';
-import { isLoading } from 'expo-font';
 
 const ProductsOverviewScreen = props => {
 
@@ -48,6 +48,7 @@ const ProductsOverviewScreen = props => {
         return (
             <View style={styles.loading}>
             <Text>An error occured!</Text>
+            <Button title='Try again' />
         </View>
         )
     }
