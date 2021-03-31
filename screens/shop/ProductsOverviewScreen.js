@@ -44,6 +44,14 @@ const ProductsOverviewScreen = props => {
         });
     };
 
+    if (error) {
+        return (
+            <View style={styles.loading}>
+            <Text>An error occured!</Text>
+        </View>
+        )
+    }
+
     if (isLoading) {
         <View style={styles.loading}>
             <ActivityIndicator size='large' color={Colors.primary} />
