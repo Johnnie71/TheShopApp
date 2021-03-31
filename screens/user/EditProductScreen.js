@@ -69,7 +69,7 @@ const EditProductScreen = props => {
         });
 
 
-    const submitHandler = useCallback(() => {
+    const submitHandler = useCallback(async () => {
         if(!formState.formIsValid) {
             Alert.alert('Wrong input!', 'Please check the errors in the form.', [
                 { text: "Okay" }
@@ -79,7 +79,7 @@ const EditProductScreen = props => {
         setError(null);
         setIsLoading(true);
         if(editedProduct) {
-            dispatch(
+            await dispatch(
                 productActions.updateProduct(
                     productId, 
                     formState.inputValues.title, 
@@ -88,7 +88,7 @@ const EditProductScreen = props => {
                 )
             );
         } else {
-            dispatch(
+            await dispatch(
                 productActions.createProduct(
                     formState.inputValues.title, 
                     formState.inputValues.description, 
