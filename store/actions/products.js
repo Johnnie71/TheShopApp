@@ -78,12 +78,14 @@ export const createProduct = (title, description, imageUrl, price) => {
 };
 
 export const updateProduct = (id, title, description, imageUrl) => {
-    return { type: UPDATE_PRODUCT, 
+    return async dispatch => {
+      return { type: UPDATE_PRODUCT, 
         pid: id,
         productData: {
-        title,
-        description,
-        imageUrl
-    }
-  };
+          title,
+          description,
+          imageUrl
+        }
+      };
+    }  
 };
