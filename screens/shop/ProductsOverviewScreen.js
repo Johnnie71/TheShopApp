@@ -30,7 +30,7 @@ const ProductsOverviewScreen = props => {
             try {
                 await dispatch(productActions.fetchProducts());
             } catch (err) {
-
+                setError(err.message);
             }
             setIsLoading(false);
         };
