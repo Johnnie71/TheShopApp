@@ -25,15 +25,6 @@ const ProductsOverviewScreen = props => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const loadProducts = async () => {
-            setIsLoading(true);
-            try {
-                await dispatch(productActions.fetchProducts());
-            } catch (err) {
-                setError(err.message);
-            }
-            setIsLoading(false);
-        };
         loadProducts();
     }, [dispatch]);
 
@@ -48,7 +39,7 @@ const ProductsOverviewScreen = props => {
         return (
             <View style={styles.loading}>
             <Text>An error occured!</Text>
-            <Button title='Try again' />
+            <Button title='Try again' onPress={} />
         </View>
         )
     }
