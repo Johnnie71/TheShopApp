@@ -36,6 +36,10 @@ const ProductsOverviewScreen = props => {
 
     useEffect(() => {
         props.navigation.addListener('willFocus', loadProducts);
+
+        return () => {
+            
+        };
     }, [loadProducts])
 
     useEffect(() => {
