@@ -24,6 +24,7 @@ const ProductsOverviewScreen = props => {
     const dispatch = useDispatch();
 
     const loadProducts = useCallBack(async () => {
+        setError(null);
         setIsLoading(true);
         try {
             await dispatch(productActions.fetchProducts());
