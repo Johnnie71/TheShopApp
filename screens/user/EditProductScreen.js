@@ -97,6 +97,7 @@ const EditProductScreen = props => {
                 )
             );
         }
+        setIsLoading(false);
         props.navigation.goBack();
     }, [dispatch, productId, formState]);
 
