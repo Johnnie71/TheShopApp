@@ -38,7 +38,7 @@ const ProductsOverviewScreen = props => {
         const willFocus = props.navigation.addListener('willFocus', loadProducts);
 
         return () => {
-
+            willFocus.remove();
         };
     }, [loadProducts])
 
