@@ -5,8 +5,7 @@ import { View,
     Platform, 
     ActivityIndicator, 
     StyleSheet, 
-    Text,
-    Button
+    Text
 } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
