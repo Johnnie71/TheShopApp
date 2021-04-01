@@ -70,6 +70,12 @@ const EditProductScreen = props => {
             formIsValid: editedProduct ? true : false,
         });
 
+        useEffect(() => {
+            if(error){
+                Alert.alert("An error occurred!", error)
+            }
+        }, [error]);
+
 
     const submitHandler = useCallback(async () => {
         if(!formState.formIsValid) {
