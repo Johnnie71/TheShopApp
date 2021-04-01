@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
 import  Colors  from '../../constants/Colors';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,6 +8,8 @@ import * as cartActions from '../../store/actions/cart';
 import * as ordersActions from '../../store/actions/orders';
 
 const CartScreen = props => {
+
+        const [isLoading, setIsLoading] = useState(false);
 
         const cartTotalAmount = useSelector(state => state.cart.totalAmount);
         
