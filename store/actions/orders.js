@@ -28,7 +28,7 @@ export const addOrder = (cartItems, totalAmount) => {
 
         dispatch ({ 
             type: ADD_ORDER, orderData: 
-            { items: cartItems, amount: totalAmount} 
+            { id: responseData.name, items: cartItems, amount: totalAmount} 
         })
     };
 
