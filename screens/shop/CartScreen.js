@@ -30,7 +30,7 @@ const CartScreen = props => {
 
         const sendOrderHandler = async () => {
             setIsLoading(true);
-            dispatch(ordersActions.addOrder(cartItems, cartTotalAmount));
+            await dispatch(ordersActions.addOrder(cartItems, cartTotalAmount));
         }
 
     return (
