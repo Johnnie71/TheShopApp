@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
-// import { Colors } from '../../constants/Colors';
+import  Colors  from '../../constants/Colors';
 import { useSelector, useDispatch } from 'react-redux';
 import CartItem from '../../components/shop/CartItem';
 import Card from '../../components/UI/Card';
@@ -34,7 +34,7 @@ const CartScreen = props => {
                     <Text style={styles.amount}>${Math.round(cartTotalAmount.toFixed(2) * 100) / 100}</Text>
                 </Text>
                 <Button 
-                  color='#5499C7' 
+                  color={Colors.primary} 
                   title="Order Now"
                   disabled={cartItems.length === 0} 
                   onPress={() => {
