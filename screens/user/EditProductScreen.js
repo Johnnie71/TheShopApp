@@ -13,7 +13,7 @@ import HeaderButton from '../../components/UI/HeaderButton';
 import { useDispatch, useSelector } from 'react-redux';
 import * as productActions from '../../store/actions/products';
 import Input from '../../components/UI/Input';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import Colors  from '../../constants/Colors';
 
 const FORM_INPUT_UPDATE = 'FORM_INPUT_UPDATE'
 
