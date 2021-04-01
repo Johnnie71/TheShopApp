@@ -106,12 +106,13 @@ const EditProductScreen = props => {
                     )
                 );
             }
-        } catch (err) {
+            props.navigation.goBack();
+        }   catch (err) {
             setError(err.message);
         }
         
         setIsLoading(false);
-        props.navigation.goBack();
+        
     }, [dispatch, productId, formState]);
 
     useEffect(() => {
