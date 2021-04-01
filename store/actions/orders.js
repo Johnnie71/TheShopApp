@@ -5,7 +5,7 @@ export const addOrder = (cartItems, totalAmount) => {
     return async dispatch => {
 
         const response = await fetch(
-            'https://shopapp-759b2-default-rtdb.firebaseio.com/orders.json',
+            'https://shopapp-759b2-default-rtdb.firebaseio.com/orders/u1.json',
              {
                 method: "POST",
                 headers: {
