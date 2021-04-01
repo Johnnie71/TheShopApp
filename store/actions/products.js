@@ -89,7 +89,7 @@ export const createProduct = (title, description, imageUrl, price) => {
 export const updateProduct = (id, title, description, imageUrl) => {
     return async dispatch => {
 
-     await fetch(
+     const response = await fetch(
         `https://shopapp-759b2-default-rtdb.firebaseio.com/products/${id}.json`, 
         {
         method: "PATCH",
@@ -102,6 +102,8 @@ export const updateProduct = (id, title, description, imageUrl) => {
           imageUrl
         })
       });
+
+      
 
       dispatch ({ type: UPDATE_PRODUCT, 
         pid: id,
