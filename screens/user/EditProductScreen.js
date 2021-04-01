@@ -78,25 +78,30 @@ const EditProductScreen = props => {
         }
         setError(null);
         setIsLoading(true);
-        if(editedProduct) {
-            await dispatch(
-                productActions.updateProduct(
-                    productId, 
-                    formState.inputValues.title, 
-                    formState.inputValues.description, 
-                    formState.inputValues.imageUrl
-                )
-            );
-        } else {
-            await dispatch(
-                productActions.createProduct(
-                    formState.inputValues.title, 
-                    formState.inputValues.description, 
-                    formState.inputValues.imageUrl, 
-                    +formState.inputValues.price
-                )
-            );
+        try {
+            if(editedProduct) {
+                await dispatch(
+                    productActions.updateProduct(
+                        productId, 
+                        formState.inputValues.title, 
+                        formState.inputValues.description, 
+                        formState.inputValues.imageUrl
+                    )
+                );
+            } else {
+                await dispatch(
+                    productActions.createProduct(
+                        formState.inputValues.title, 
+                        formState.inputValues.description, 
+                        formState.inputValues.imageUrl, 
+                        +formState.inputValues.price
+                    )
+                );
+            }
+        } catch (err) {
+            setError(err.message);
         }
+        
         setIsLoading(false);
         props.navigation.goBack();
     }, [dispatch, productId, formState]);
