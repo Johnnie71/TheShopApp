@@ -29,6 +29,7 @@ const CartScreen = props => {
         const dispatch = useDispatch();
 
         const sendOrderHandler = async () => {
+            setIsLoading(true);
             dispatch(ordersActions.addOrder(cartItems, cartTotalAmount));
         }
 
