@@ -12,10 +12,9 @@ export const addOrder = (cartItems, totalAmount) => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    title,
-                    description,
-                    imageUrl,
-                    price
+                    cartItems,
+                    totalAmount,
+                    date: new Date().toISOString()
                 })
              }
         );
