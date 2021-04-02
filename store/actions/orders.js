@@ -19,7 +19,7 @@ export const fetchOrders = () => {
         
             for(const key in responseData){
               loadedOrders.push(
-                new Order()
+                new Order(key, responseData[key].cartItems, responseData[key].totalAmount)
               );
             }
         dispatch({type: SET_ORDERS, orders: loadedOrders});
