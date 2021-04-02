@@ -13,21 +13,14 @@ export const fetchOrders = () => {
             }
         
             const responseData = await response.json();
-            const loadedProducts = [];
+            const loadedOrders = [];
         
             for(const key in responseData){
-              loadedProducts.push(
-                new Product(
-                  key, 
-                  'u1', 
-                  responseData[key].title, 
-                  responseData[key].imageUrl, 
-                  responseData[key].description, 
-                  responseData[key].price
-                ) 
+              loadedOrders.push(
+                
               );
             }
-        dispatch({type: SET_ORDERS, orders: []});
+        dispatch({type: SET_ORDERS, orders: loadedOrders});
     }
 };
 
