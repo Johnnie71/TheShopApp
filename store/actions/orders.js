@@ -1,7 +1,11 @@
 export const ADD_ORDER = 'ADD_ORDER';
 export const SET_ORDERS = 'SET_ORDERS'
 
-export const fetchOrders = () => {};
+export const fetchOrders = () => {
+    return async dispatch => {
+        dispatch({type: SET_ORDERS, orders: []})
+    }
+};
 
 export const addOrder = (cartItems, totalAmount) => {
 
