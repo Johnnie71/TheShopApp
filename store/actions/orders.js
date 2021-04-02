@@ -32,6 +32,7 @@ export const fetchOrders = () => {
         throw err;
     }
 };
+}
 
 export const addOrder = (cartItems, totalAmount) => {
 
