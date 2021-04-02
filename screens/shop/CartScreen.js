@@ -43,13 +43,16 @@ const CartScreen = props => {
                         ${Math.round(cartTotalAmount.toFixed(2) * 100) / 100}
                     </Text>
                 </Text>
-                
-                <Button 
-                  color={Colors.primary} 
-                  title="Order Now"
-                  disabled={cartItems.length === 0} 
-                  onPress={sendOrderHandler}
-                />
+                {isLoading ? (
+                    <ActivityIndicator size='small' color={Colors.primary} /> 
+                ) : (
+                    <Button 
+                        color={Colors.primary} 
+                        title="Order Now"
+                        disabled={cartItems.length === 0} 
+                        onPress={sendOrderHandler}
+                    />
+                )}
             </Card>
             <FlatList 
             data={cartItems} 
