@@ -1,3 +1,5 @@
+import Order from '../../models/order';
+
 export const ADD_ORDER = 'ADD_ORDER';
 export const SET_ORDERS = 'SET_ORDERS'
 
@@ -17,10 +19,12 @@ export const fetchOrders = () => {
         
             for(const key in responseData){
               loadedOrders.push(
-                
+                new Order()
               );
             }
         dispatch({type: SET_ORDERS, orders: loadedOrders});
+    } catch (err) {
+        throw err;
     }
 };
 
