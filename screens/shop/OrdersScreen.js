@@ -7,6 +7,7 @@ import OrderItem from '../../components/shop/OrderItem';
 
 const OrdersScreen = props => {
      const orders = useSelector(state => state.orders.orders);
+     const dispatch = useDispatch();
 
      return (
          <FlatList 
