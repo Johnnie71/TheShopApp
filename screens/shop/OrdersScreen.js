@@ -15,7 +15,9 @@ const OrdersScreen = props => {
 
      useEffect(() => {
          setIsLoading(true);
-        dispatch(ordersActions.fetchOrders());
+        dispatch(ordersActions.fetchOrders().then(() => {
+            setIsLoading(false);
+        }));
      }, [dispatch])
 
      return (
