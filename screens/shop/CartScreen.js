@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Button, ActivityIndicator } from 'react-native';
 import  Colors  from '../../constants/Colors';
 import { useSelector, useDispatch } from 'react-redux';
 import CartItem from '../../components/shop/CartItem';
@@ -43,6 +43,7 @@ const CartScreen = props => {
                         ${Math.round(cartTotalAmount.toFixed(2) * 100) / 100}
                     </Text>
                 </Text>
+                
                 <Button 
                   color={Colors.primary} 
                   title="Order Now"
