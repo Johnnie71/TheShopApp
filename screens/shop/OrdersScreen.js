@@ -7,6 +7,8 @@ import OrderItem from '../../components/shop/OrderItem';
 import * as ordersActions from '../../store/actions/orders';
 
 const OrdersScreen = props => {
+
+    const [isLoading, setIsLoading] = useState(false)
      const orders = useSelector(state => state.orders.orders);
      const dispatch = useDispatch();
 
