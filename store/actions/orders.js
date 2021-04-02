@@ -3,7 +3,7 @@ export const SET_ORDERS = 'SET_ORDERS'
 
 export const fetchOrders = () => {
     return async dispatch => {
-        dispatch({type: SET_ORDERS, orders: []})
+        dispatch({type: SET_ORDERS, orders: []});
     }
 };
 
