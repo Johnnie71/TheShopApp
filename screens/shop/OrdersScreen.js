@@ -4,13 +4,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../../components/UI/HeaderButton';
 import OrderItem from '../../components/shop/OrderItem';
+import * as ordersActions from '../../store/actions/orders';
 
 const OrdersScreen = props => {
      const orders = useSelector(state => state.orders.orders);
      const dispatch = useDispatch();
 
      useEffect(() => {
-
+        dispatch()
      }, [dispatch])
 
      return (
