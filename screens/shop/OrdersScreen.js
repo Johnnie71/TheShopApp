@@ -11,7 +11,7 @@ const OrdersScreen = props => {
      const dispatch = useDispatch();
 
      useEffect(() => {
-        dispatch()
+        dispatch(ordersActions.fetchOrders());
      }, [dispatch])
 
      return (
