@@ -27,6 +27,10 @@ const OrdersScreen = props => {
         }));
      }, [dispatch])
 
+     if (isLoading) {
+         
+     }
+
      return (
          <FlatList 
          data={orders} 
