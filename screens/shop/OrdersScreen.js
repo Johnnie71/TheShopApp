@@ -30,7 +30,7 @@ const OrdersScreen = props => {
 
      if (isLoading) {
          return (
-             <View>
+             <View style={styles.spinner}>
                  <ActivityIndicator size='large' color={Colors.primary} />
              </View>
          )
