@@ -25,13 +25,11 @@ const ProductsOverviewScreen = props => {
 
     const loadProducts = useCallBack(async () => {
         setError(null);
-        setIsLoading(true);
         try {
             await dispatch(productActions.fetchProducts());
         } catch (err) {
             setError(err.message);
         }
-        setIsLoading(false);
     },[dispatch, setIsLoading, setError]);
 
     useEffect(() => {
