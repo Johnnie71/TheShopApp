@@ -28,7 +28,11 @@ const OrdersScreen = props => {
      }, [dispatch])
 
      if (isLoading) {
-         
+         return (
+             <View>
+                 <ActivityIndicator />
+             </View>
+         )
      }
 
      return (
