@@ -44,7 +44,8 @@ const ProductsOverviewScreen = props => {
     }, [loadProducts])
 
     useEffect(() => {
-        loadProducts();
+        setIsLoading(true);
+        loadProducts().then(() => setIsLoading(false));
     }, [dispatch, loadProducts]);
 
     const selectItemHandler = (id, title) => {
