@@ -6,7 +6,11 @@ import Card from '../../components/UI/Card';
 
 const AuthScreen = props => {
     return (
-
+        <Card>
+            <ScrollView>
+                
+            </ScrollView>
+        </Card>
     )
 };
 
