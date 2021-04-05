@@ -6,7 +6,7 @@ import Card from '../../components/UI/Card';
 
 const AuthScreen = props => {
     return (
-        <KeyboardAvoidingView style={styles.screen}>
+        <KeyboardAvoidingView behavior='padding' style={styles.screen}>
             <Card style={styles.authContainer}>
                 <ScrollView>
 
