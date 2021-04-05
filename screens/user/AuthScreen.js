@@ -6,9 +6,9 @@ import Card from '../../components/UI/Card';
 
 const AuthScreen = props => {
     return (
-        <Card>
+        <Card style={styles.authContainer}>
             <ScrollView>
-                
+
             </ScrollView>
         </Card>
     )
