@@ -32,6 +32,7 @@ const ProductsOverviewScreen = props => {
         } catch (err) {
             setError(err.message);
         }
+        setIsRefreshing(false);
     },[dispatch, setIsLoading, setError]);
 
     useEffect(() => {
