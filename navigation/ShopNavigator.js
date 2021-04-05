@@ -130,6 +130,13 @@ export const OrdersNavigator = () => {
     </OrdersStackNavigator.Navigator>
 };
 
-const MainNavigator = createSwitchNavigator({});
+const AuthNavigator = createStackNavigator({
+    Auth:
+})
+
+const MainNavigator = createSwitchNavigator({
+    Auth:,
+    Shop:
+});
 
 export default createAppContainer(ProductsNavigator);
