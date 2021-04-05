@@ -13,7 +13,7 @@ const AuthScreen = props => {
         >
             <Card style={styles.authContainer}>
                 <ScrollView>
-
+                    <Input />
                 </ScrollView>
             </Card>
         </KeyboardAvoidingView>
