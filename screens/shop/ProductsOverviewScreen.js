@@ -26,6 +26,7 @@ const ProductsOverviewScreen = props => {
 
     const loadProducts = useCallBack(async () => {
         setError(null);
+        setIsRefreshing(true);
         try {
             await dispatch(productActions.fetchProducts());
         } catch (err) {
