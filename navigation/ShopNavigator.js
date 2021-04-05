@@ -16,6 +16,7 @@ import CartScreen, { screenOptions as cartScreenOptions} from '../screens/shop/C
 import OrdersScreen, { screenOptions as orderScreenOptions } from '../screens/shop/OrdersScreen';
 import UserProductsScreen from '../screens/user/UserProductScreen';
 import EditProductScreen from '../screens/user/EditProductScreen';
+import AuthScreen from '../screens/user/AuthScreen';
 import Colors from '../constants/Colors';
 
 
