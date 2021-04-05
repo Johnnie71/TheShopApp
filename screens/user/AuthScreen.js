@@ -17,6 +17,8 @@ const AuthScreen = props => {
                         id='email' 
                         label='E-Mail' 
                         keyboardType='email-address' 
+                        required
+                        email
                     />
                 </ScrollView>
             </Card>
