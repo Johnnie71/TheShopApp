@@ -140,4 +140,4 @@ const MainNavigator = createSwitchNavigator({
     Shop: ShopNavigator
 });
 
-export default createAppContainer(ProductsNavigator);
+export default createAppContainer(MainNavigator);
