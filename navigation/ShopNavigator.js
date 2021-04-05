@@ -130,4 +130,6 @@ export const OrdersNavigator = () => {
     </OrdersStackNavigator.Navigator>
 };
 
+const MainNavigator = createSwitchNavigator({});
+
 export default createAppContainer(ProductsNavigator);
