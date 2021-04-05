@@ -107,17 +107,17 @@ const AdminNavigator = createStackNavigator({
     defaultNavigationOptions: defaultNavOptions
 });
 
-// const ShopNavigator = createDrawerNavigator({
-//     Products: ProductsNavigator,
-//     Orders: OrdersNavigator,
-//     Admin: AdminNavigator
-// },
-//     {
-//      contentOptions: {
-//         activeTintColor: Colors.primary
-//      }
-//     }
-// );
+const ShopNavigator = createDrawerNavigator({
+    Products: ProductsNavigator,
+    Orders: OrdersNavigator,
+    Admin: AdminNavigator
+},
+    {
+     contentOptions: {
+        activeTintColor: Colors.primary
+     }
+    }
+);
 
 const OrdersStackNavigator = createStackNavigator();
 
@@ -132,12 +132,12 @@ export const OrdersNavigator = () => {
 };
 
 const AuthNavigator = createStackNavigator({
-    Auth:
+    Auth: AuthScreen
 })
 
 const MainNavigator = createSwitchNavigator({
-    Auth:,
-    Shop:
+    Auth: AuthNavigator,
+    Shop: ShopNavigator
 });
 
 export default createAppContainer(ProductsNavigator);
