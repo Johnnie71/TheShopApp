@@ -6,3 +6,7 @@ import Input from '../../components/UI/Input';
 const AuthScreen = props => {
 
 };
+
+const styles = StyleSheet.create({
+
+});
