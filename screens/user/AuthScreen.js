@@ -13,7 +13,7 @@ const AuthScreen = props => {
         >
             <Card style={styles.authContainer}>
                 <ScrollView>
-                    <Input />
+                    <Input id='email' label='E-Mail' keyboardType='email-address' />
                 </ScrollView>
             </Card>
         </KeyboardAvoidingView>
