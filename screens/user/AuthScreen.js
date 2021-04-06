@@ -3,6 +3,7 @@ import { ScrollView, View, Button, KeyboardAvoidingView, StyleSheet } from 'reac
 
 import Input from '../../components/UI/Input';
 import Card from '../../components/UI/Card';
+import Colors from '../../constants/Colors';
 
 const AuthScreen = props => {
     return (
@@ -36,7 +37,7 @@ const AuthScreen = props => {
                         onValueChange={() => {}}
                         initialValue=''
                     />
-                    <Button title='Login' />
+                    <Button title='Login' color={Colors.primary}/>
                 </ScrollView>
             </Card>
         </KeyboardAvoidingView>
