@@ -24,6 +24,17 @@ const AuthScreen = props => {
                         onValueChange={() => {}}
                         initialValue=''
                     />
+                    <Input 
+                        id='password' 
+                        label='E-Mail' 
+                        keyboardType='email-address' 
+                        required
+                        email
+                        autoCapitalize='none'
+                        errorMessage='Please enter a valid email address.'
+                        onValueChange={() => {}}
+                        initialValue=''
+                    />
                 </ScrollView>
             </Card>
         </KeyboardAvoidingView>
