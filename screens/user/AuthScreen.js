@@ -19,6 +19,7 @@ const AuthScreen = props => {
                         keyboardType='email-address' 
                         required
                         email
+                        autoCapitalize='none'
                     />
                 </ScrollView>
             </Card>
