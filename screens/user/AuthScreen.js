@@ -62,7 +62,10 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     authContainer: {
-
+        width: '80%',
+        maxWidth: 400,
+        height: '50%',
+        maxHeight: 400
     }
 });
 
