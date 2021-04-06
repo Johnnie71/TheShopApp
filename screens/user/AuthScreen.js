@@ -27,7 +27,7 @@ const AuthScreen = props => {
                     <Input 
                         id='password' 
                         label='Password' 
-                        keyboardType='email-address' 
+                        keyboardType='default' 
                         required
                         email
                         autoCapitalize='none'
