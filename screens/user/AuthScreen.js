@@ -55,6 +55,10 @@ const AuthScreen = props => {
     )
 };
 
+AuthScreen.navigationOptions = {}
+
+
+
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
