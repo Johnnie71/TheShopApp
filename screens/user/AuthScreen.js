@@ -22,7 +22,7 @@ const AuthScreen = props => {
                         email
                         autoCapitalize='none'
                         errorMessage='Please enter a valid email address.'
-                        onValueChange={() => {}}
+                        onInputChange={() => {}}
                         initialValue=''
                     />
                     <Input 
@@ -34,7 +34,7 @@ const AuthScreen = props => {
                         minLength={5}
                         autoCapitalize='none'
                         errorMessage='Please enter a valid password.'
-                        onValueChange={() => {}}
+                        onInputChange={() => {}}
                         initialValue=''
                     />
                     <View>
