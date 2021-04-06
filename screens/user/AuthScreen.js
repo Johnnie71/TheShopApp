@@ -30,7 +30,7 @@ const AuthScreen = props => {
                         keyboardType='default' 
                         secureTextEntry
                         required
-                        email
+                        minLength={5}
                         autoCapitalize='none'
                         errorMessage='Please enter a valid email address.'
                         onValueChange={() => {}}
