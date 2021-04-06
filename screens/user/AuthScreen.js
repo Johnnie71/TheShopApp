@@ -37,7 +37,7 @@ const AuthScreen = props => {
                         onValueChange={() => {}}
                         initialValue=''
                     />
-                    <Button title='Login' color={Colors.primary}/>
+                    <Button title='Login' color={Colors.primary} onPress={() => {}}/>
                 </ScrollView>
             </Card>
         </KeyboardAvoidingView>
