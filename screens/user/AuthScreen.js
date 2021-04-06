@@ -56,7 +56,12 @@ const AuthScreen = props => {
 };
 
 const styles = StyleSheet.create({
+    screen: {
 
+    },
+    authContainer: {
+        
+    }
 });
 
 export default AuthScreen;
