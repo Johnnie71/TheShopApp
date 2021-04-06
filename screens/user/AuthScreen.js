@@ -36,6 +36,7 @@ const AuthScreen = props => {
                         onValueChange={() => {}}
                         initialValue=''
                     />
+                    <Button title='Login' />
                 </ScrollView>
             </Card>
         </KeyboardAvoidingView>
