@@ -55,7 +55,9 @@ const AuthScreen = props => {
     )
 };
 
-AuthScreen.navigationOptions = {}
+AuthScreen.navigationOptions = {
+    headerTitle: 'Please authenticate'
+}
 
 
 
