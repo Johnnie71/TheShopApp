@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     buttonContainer: {
-        
+        marginTop: 10
     }
 });
 
