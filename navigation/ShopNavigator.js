@@ -133,6 +133,8 @@ export const OrdersNavigator = () => {
 
 const AuthNavigator = createStackNavigator({
     Auth: AuthScreen
+}, {
+    defaultNavigationOptions: defaultNavOptions
 })
 
 const MainNavigator = createSwitchNavigator({
