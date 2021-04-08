@@ -1,3 +1,3 @@
-export const signup = () => {
+export const signup = (email, password) => {
 
 };
