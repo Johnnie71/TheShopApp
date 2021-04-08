@@ -8,7 +8,11 @@ export const signup = (email, password) => {
             headers: {
                 "Content-Type": 'application/json'
             },
-            
+            body: JSON.stringify({
+                email: email,
+                password: password,
+                returnSecureToken
+            })
         }
         );
         dispatch({type: SIGNUP});
