@@ -19,45 +19,47 @@ const AuthScreen = props => {
             keyboardVerticalOffset={50} 
             style={styles.screen}
         >
-            <Card style={styles.authContainer}>
-                <ScrollView>
-                    <Input 
-                        id='email' 
-                        label='E-Mail' 
-                        keyboardType='email-address' 
-                        required
-                        email
-                        autoCapitalize='none'
-                        errorMessage='Please enter a valid email address.'
-                        onInputChange={() => {}}
-                        initialValue=''
-                    />
-                    <Input 
-                        id='password' 
-                        label='Password' 
-                        keyboardType='default' 
-                        secureTextEntry
-                        required
-                        minLength={5}
-                        autoCapitalize='none'
-                        errorMessage='Please enter a valid password.'
-                        onInputChange={() => {}}
-                        initialValue=''
-                    />
-                    <View>
-                        <Button 
-                            title='Login' 
-                            color={Colors.primary} 
-                            onPress={() => {}}
+            <LinearGradient>
+                <Card style={styles.authContainer}>
+                    <ScrollView>
+                        <Input 
+                            id='email' 
+                            label='E-Mail' 
+                            keyboardType='email-address' 
+                            required
+                            email
+                            autoCapitalize='none'
+                            errorMessage='Please enter a valid email address.'
+                            onInputChange={() => {}}
+                            initialValue=''
                         />
-                        <Button 
-                            title='Switch to sign up' 
-                            color={Colors.accent} 
-                            onPress={() => {}}
+                        <Input 
+                            id='password' 
+                            label='Password' 
+                            keyboardType='default' 
+                            secureTextEntry
+                            required
+                            minLength={5}
+                            autoCapitalize='none'
+                            errorMessage='Please enter a valid password.'
+                            onInputChange={() => {}}
+                            initialValue=''
                         />
-                    </View>
-                </ScrollView>
-            </Card>
+                        <View>
+                            <Button 
+                                title='Login' 
+                                color={Colors.primary} 
+                                onPress={() => {}}
+                            />
+                            <Button 
+                                title='Switch to sign up' 
+                                color={Colors.accent} 
+                                onPress={() => {}}
+                            />
+                        </View>
+                    </ScrollView>
+                </Card>
+            </LinearGradient>
         </KeyboardAvoidingView>
     )
 };
