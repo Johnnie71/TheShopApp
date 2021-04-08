@@ -51,6 +51,8 @@ const AuthScreen = props => {
                                 color={Colors.primary} 
                                 onPress={() => {}}
                             />
+                        </View>
+                        <View>
                             <Button 
                                 title='Switch to sign up' 
                                 color={Colors.accent} 
