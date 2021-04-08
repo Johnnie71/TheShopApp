@@ -45,7 +45,7 @@ const AuthScreen = props => {
                             onInputChange={() => {}}
                             initialValue=''
                         />
-                        <View>
+                        <View style={styles.buttonContainer}>
                             <Button 
                                 title='Login' 
                                 color={Colors.primary} 
