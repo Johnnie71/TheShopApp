@@ -56,7 +56,7 @@ const AuthScreen = props => {
 };
 
 AuthScreen.navigationOptions = {
-    headerTitle: 'Please authenticate'
+    headerTitle: 'Authenticate'
 }
 
 
