@@ -1,5 +1,12 @@
 import React from 'react';
-import { ScrollView, View, Button, KeyboardAvoidingView, StyleSheet } from 'react-native';
+import { 
+    ScrollView, 
+    View, 
+    Button, 
+    KeyboardAvoidingView, 
+    StyleSheet 
+} from 'react-native';
+
 
 import Input from '../../components/UI/Input';
 import Card from '../../components/UI/Card';
