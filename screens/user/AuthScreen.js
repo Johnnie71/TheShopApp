@@ -72,9 +72,7 @@ AuthScreen.navigationOptions = {
 
 const styles = StyleSheet.create({
     screen: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        flex: 1
     },
     authContainer: {
         width: '80%',
