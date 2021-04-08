@@ -81,6 +81,9 @@ const styles = StyleSheet.create({
         maxWidth: 400,
         maxHeight: 400,
         padding: 20
+    },
+    gradient: {
+        
     }
 });
 
