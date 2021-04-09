@@ -19,7 +19,7 @@ const AuthScreen = props => {
     const dispatch = useDispatch();
 
     const signupHandler = () => {
-
+        dispatch(authActions.signup())
     };
 
     return (
