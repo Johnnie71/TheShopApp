@@ -15,6 +15,11 @@ import Colors from '../../constants/Colors';
 import * as authActions from '../../store/actions/auth';
 
 const AuthScreen = props => {
+
+    const signupHandler = () => {
+
+    };
+
     return (
         <KeyboardAvoidingView 
             behavior='padding' 
