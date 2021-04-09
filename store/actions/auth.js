@@ -15,6 +15,9 @@ export const signup = (email, password) => {
             })
         }
         );
+        if (!response.ok) {
+
+        }
         dispatch({type: SIGNUP});
     };
 };
