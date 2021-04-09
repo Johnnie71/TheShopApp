@@ -44,10 +44,7 @@ const AuthScreen = props => {
 
     const [ formState, dispatchFormState ] = useReducer(formReducer, { 
         inputValues: {
-            title: editedProduct ? editedProduct.title : '',
-            imageUrl: editedProduct ? editedProduct.imageUrl : '',
-            description: editedProduct ? editedProduct.description : '',
-            price: ''
+            
         }, 
         inputValidities: {
             title: editedProduct ? true : false,
