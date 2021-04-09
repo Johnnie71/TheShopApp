@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
     ScrollView, 
     View, 
@@ -15,6 +15,8 @@ import Colors from '../../constants/Colors';
 import * as authActions from '../../store/actions/auth';
 
 const AuthScreen = props => {
+
+    const 
 
     const dispatch = useDispatch();
 
