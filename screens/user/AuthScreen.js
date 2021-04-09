@@ -62,7 +62,8 @@ const AuthScreen = props => {
         dispatch(authActions.signup())
     };
 
-    const inputChangeHandler = (inputIdentifier, inputValue, inputValidity) => {
+    const inputChangeHandler = useCallback(
+        (inputIdentifier, inputValue, inputValidity) => {
         dispatchFormState({
             type: FORM_INPUT_UPDATE, 
             value: inputValue, 
@@ -70,6 +71,7 @@ const AuthScreen = props => {
             input: inputIdentifier
         });
     },
+    [dispatchFormState]);
 
 
     return (
