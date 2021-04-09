@@ -40,6 +40,23 @@ const formReducer = (state, action) => {
 
 const AuthScreen = props => {
 
+    const [ formState, dispatchFormState ] = useReducer(formReducer, { 
+        inputValues: {
+            title: editedProduct ? editedProduct.title : '',
+            imageUrl: editedProduct ? editedProduct.imageUrl : '',
+            description: editedProduct ? editedProduct.description : '',
+            price: ''
+        }, 
+        inputValidities: {
+            title: editedProduct ? true : false,
+            imageUrl: editedProduct ? true : false,
+            description: editedProduct ? true : false,
+            price: editedProduct ? true : false,
+
+        }, 
+        formIsValid: editedProduct ? true : false,
+    });
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
