@@ -16,7 +16,7 @@ import * as authActions from '../../store/actions/auth';
 
 const AuthScreen = props => {
 
-    const [] = useState();
+    const [email, setEmail] = useState('');
     const [] = useState();
 
     const dispatch = useDispatch();
