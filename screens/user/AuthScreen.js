@@ -91,9 +91,7 @@ const AuthScreen = props => {
                             email
                             autoCapitalize='none'
                             errorMessage='Please enter a valid email address.'
-                            onInputChange={() => {
-
-                            }}
+                            onInputChange={inputChangeHandler}
                             initialValue=""
                         />
                         <Input 
