@@ -62,6 +62,15 @@ const AuthScreen = props => {
         dispatch(authActions.signup())
     };
 
+    const inputChangeHandler = (inputIdentifier, inputValue, inputValidity) => {
+        dispatchFormState({
+            type: FORM_INPUT_UPDATE, 
+            value: inputValue, 
+            isValid: inputValidity,
+            input: inputIdentifier
+        });
+    },
+
 
     return (
         <KeyboardAvoidingView 
@@ -80,7 +89,9 @@ const AuthScreen = props => {
                             email
                             autoCapitalize='none'
                             errorMessage='Please enter a valid email address.'
-                            onInputChange={() => {}}
+                            onInputChange={() => {
+
+                            }}
                             initialValue=""
                         />
                         <Input 
