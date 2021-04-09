@@ -25,6 +25,10 @@ const AuthScreen = props => {
         dispatch(authActions.signup())
     };
 
+    const emailHandler = () => {
+
+    }
+
     return (
         <KeyboardAvoidingView 
             behavior='padding' 
@@ -43,7 +47,7 @@ const AuthScreen = props => {
                             autoCapitalize='none'
                             errorMessage='Please enter a valid email address.'
                             onInputChange={() => {}}
-                            initialValue={email}
+                            initialValue=""
                         />
                         <Input 
                             id='password' 
