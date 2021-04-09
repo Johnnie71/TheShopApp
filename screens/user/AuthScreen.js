@@ -55,8 +55,6 @@ const AuthScreen = props => {
         formIsValid: false,
     });
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
 
     const dispatch = useDispatch();
 
@@ -64,9 +62,6 @@ const AuthScreen = props => {
         dispatch(authActions.signup())
     };
 
-    const emailHandler = () => {
-
-    }
 
     return (
         <KeyboardAvoidingView 
