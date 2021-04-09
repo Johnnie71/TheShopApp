@@ -49,7 +49,7 @@ const AuthScreen = props => {
         }, 
         inputValidities: {
             email: false,
-            
+            password: false
 
         }, 
         formIsValid: editedProduct ? true : false,
