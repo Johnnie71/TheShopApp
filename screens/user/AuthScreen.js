@@ -52,7 +52,7 @@ const AuthScreen = props => {
             password: false
 
         }, 
-        formIsValid: editedProduct ? true : false,
+        formIsValid: false,
     });
 
     const [email, setEmail] = useState("");
