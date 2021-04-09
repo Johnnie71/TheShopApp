@@ -48,10 +48,8 @@ const AuthScreen = props => {
             password: ''
         }, 
         inputValidities: {
-            title: editedProduct ? true : false,
-            imageUrl: editedProduct ? true : false,
-            description: editedProduct ? true : false,
-            price: editedProduct ? true : false,
+            email: false,
+            
 
         }, 
         formIsValid: editedProduct ? true : false,
