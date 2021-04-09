@@ -15,9 +15,13 @@ export const signup = (email, password) => {
             })
         }
         );
+
         if (!response.ok) {
             throw new Error('Something went wrong!');
         }
+
+        const resData = await response.json();
+
         dispatch({type: SIGNUP});
     };
 };
