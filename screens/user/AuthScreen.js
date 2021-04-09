@@ -14,6 +14,8 @@ import Card from '../../components/UI/Card';
 import Colors from '../../constants/Colors';
 import * as authActions from '../../store/actions/auth';
 
+const FORM_INPUT_UPDATE = 'FORM_INPUT_UPDATE'
+
 const formReducer = (state, action) => {
     if(action.type === FORM_INPUT_UPDATE){
         const updatedValues = {
