@@ -44,6 +44,7 @@ const AuthScreen = props => {
 
     const [ formState, dispatchFormState ] = useReducer(formReducer, { 
         inputValues: {
+            email: '',
             
         }, 
         inputValidities: {
