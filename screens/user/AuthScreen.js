@@ -12,6 +12,7 @@ import { useDispatch } from 'react-redux';
 import Input from '../../components/UI/Input';
 import Card from '../../components/UI/Card';
 import Colors from '../../constants/Colors';
+import * as authActions from '../../store/actions/auth';
 
 const AuthScreen = props => {
     return (
