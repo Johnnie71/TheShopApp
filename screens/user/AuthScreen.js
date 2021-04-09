@@ -14,6 +14,30 @@ import Card from '../../components/UI/Card';
 import Colors from '../../constants/Colors';
 import * as authActions from '../../store/actions/auth';
 
+const formReducer = (state, action) => {
+    if(action.type === FORM_INPUT_UPDATE){
+        const updatedValues = {
+            ...state.inputValues,
+            [action.input]: action.value
+        };
+        const updatedValidities = {
+            ...state.inputValidities,
+            [action.input]: action.isValid
+        };
+
+        let updatedFormIsValid = true;
+        for(const key in updatedValidities){
+            updatedFormIsValid = updatedFormIsValid && updatedValidities[key];
+        }
+        return {
+            formIsValid: updatedFormIsValid,
+            inputValidities: updatedValidities,
+            inputValues: updatedValues
+        };
+    };
+    return state;
+};
+
 const AuthScreen = props => {
 
     const [email, setEmail] = useState("");
