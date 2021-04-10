@@ -64,7 +64,7 @@ const AuthScreen = props => {
                 formState.inputValues.email,
                 formState.inputValues.password
             )
-        )
+        );
     };
 
     const inputChangeHandler = useCallback(
