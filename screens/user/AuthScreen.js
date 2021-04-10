@@ -59,7 +59,12 @@ const AuthScreen = props => {
     const dispatch = useDispatch();
 
     const signupHandler = () => {
-        dispatch(authActions.signup(formState.inputValues.email, formState.inputValues.password))
+        dispatch(
+            authActions.signup(
+                formState.inputValues.email,
+                formState.inputValues.password
+            )
+        )
     };
 
     const inputChangeHandler = useCallback(
