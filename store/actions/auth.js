@@ -51,6 +51,6 @@ export const login = (email, password) => {
 
         const resData = await response.json();
 
-        dispatch({type: SIGNUP});
+        dispatch({ type: LOGIN });
     };
 };
