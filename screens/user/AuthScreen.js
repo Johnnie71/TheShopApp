@@ -55,7 +55,7 @@ const AuthScreen = props => {
         formIsValid: false,
     });
 
-    const [] = useState();
+    const [isSignup, setIsSignup] = useState(false);
     const dispatch = useDispatch();
 
     const signupHandler = () => {
