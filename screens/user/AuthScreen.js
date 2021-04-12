@@ -120,7 +120,7 @@ const AuthScreen = props => {
                         </View>
                         <View style={styles.buttonContainer} >
                             <Button 
-                                title='Switch to sign up' 
+                                title={`Switch to ${isSignup ? "Login" : "Sign Up"}`} 
                                 color={Colors.accent} 
                                 onPress={() => {}}
                             />
