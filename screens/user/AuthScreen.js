@@ -67,8 +67,14 @@ const AuthScreen = props => {
                 )
             );
         } else {
-            
+
         }
+        dispatch(
+            authActions.signup(
+                formState.inputValues.email,
+                formState.inputValues.password
+            )
+        );
         
     };
 
