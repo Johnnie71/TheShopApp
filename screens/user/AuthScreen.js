@@ -4,7 +4,8 @@ import {
     View, 
     Button, 
     KeyboardAvoidingView, 
-    StyleSheet 
+    StyleSheet,
+    ActivityIndicator 
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useDispatch } from 'react-redux';
