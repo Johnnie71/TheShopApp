@@ -43,6 +43,10 @@ const formReducer = (state, action) => {
 
 const AuthScreen = props => {
     const [isLoading, setIsLoading] = useState(false);
+    const [isSignup, setIsSignup] = useState(false);
+    const dispatch = useDispatch();
+
+
     const [ formState, dispatchFormState ] = useReducer(formReducer, { 
         inputValues: {
             email: '',
@@ -56,8 +60,7 @@ const AuthScreen = props => {
         formIsValid: false,
     });
 
-    const [isSignup, setIsSignup] = useState(false);
-    const dispatch = useDispatch();
+    
 
     const authHandler = async () => {
         let action;
