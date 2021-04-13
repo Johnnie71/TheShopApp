@@ -59,7 +59,7 @@ const AuthScreen = props => {
     const [isSignup, setIsSignup] = useState(false);
     const dispatch = useDispatch();
 
-    const authHandler = () => {
+    const authHandler = async () => {
         let action;
         if (isSignup) {
             action = authActions.signup(
@@ -72,7 +72,7 @@ const AuthScreen = props => {
                 formState.inputValues.password
             );
         }
-        dispatch(action);
+        await dispatch(action);
     };
 
     const inputChangeHandler = useCallback(
