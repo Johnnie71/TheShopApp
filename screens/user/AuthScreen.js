@@ -61,6 +61,7 @@ const AuthScreen = props => {
     const authHandler = () => {
         let action;
         if (isSignup) {
+            action =
             dispatch(
                 authActions.signup(
                     formState.inputValues.email,
