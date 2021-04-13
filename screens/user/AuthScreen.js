@@ -77,7 +77,10 @@ const AuthScreen = props => {
             );
         }
         setIsLoading(true);
-        await dispatch(action);
+        try {
+            await dispatch(action);
+
+        }
         setIsLoading(false);
     };
 
