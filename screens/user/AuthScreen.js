@@ -122,7 +122,9 @@ const AuthScreen = props => {
                             <Button 
                                 title={`Switch to ${isSignup ? "Login" : "Sign Up"}`} 
                                 color={Colors.accent} 
-                                onPress={() => {}}
+                                onPress={() => {
+                                    setIsSignup(prevState => !prevState);
+                                }}
                             />
                         </View>
                     </ScrollView>
