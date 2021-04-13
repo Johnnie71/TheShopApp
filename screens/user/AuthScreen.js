@@ -80,6 +80,8 @@ const AuthScreen = props => {
         try {
             await dispatch(action);
 
+        } catch (err) {
+            throw new Error("Something went wrong!")
         }
         setIsLoading(false);
     };
