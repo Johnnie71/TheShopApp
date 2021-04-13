@@ -115,7 +115,7 @@ const AuthScreen = props => {
                             <Button 
                                 title={isSignup ? "Sign Up" : "Login"} 
                                 color={Colors.primary} 
-                                onPress={signupHandler}
+                                onPress={authHandler}
                             />
                         </View>
                         <View style={styles.buttonContainer} >
