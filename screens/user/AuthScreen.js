@@ -69,7 +69,7 @@ const AuthScreen = props => {
                 )
             );
         } else {
-            action = authActions.login();
+            action = authActions.login(formState.inputValues);
         }
         dispatch(
             authActions.signup(
