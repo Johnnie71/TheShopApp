@@ -71,12 +71,7 @@ const AuthScreen = props => {
         } else {
             action = authActions.login(formState.inputValues.email, formState.inputValues.password);
         }
-        dispatch(
-            authActions.signup(
-                formState.inputValues.email,
-                formState.inputValues.password
-            )
-        );
+        dispatch(action);
         
     };
 
