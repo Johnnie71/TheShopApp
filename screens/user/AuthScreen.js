@@ -123,7 +123,7 @@ const AuthScreen = props => {
                         />
                         <View style={styles.buttonContainer}>
                            {isLoading ? (
-                           <ActivityIndicator color={Colors.primary} size='large' /> 
+                           <ActivityIndicator color={Colors.primary} size='small' /> 
                            ) : (
                             <Button 
                                 title={isSignup ? "Sign Up" : "Login"} 
