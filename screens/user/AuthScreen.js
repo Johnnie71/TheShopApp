@@ -69,7 +69,7 @@ const AuthScreen = props => {
                 )
             );
         } else {
-
+            action = authActions.login();
         }
         dispatch(
             authActions.signup(
