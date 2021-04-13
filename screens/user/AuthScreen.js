@@ -76,6 +76,7 @@ const AuthScreen = props => {
                 formState.inputValues.password
             );
         }
+        setError(null);
         setIsLoading(true);
         try {
             await dispatch(action);
