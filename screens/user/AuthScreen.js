@@ -59,6 +59,7 @@ const AuthScreen = props => {
     const dispatch = useDispatch();
 
     const authHandler = () => {
+        let action;
         if (isSignup) {
             dispatch(
                 authActions.signup(
