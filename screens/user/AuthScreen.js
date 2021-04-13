@@ -74,6 +74,7 @@ const AuthScreen = props => {
         }
         setIsLoading(true);
         await dispatch(action);
+        setIsLoading(false);
     };
 
     const inputChangeHandler = useCallback(
