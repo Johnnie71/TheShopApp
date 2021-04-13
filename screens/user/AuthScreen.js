@@ -61,18 +61,17 @@ const AuthScreen = props => {
     const authHandler = () => {
         let action;
         if (isSignup) {
-            action =
-            dispatch(
-                authActions.signup(
-                    formState.inputValues.email,
-                    formState.inputValues.password
-                )
+            action = authActions.signup(
+                formState.inputValues.email,
+                formState.inputValues.password
             );
         } else {
-            action = authActions.login(formState.inputValues.email, formState.inputValues.password);
+            action = authActions.login(
+                formState.inputValues.email, 
+                formState.inputValues.password
+            );
         }
         dispatch(action);
-        
     };
 
     const inputChangeHandler = useCallback(
