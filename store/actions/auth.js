@@ -52,6 +52,7 @@ export const login = (email, password) => {
             if (errorId === "EMAIL_NOT_FOUND") {
                 message = 'This email could not be found!'
             }
+            throw new Error(message);
         }
 
         const resData = await response.json();
