@@ -46,7 +46,7 @@ export const login = (email, password) => {
         );
 
         if (!response.ok) {
-            throw new Error('Something went wrong!');
+            const errorResponseData = await response.json();
         }
 
         const resData = await response.json();
