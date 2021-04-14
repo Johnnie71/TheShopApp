@@ -24,9 +24,7 @@ export const signup = (email, password) => {
             let message = "Something went wrong!";
             if (errorId === "EMAIL_EXISTS") {
                 message = 'This email exists already!'
-            } else if (errorId === "INVALID_PASSWORD") {
-                message = "This password is not valid!"
-            }
+            } 
             throw new Error(message);
         }
 
