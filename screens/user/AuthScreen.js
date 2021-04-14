@@ -60,10 +60,10 @@ const AuthScreen = props => {
 
         }, 
         formIsValid: false,
-    });
+    },[]);
 
     useEffect(() => {
-        
+
     })
 
     
