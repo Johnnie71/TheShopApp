@@ -50,7 +50,7 @@ export const login = (email, password) => {
             const errorId = errorResponseData.error.message;
             let message = "Something went wrong!";
             if (errorId === "EMAIL_NOT_FOUND") {
-
+                message = 'This email could not be found!'
             }
         }
 
