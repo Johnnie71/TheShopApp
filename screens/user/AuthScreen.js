@@ -62,6 +62,10 @@ const AuthScreen = props => {
         formIsValid: false,
     });
 
+    useEffect(() => {
+        
+    })
+
     
  
     const authHandler = async () => {
