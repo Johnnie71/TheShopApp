@@ -52,7 +52,7 @@ export const login = (email, password) => {
             if (errorId === "EMAIL_NOT_FOUND") {
                 message = 'This email could not be found!'
             } else if (errorId === "INVALID_PASSWORD") {
-                message = "Password is incorrect!"
+                message = "This password is not valid!"
             }
             throw new Error(message);
         }
