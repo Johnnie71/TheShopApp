@@ -96,7 +96,9 @@ UserProductsScreen.navigationOptions = navData => {
 
 const styles = StyleSheet.create({
     addText: {
-
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });
 
