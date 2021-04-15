@@ -28,6 +28,14 @@ const UserProductsScreen = props => {
         ])
     };
 
+    if(userProducts.length === 0) {
+        return (
+            <View>
+                <Text>No products found, start adding some!</Text>
+            </View>
+        )
+    }
+
     return (
         <FlatList 
             data={userProducts} 
