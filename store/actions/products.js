@@ -90,7 +90,8 @@ export const createProduct = (title, description, imageUrl, price) => {
             title,
             description,
             imageUrl,
-            price
+            price,
+            ownerId: userId
           }
       });
     }
