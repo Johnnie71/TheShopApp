@@ -4,7 +4,7 @@ import { CREATE_PRODUCT, DELETE_PRODUCT, SET_PRODUCTS, UPDATE_PRODUCT }from '../
 
 const initialState = {
     availableProducts: [],
-    userProducts: PRODUCTS.filter(prod => prod.ownerId === 'u1')
+    userProducts: []
 };
 
 export default (state = initialState, action) => {
