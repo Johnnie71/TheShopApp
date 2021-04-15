@@ -34,7 +34,11 @@ export const fetchProducts = () => {
         );
       }
   
-      dispatch({ type: SET_PRODUCTS, products: loadedProducts, userProducts: loadedProducts.filter(prod => prod.ownerId === userId) })
+      dispatch({ 
+        type: SET_PRODUCTS, 
+        products: loadedProducts, 
+        userProducts: loadedProducts.filter(prod => prod.ownerId === userId) 
+      })
     } catch (err) {
       //sends to custom analytics server
       throw err;
