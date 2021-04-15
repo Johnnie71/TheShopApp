@@ -30,7 +30,7 @@ const UserProductsScreen = props => {
 
     if(userProducts.length === 0) {
         return (
-            <View>
+            <View style={styles.addText}>
                 <Text>No products found, start adding some!</Text>
             </View>
         )
@@ -93,5 +93,11 @@ UserProductsScreen.navigationOptions = navData => {
         )
     }
 };
+
+const styles = StyleSheet.create({
+    addText: {
+
+    }
+});
 
 export default UserProductsScreen;
