@@ -11,6 +11,7 @@ import productsReducer from './store/reducers/products';
 // import ShopNavigator from './navigation/ShopNavigator';
 import ordersReducer from './store/reducers/orders';
 import cartReducer from './store/reducers/cart';
+import authReducer from './store/reducers/auth';
 // import NavigationContainer from './navigation/AppNavigator'
 import AppNavigator from './navigation/AppNavigator';
 
