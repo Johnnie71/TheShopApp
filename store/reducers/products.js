@@ -3,7 +3,7 @@ import Product from '../../models/product';
 import { CREATE_PRODUCT, DELETE_PRODUCT, SET_PRODUCTS, UPDATE_PRODUCT }from '../actions/products';
 
 const initialState = {
-    availableProducts: PRODUCTS,
+    availableProducts: [],
     userProducts: PRODUCTS.filter(prod => prod.ownerId === 'u1')
 };
 
