@@ -72,12 +72,13 @@ export const login = (email, password) => {
     };
 };
 
-const saveDataToStorage = (token, userId) => {
+const saveDataToStorage = (token, userId, expirationDate) => {
     AsyncStorageStatic.setItem(
         "userData", 
         JSON.stringify({
           token: token,
-          userId: userId
+          userId: userId,
+          expirationDate: expirationDate
         })
     );
 };
