@@ -39,7 +39,7 @@ const OrdersScreen = props => {
      if(orders.length === 0) {
         return (
             <View style={styles.addText}>
-                <Text>No products found, start adding some!</Text>
+                <Text>No orders found, start adding some!</Text>
             </View>
         );
     }
