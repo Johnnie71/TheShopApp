@@ -70,6 +70,6 @@ export const login = (email, password) => {
     };
 };
 
-const saveDataToStorage = () => {
-
+const saveDataToStorage = (token, userId) => {
+    
 };
