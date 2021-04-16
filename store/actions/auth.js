@@ -78,7 +78,7 @@ const saveDataToStorage = (token, userId, expirationDate) => {
         JSON.stringify({
           token: token,
           userId: userId,
-          expirDate: expirationDate
+          expirDate: expirationDate.toISOString()
         })
     );
 };
