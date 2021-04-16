@@ -33,7 +33,7 @@ const OrdersScreen = props => {
              <View style={styles.spinner}>
                  <ActivityIndicator size='large' color={Colors.primary} />
              </View>
-         )
+         );
      }
 
      return (
