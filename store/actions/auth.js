@@ -68,7 +68,7 @@ export const login = (email, password) => {
         console.log(resData);
         dispatch({ type: LOGIN, token: resData.idToken, userId: resData.localId });
         const expirationDate = new Date(new Date().getTime() + parseInt(resData.expiresin) * 1000);
-        saveDataToStorage(resData.idToken, resData.localId);
+        saveDataToStorage(resData.idToken, resData.localId, expirationDate);
     };
 };
 
