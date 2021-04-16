@@ -33,7 +33,7 @@ const UserProductsScreen = props => {
             <View style={styles.addText}>
                 <Text>No products found, start adding some!</Text>
             </View>
-        )
+        );
     }
 
     return (
