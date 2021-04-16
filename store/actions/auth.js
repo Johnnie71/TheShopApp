@@ -1,4 +1,4 @@
-import { AsyncStorage } from 'react-native';
+import { AsyncStorageStatic } from '@react-native-async-storage/async-storage';
 export const SIGNUP = 'SIGNUP';
 export const LOGIN = 'LOGIN';
 
