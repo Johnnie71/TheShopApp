@@ -10,7 +10,11 @@ import Colors from '../constants/Colors';
 const StartupScreen = props => {
 
     useEffect(() => {
-        
+        const tryLogin = async () => {
+
+        };
+
+        tryLogin();
     }, [])
 
 
