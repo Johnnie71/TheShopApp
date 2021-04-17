@@ -17,6 +17,7 @@ import OrdersScreen, { screenOptions as orderScreenOptions } from '../screens/sh
 import UserProductsScreen from '../screens/user/UserProductScreen';
 import EditProductScreen from '../screens/user/EditProductScreen';
 import AuthScreen from '../screens/user/AuthScreen';
+import StartupScreen from '../screens/StartUpScreen';
 import Colors from '../constants/Colors';
 
 
