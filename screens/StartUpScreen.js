@@ -5,9 +5,14 @@ import {
     StyleSheet 
 } from "react-native";
 import { AsyncStorageStatic} from '@react-native-async-storage/async-storage';
+import Colors from '../constants/Colors';
 
 const StartupScreen = props => {
-
+    return (
+        <View>
+            <ActivityIndicator size='large' color={Colors.primary} />
+        </View>
+    )
 };
 
 const styles = StyleSheet.create({
