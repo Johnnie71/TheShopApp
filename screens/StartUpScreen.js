@@ -8,6 +8,12 @@ import { AsyncStorageStatic} from '@react-native-async-storage/async-storage';
 import Colors from '../constants/Colors';
 
 const StartupScreen = props => {
+
+    useEffect(() => {
+        
+    }, [])
+
+
     return (
         <View style={styles.loadingView}>
             <ActivityIndicator size='large' color={Colors.primary} />
