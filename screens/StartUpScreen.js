@@ -16,7 +16,11 @@ const StartupScreen = props => {
 };
 
 const styles = StyleSheet.create({
-
+    loadingView: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
 });
 
 export default StartupScreen;
