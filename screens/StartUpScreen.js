@@ -9,7 +9,7 @@ import Colors from '../constants/Colors';
 
 const StartupScreen = props => {
     return (
-        <View>
+        <View style={styles.loadingView}>
             <ActivityIndicator size='large' color={Colors.primary} />
         </View>
     )
