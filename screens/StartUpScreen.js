@@ -13,3 +13,5 @@ const StartupScreen = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default StartupScreen;
