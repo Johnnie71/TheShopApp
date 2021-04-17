@@ -12,6 +12,9 @@ const StartupScreen = props => {
     useEffect(() => {
         const tryLogin = async () => {
             const userData = await AsyncStorageStatic.getItem('userData');
+            if (!userData) {
+                return;
+            }
             const transformedData = JSON.parse(userData);
         };
 
