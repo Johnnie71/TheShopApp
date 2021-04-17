@@ -4,3 +4,4 @@ import {
     ActivityIndicator, 
     StyleSheet 
 } from "react-native";
+import { AsyncStorageStatic} from '@react-native-async-storage/async-storage'
