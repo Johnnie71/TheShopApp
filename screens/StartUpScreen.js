@@ -11,7 +11,7 @@ const StartupScreen = props => {
 
     useEffect(() => {
         const tryLogin = async () => {
-            const userData = AsyncStorageStatic.getItem('userData')
+            const userData = await AsyncStorageStatic.getItem('userData')
         };
 
         tryLogin();
