@@ -5,6 +5,7 @@ import {
     StyleSheet 
 } from "react-native";
 import { AsyncStorageStatic} from '@react-native-async-storage/async-storage';
+import { useDispatch } from 'react-redux';
 import Colors from '../constants/Colors';
 
 const StartupScreen = props => {
