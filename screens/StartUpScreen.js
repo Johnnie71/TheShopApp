@@ -17,7 +17,7 @@ const StartupScreen = props => {
                 return;
             }
             const transformedData = JSON.parse(userData);
-            const { token, userId, expirDate } = transformedData
+            const { token, userId, expirDate } = transformedData;
         };
 
         tryLogin();
