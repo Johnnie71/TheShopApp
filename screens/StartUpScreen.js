@@ -24,6 +24,8 @@ const StartupScreen = props => {
                 props.navigation.navigate('Auth');
                 return;
             }
+
+            props.navigation.navigate('Shop');
         };
 
         tryLogin();
