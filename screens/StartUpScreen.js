@@ -29,6 +29,7 @@ const StartupScreen = props => {
             }
 
             props.navigation.navigate('Shop');
+            dispatch(authActions.authenticate(userId, token));
         };
 
         tryLogin();
