@@ -3,7 +3,7 @@ export const SIGNUP = 'SIGNUP';
 export const LOGIN = 'LOGIN';
 
 export const authenticate = (userId, token) => {
-
+        return {}
 };
 
 export const signup = (email, password) => {
