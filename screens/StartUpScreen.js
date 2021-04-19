@@ -11,6 +11,7 @@ import * as authActions from '../store/actions/auth';
 
 const StartupScreen = props => {
     const dispatch = useDispatch();
+
     useEffect(() => {
         const tryLogin = async () => {
             const userData = await AsyncStorageStatic.getItem('userData');
@@ -31,7 +32,7 @@ const StartupScreen = props => {
         };
 
         tryLogin();
-    }, [])
+    }, [dispatch])
 
 
     return (
