@@ -20,7 +20,7 @@ const StartupScreen = props => {
             const { token, userId, expirDate } = transformedData;
             const expirationDate = new Date(expirDate);
 
-            if(expirationDate <= new Date() || !token) {
+            if(expirationDate <= new Date() || !token || !userId) {
 
             }
         };
