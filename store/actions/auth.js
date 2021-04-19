@@ -4,7 +4,7 @@ export const LOGIN = 'LOGIN';
 export const AUTHENTICATE = 'AUTHENTICATE';
 
 export const authenticate = (userId, token) => {
-        return {}
+        return { type: AUTHENTICATE, userId: userId, token: token }
 };
 
 export const signup = (email, password) => {
