@@ -10,7 +10,7 @@ import Colors from '../constants/Colors';
 import * as authActions from '../store/actions/auth';
 
 const StartupScreen = props => {
-
+    const dispatch = useDispatch();
     useEffect(() => {
         const tryLogin = async () => {
             const userData = await AsyncStorageStatic.getItem('userData');
