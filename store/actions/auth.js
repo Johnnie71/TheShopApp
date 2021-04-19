@@ -2,6 +2,10 @@ import { AsyncStorageStatic } from '@react-native-async-storage/async-storage';
 export const SIGNUP = 'SIGNUP';
 export const LOGIN = 'LOGIN';
 
+export const authenticate = (userId, token) => {
+
+};
+
 export const signup = (email, password) => {
     return async dispatch => {
        const response = await fetch(
