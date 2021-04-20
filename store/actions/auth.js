@@ -2,6 +2,7 @@ import { AsyncStorageStatic } from '@react-native-async-storage/async-storage';
 // export const SIGNUP = 'SIGNUP';
 // export const LOGIN = 'LOGIN';
 export const AUTHENTICATE = 'AUTHENTICATE';
+export const LOGOUT = 'LOGOUT';
 
 export const authenticate = (userId, token) => {
         return { type: AUTHENTICATE, userId: userId, token: token }
