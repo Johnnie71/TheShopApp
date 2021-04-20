@@ -121,7 +121,7 @@ const ShopNavigator = createDrawerNavigator({
      contentComponent: props => {
          return (
              <View style={{flex: 1}}>
-
+                 <SafeAreaView></SafeAreaView>
              </View>
          )
      }
