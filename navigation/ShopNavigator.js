@@ -8,7 +8,7 @@ import {
     DrawerItems
 } from 'react-navigation';
 // import { createDrawerNavigator} from '@react-navigation/drawer';
-import { Platform, SafeAreaView, Button } from 'react-native';
+import { Platform, SafeAreaView, Button, View } from 'react-native';
 // import { Ionicons } from '@expo/vector-icons';
 
 import ProductsOverviewScreen, { screenOptions as productsOverviewScreenOptions } from '../screens/shop/ProductsOverviewScreen';
