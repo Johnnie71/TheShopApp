@@ -119,7 +119,11 @@ const ShopNavigator = createDrawerNavigator({
         activeTintColor: Colors.primary
      },
      contentComponent: props => {
-         return 
+         return (
+             <View>
+                 
+             </View>
+         )
      }
     }
 );
