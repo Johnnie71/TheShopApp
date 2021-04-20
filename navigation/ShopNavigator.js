@@ -4,7 +4,8 @@ import {
     createStackNavigator,
     createDrawerNavigator,
     createSwitchNavigator,
-    createAppContainer
+    createAppContainer,
+    DrawerItems
 } from 'react-navigation';
 // import { createDrawerNavigator} from '@react-navigation/drawer';
 import { Platform, SafeAreaView, Button } from 'react-native';
