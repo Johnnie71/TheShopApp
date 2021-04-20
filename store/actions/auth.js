@@ -85,7 +85,7 @@ export const login = (email, password) => {
 };
 
 export const logout = () => {
-
+    return { type: LOGOUT }
 };
 
 const saveDataToStorage = (token, userId, expirationDate) => {
