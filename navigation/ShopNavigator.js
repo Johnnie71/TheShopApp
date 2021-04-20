@@ -125,7 +125,11 @@ const ShopNavigator = createDrawerNavigator({
              <View style={{flex: 1, paddingTop: 20}}>
                  <SafeAreaView forceInset={{top: 'always', horizontal: 'never'}}>
                      <DrawerItems {...props} />
-                     <Button title="Logout" color={Colors.primary} onPress={} />
+                     <Button 
+                        title="Logout" 
+                        color={Colors.primary} 
+                        onPress={} 
+                     />
                  </SafeAreaView>
              </View>
          )
