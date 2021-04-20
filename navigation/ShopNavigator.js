@@ -121,7 +121,7 @@ const ShopNavigator = createDrawerNavigator({
      contentComponent: props => {
          return (
              <View style={{flex: 1}}>
-                 <SafeAreaView forceInset={{top: 'always'}}></SafeAreaView>
+                 <SafeAreaView forceInset={{top: 'always', horizontal: 'never'}}></SafeAreaView>
              </View>
          )
      }
