@@ -120,8 +120,8 @@ const ShopNavigator = createDrawerNavigator({
      },
      contentComponent: props => {
          return (
-             <View>
-                 
+             <View style={{flex: 1}}>
+
              </View>
          )
      }
