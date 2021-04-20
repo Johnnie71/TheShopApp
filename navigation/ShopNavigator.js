@@ -10,6 +10,7 @@ import {
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Platform, SafeAreaView, Button, View } from 'react-native';
 import { useDispatch } from 'react-redux';
+import * as authActions from '../store/actions/auth';
 // import { Ionicons } from '@expo/vector-icons';
 
 import ProductsOverviewScreen, { screenOptions as productsOverviewScreenOptions } from '../screens/shop/ProductsOverviewScreen';
