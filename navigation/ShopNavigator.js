@@ -130,7 +130,7 @@ const ShopNavigator = createDrawerNavigator({
                         title="Logout" 
                         color={Colors.primary} 
                         onPress={() => {
-                            dispatch()
+                            dispatch(authActions.logout());
                         }} 
                      />
                  </SafeAreaView>
