@@ -7,7 +7,7 @@ import {
     createAppContainer
 } from 'react-navigation';
 // import { createDrawerNavigator} from '@react-navigation/drawer';
-import { Platform } from 'react-native';
+import { Platform, SafeAreaView } from 'react-native';
 // import { Ionicons } from '@expo/vector-icons';
 
 import ProductsOverviewScreen, { screenOptions as productsOverviewScreenOptions } from '../screens/shop/ProductsOverviewScreen';
