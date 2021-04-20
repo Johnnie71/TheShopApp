@@ -116,7 +116,8 @@ const ShopNavigator = createDrawerNavigator({
     {
      contentOptions: {
         activeTintColor: Colors.primary
-     }
+     },
+     contentComponent: 
     }
 );
 
