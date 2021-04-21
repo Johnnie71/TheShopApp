@@ -9,8 +9,8 @@ let timer;
 export const authenticate = (userId, token) => {
         return dispatch => {
             dispatch(setLogoutTimer());
+            dispatch({ type: AUTHENTICATE, userId: userId, token: token })
         }
-        return { type: AUTHENTICATE, userId: userId, token: token }
 };
 
 export const signup = (email, password) => {
