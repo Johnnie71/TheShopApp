@@ -90,6 +90,10 @@ export const logout = () => {
     return { type: LOGOUT }
 };
 
+const clearLogoutTimer = () => {
+    
+};
+
 const setLogoutTimer = expirationTime => {
     return dispatch => {
        timer = setTimeout(() => {
