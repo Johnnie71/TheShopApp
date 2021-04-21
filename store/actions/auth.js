@@ -6,9 +6,9 @@ export const LOGOUT = 'LOGOUT';
 
 let timer;
 
-export const authenticate = (userId, token) => {
+export const authenticate = (userId, token, expirTime) => {
         return dispatch => {
-            dispatch(setLogoutTimer());
+            dispatch(setLogoutTimer(expirTime));
             dispatch({ type: AUTHENTICATE, userId: userId, token: token })
         };
 };
