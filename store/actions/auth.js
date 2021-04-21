@@ -89,7 +89,11 @@ export const logout = () => {
 };
 
 const setLogoutTimer = expirationTime => {
-    setTimeout(, expirationTime)
+    return dispatch => {
+        setTimeout(() => {
+            dispatch(logout())
+        }, expirationTime);
+    };
 };
 
 const saveDataToStorage = (token, userId, expirationDate) => {
