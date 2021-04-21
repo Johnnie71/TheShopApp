@@ -42,7 +42,7 @@ export const signup = (email, password) => {
 
         const resData = await response.json();
         console.log(resData);
-        dispatch(authenticate(resData.localId, resData.idToken, parseInt(resData.expiresIn)));
+        dispatch(authenticate(resData.localId, resData.idToken, parseInt(resData.expiresIn) * 1000));
         const expirationDate = new Date(
             new Date().getTime() + parseInt(resData.expiresIn) * 1000
         );
@@ -71,7 +71,7 @@ export const login = (email, password) => {
             const errorResponseData = await response.json();
             const errorId = errorResponseData.error.message;
             let message = "Something went wrong!";
-            
+
             if (errorId === "EMAIL_NOT_FOUND") {
                 message = 'This email could not be found!'
             } else if (errorId === "INVALID_PASSWORD") {
