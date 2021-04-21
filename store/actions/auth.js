@@ -91,7 +91,9 @@ export const logout = () => {
 };
 
 const clearLogoutTimer = () => {
-    
+    if(timer) {
+        clearTimeout(timer);
+    }
 };
 
 const setLogoutTimer = expirationTime => {
