@@ -92,7 +92,7 @@ export const logout = () => {
 
 const setLogoutTimer = expirationTime => {
     return dispatch => {
-        setTimeout(() => {
+       timer = setTimeout(() => {
             dispatch(logout())
         }, expirationTime);
     };
