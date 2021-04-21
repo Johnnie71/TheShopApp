@@ -88,6 +88,7 @@ export const login = (email, password) => {
 
 export const logout = () => {
     clearLogoutTimer();
+    AsyncStorageStatic.removeItem('userData');
     return { type: LOGOUT }
 };
 
