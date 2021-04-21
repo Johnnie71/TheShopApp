@@ -87,6 +87,7 @@ export const login = (email, password) => {
 };
 
 export const logout = () => {
+    clearLogoutTimer();
     return { type: LOGOUT }
 };
 
