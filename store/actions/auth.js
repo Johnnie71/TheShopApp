@@ -88,6 +88,10 @@ export const logout = () => {
     return { type: LOGOUT }
 };
 
+const setLogoutTimer = expirationTime => {
+    
+}
+
 const saveDataToStorage = (token, userId, expirationDate) => {
     AsyncStorageStatic.setItem(
         "userData", 
