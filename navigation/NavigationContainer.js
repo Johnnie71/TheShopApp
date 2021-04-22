@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 
 import ShopNavigator from './ShopNavigator';
@@ -8,7 +8,7 @@ const NavigationContainer = props => {
 
     useEffect(() => {
         if (!isAuth) {
-            
+
         }
     }, [isAuth]);
 
