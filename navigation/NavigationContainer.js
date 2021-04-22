@@ -13,7 +13,7 @@ const NavigationContainer = props => {
         }
     }, [isAuth]);
 
-    return <ShopNavigator />;
+    return <ShopNavigator ref={navRef} />;
 };
 
 export default NavigationContainer;
