@@ -5,6 +5,9 @@ import ShopNavigator from './ShopNavigator';
 
 const NavigationContainer = props => {
     const isAuth = useSelector(state => !!state.auth.token);
+
+    useEffect(, [isAuth]);
+
     return <ShopNavigator />;
 };
 
