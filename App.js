@@ -12,7 +12,7 @@ import productsReducer from './store/reducers/products';
 import ordersReducer from './store/reducers/orders';
 import cartReducer from './store/reducers/cart';
 import authReducer from './store/reducers/auth';
-// import NavigationContainer from './navigation/AppNavigator'
+import NavigationContainer from './navigation/NavigationContainer';
 import AppNavigator from './navigation/AppNavigator';
 
 const rootReducer = combineReducers({
