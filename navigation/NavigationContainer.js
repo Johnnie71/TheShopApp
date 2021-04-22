@@ -9,7 +9,7 @@ const NavigationContainer = props => {
 
     useEffect(() => {
         if (!isAuth) {
-
+            navRef.current.dispatch();
         }
     }, [isAuth]);
 
