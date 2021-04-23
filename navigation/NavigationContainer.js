@@ -8,7 +8,7 @@ const NavigationContainer = props => {
     
     const isAuth = useSelector(state => !!state.auth.token);
 
-    return <ShopNavigator ref={navRef} />;
+    return <ShopNavigator />;
 };
 
 export default NavigationContainer;
