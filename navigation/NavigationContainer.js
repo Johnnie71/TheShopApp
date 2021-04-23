@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { NavigationActions } from 'react-navigation';
 
 import ShopNavigator from './ShopNavigator';
 
