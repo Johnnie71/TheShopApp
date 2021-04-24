@@ -11,7 +11,7 @@ import productsReducer from './store/reducers/products';
 import ordersReducer from './store/reducers/orders';
 import cartReducer from './store/reducers/cart';
 import authReducer from './store/reducers/auth';
-import ApplicationNavigator from './navigation/NavigationContainer';
+import ApplicationNavigator from './navigation/ApplicationNavigator';
 
 const rootReducer = combineReducers({
   products: productsReducer,
