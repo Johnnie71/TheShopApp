@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import ShopNavigator from './ShopNavigator';
+import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
 
 const MyStack = createStackNavigator();
 
