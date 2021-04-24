@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import ShopNavigator from './ShopNavigator';
 
+const MyStack = createStackNavigator();
+
 const ApplicationNavigator = props => {
     const isAuth = useSelector(state => !!state.auth.token);
 
