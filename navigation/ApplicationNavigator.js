@@ -10,7 +10,11 @@ const MyStack = createStackNavigator();
 const ApplicationNavigator = props => {
     const isAuth = useSelector(state => !!state.auth.token);
 
-    return ;
+    return (
+        <NavigationContainer>
+            
+        </NavigationContainer>
+    );
 };
 
 export default ApplicationNavigator;
