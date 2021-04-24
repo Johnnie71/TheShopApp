@@ -4,10 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import ShopNavigator from './ShopNavigator';
 
-const NavigationContainer = props => {
+const ApplicationNavigator = props => {
     const isAuth = useSelector(state => !!state.auth.token);
 
     return ;
 };
 
-export default NavigationContainer;
+export default ApplicationNavigator;
