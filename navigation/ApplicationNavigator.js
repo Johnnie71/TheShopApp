@@ -12,7 +12,9 @@ const ApplicationNavigator = props => {
 
     return (
         <NavigationContainer>
-            
+            <MyStack.Navigator>
+                
+            </MyStack.Navigator>
         </NavigationContainer>
     );
 };
