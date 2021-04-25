@@ -1,12 +1,6 @@
 import React from 'react';
 // import { createStackNavigator } from '@react-navigation/stack';
-import {
-    createStackNavigator,
-    createDrawerNavigator,
-    createSwitchNavigator,
-    createAppContainer,
-    DrawerItems 
-} from 'react-navigation';
+
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Platform, SafeAreaView, Button, View } from 'react-native';
 import { useDispatch } from 'react-redux';
