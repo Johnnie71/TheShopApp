@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 
-// import ShopNavigator from './ShopNavigator';
+import ShopNavigator from './ShopNavigator';
 import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
 
 
