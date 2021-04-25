@@ -11,12 +11,7 @@ const ApplicationNavigator = props => {
 
     return (
         <NavigationContainer>
-            <MyStack.Navigator>
-                <MyStack.Screen 
-                name='ProductsOverview' 
-                component={ProductsOverviewScreen} 
-            />
-            </MyStack.Navigator>
+            
         </NavigationContainer>
     );
 };
