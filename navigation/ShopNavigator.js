@@ -1,6 +1,5 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Platform, SafeAreaView, Button, View } from 'react-native';
@@ -33,6 +32,7 @@ const defaultNavOptions = {
 };
 
 const ProductsStackNavigator = createStackNavigator();
+
 
 const ProductsNavigator = () => {
     return <ProductsStackNavigator.Navigator screenOptions={defaultNavOptions} >
