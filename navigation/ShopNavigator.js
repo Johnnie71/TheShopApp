@@ -40,34 +40,7 @@ export const ProductsNavigator = () => {
         <ProductsStackNavigator.Screen 
             name="ProductsOverview" 
             component={ProductsOverviewScreen}
-            options={navData => {
-                return {
-                    headerTitle: 'All Products',
-                    headerLeft: () => (
-                        <HeaderButtons HeaderButtonComponent={HeaderButton}>
-                            <Item 
-                                title="Menu" 
-                                iconName={ Platform.OS === 'android' ? 'md-menu' : 'ios-menu' } 
-                                onPress={() => {
-                                    navData.navigation.toggleDrawer();
-                                }} 
-                            />
-                         </HeaderButtons>
-                    ),
-                    headerRight: () => (
-                        <HeaderButtons HeaderButtonComponent={HeaderButton}>
-                            <Item 
-                                title="Cart" 
-                                iconName={ Platform.OS === 'android' ? 'md-cart' : 'ios-cart' } 
-                                onPress={() => {
-                                    navData.navigation.navigate('Cart')
-                                }} 
-                            />
-                        </HeaderButtons>
-                        )
-                };
-               }
-              }  
+            options={}  
             />
              <ProductsStackNavigator.Screen 
                 name="ProductDetail" 
