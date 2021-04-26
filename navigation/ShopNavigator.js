@@ -40,7 +40,7 @@ export const ProductsNavigator = () => {
         <ProductsStackNavigator.Screen 
             name="ProductsOverview" 
             component={ProductsOverviewScreen}
-            options={}  
+            options={productsOverviewScreenOptions}  
             />
              <ProductsStackNavigator.Screen 
                 name="ProductDetail" 
