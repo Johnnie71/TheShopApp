@@ -117,7 +117,6 @@ const ProductsOverviewScreen = props => {
 };
 
 export const screenOptions = navData => {
-
     return {
     headerTitle: 'All Products',
     headerLeft: () => <HeaderButtons HeaderButtonComponent={HeaderButton}>
