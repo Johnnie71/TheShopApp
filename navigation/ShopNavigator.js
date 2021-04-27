@@ -91,21 +91,23 @@ export const ProductsNavigator = () => {
 //     defaultNavigationOptions: defaultNavOptions
 // });
 
-const AdminNavigator = createStackNavigator({
-    UserProducts: UserProductsScreen,
-    EditProduct: EditProductScreen
-}, {
-   navigationOptions: {
-      drawerIcon: drawerConfig => (
-        <Ionicons 
-             name={Platform.OS === 'android' ? 'md-create' : 'ios-create'} 
-             size={23}
-             color={drawerConfig.tintColor}
-        />
-      )
-},
-    defaultNavigationOptions: defaultNavOptions
-});
+const AdminStackNavigator = createStackNavigator();
+
+// const AdminNavigator = createStackNavigator({
+//     UserProducts: UserProductsScreen,
+//     EditProduct: EditProductScreen
+// }, {
+//    navigationOptions: {
+//       drawerIcon: drawerConfig => (
+//         <Ionicons 
+//              name={Platform.OS === 'android' ? 'md-create' : 'ios-create'} 
+//              size={23}
+//              color={drawerConfig.tintColor}
+//         />
+//       )
+// },
+//     defaultNavigationOptions: defaultNavOptions
+// });
 
 const ShopNavigator = createDrawerNavigator({
     Products: ProductsNavigator,
