@@ -95,7 +95,7 @@ const AdminStackNavigator = createStackNavigator();
 
 export const AdminNavigator = () => {
     return (
-        <AdminStackNavigator.Navigator>
+        <AdminStackNavigator.Navigator screenOptions={defaultNavOptions}>
             <AdminStackNavigator.Screen 
                 name="UserProducts" 
                 component={UserProductsScreen} 
