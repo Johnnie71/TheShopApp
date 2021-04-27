@@ -96,7 +96,7 @@ const AdminStackNavigator = createStackNavigator();
 export const AdminNavigator = () => {
     return (
         <AdminStackNavigator.Navigator>
-
+            <AdminStackNavigator.Screen />
         </AdminStackNavigator.Navigator>
     )
 }
