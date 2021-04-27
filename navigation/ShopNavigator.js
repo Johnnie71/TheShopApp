@@ -11,7 +11,7 @@ import ProductsOverviewScreen, { screenOptions as productsOverviewScreenOptions 
 import ProductDetailsScreen, { screenOptions as productDetailScreenOptions } from '../screens/shop/ProductDetailScreen';
 import CartScreen, { screenOptions as cartScreenOptions} from '../screens/shop/CartScreen';
 import OrdersScreen, { screenOptions as orderScreenOptions } from '../screens/shop/OrdersScreen';
-import UserProductsScreen from '../screens/user/UserProductScreen';
+import UserProductsScreen, { screenOptions as userProductsScreenOptions } from '../screens/user/UserProductScreen';
 import EditProductScreen from '../screens/user/EditProductScreen';
 import AuthScreen from '../screens/user/AuthScreen';
 import StartupScreen from '../screens/StartUpScreen';
