@@ -12,7 +12,7 @@ import ProductDetailsScreen, { screenOptions as productDetailScreenOptions } fro
 import CartScreen, { screenOptions as cartScreenOptions} from '../screens/shop/CartScreen';
 import OrdersScreen, { screenOptions as orderScreenOptions } from '../screens/shop/OrdersScreen';
 import UserProductsScreen, { screenOptions as userProductsScreenOptions } from '../screens/user/UserProductScreen';
-import EditProductScreen, { screenOptions as editScreenOptions } from '../screens/user/EditProductScreen';
+import EditProductScreen, { screenOptions as editProductsScreenOptions } from '../screens/user/EditProductScreen';
 import AuthScreen from '../screens/user/AuthScreen';
 import StartupScreen from '../screens/StartUpScreen';
 import Colors from '../constants/Colors';
@@ -104,6 +104,7 @@ export const AdminNavigator = () => {
             <AdminStackNavigator.Screen 
                 name="EditProducts" 
                 component={EditProductScreen} 
+                options={editProductsScreenOptions}
             />
         </AdminStackNavigator.Navigator>
     )
