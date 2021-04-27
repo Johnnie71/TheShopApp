@@ -126,6 +126,8 @@ export const AdminNavigator = () => {
 //     defaultNavigationOptions: defaultNavOptions
 // });
 
+const ShopDrawerNavigator = createDrawerNavigator();
+
 const ShopNavigator = createDrawerNavigator({
     Products: ProductsNavigator,
     Orders: OrdersNavigator,
