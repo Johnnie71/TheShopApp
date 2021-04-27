@@ -131,7 +131,7 @@ const ShopDrawerNavigator = createDrawerNavigator();
 const ShopNavigator = () => {
     return (
         <ShopDrawerNavigator.Navigator>
-            <ShopDrawerNavigator.Screen name="Products" />
+            <ShopDrawerNavigator.Screen name="Products" component={ProductsNavigator}/>
         </ShopDrawerNavigator.Navigator>
     )
 };
