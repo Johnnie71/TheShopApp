@@ -93,6 +93,14 @@ export const ProductsNavigator = () => {
 
 const AdminStackNavigator = createStackNavigator();
 
+export const AdminNavigator = () => {
+    return (
+        <AdminStackNavigator.Navigator>
+
+        </AdminStackNavigator.Navigator>
+    )
+}
+
 // const AdminNavigator = createStackNavigator({
 //     UserProducts: UserProductsScreen,
 //     EditProduct: EditProductScreen
