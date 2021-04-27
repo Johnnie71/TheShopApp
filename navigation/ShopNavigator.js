@@ -97,8 +97,12 @@ export const AdminNavigator = () => {
     return (
         <AdminStackNavigator.Navigator>
             <AdminStackNavigator.Screen 
-                name="User Products" 
+                name="UserProducts" 
                 component={UserProductsScreen} 
+            />
+            <AdminStackNavigator.Screen 
+                name="EditProducts" 
+                component={EditProductScreen} 
             />
         </AdminStackNavigator.Navigator>
     )
