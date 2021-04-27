@@ -141,13 +141,15 @@ const ShopNavigator = createDrawerNavigator({
 const OrdersStackNavigator = createStackNavigator();
 
 export const OrdersNavigator = () => {
-    return <OrdersStackNavigator.Navigator screenOptions={defaultNavOptions}>
+    return (
+     <OrdersStackNavigator.Navigator screenOptions={defaultNavOptions}>
         <OrdersStackNavigator.Screen 
             name="Orders" 
             component={OrdersScreen}
             options={orderScreenOptions}
         />
-    </OrdersStackNavigator.Navigator>
+     </OrdersStackNavigator.Navigator>
+    )
 };
 
 const AuthNavigator = createStackNavigator({
