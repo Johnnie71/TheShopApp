@@ -128,35 +128,43 @@ export const AdminNavigator = () => {
 
 const ShopDrawerNavigator = createDrawerNavigator();
 
-const ShopNavigator = createDrawerNavigator({
-    Products: ProductsNavigator,
-    Orders: OrdersNavigator,
-    Admin: AdminNavigator
-},
-    {
-     contentOptions: {
-        activeTintColor: Colors.primary
-     },
-     contentComponent: props => {
-         const dispatch = useDispatch();
-         return (
-             <View style={{flex: 1, paddingTop: 20}}>
-                 <SafeAreaView forceInset={{top: 'always', horizontal: 'never'}}>
-                     <DrawerItems {...props} />
-                     <Button 
-                        title="Logout" 
-                        color={Colors.primary} 
-                        onPress={() => {
-                            dispatch(authActions.logout());
-                            // props.navigation.navigate('Auth');
-                        }} 
-                     />
-                 </SafeAreaView>
-             </View>
-         )
-     }
-    }
-);
+const ShopNavigator = () => {
+    return (
+        <ShopDrawerNavigator.Navigator>
+            
+        </ShopDrawerNavigator.Navigator>
+    )
+};
+
+// const ShopNavigator = createDrawerNavigator({
+//     Products: ProductsNavigator,
+//     Orders: OrdersNavigator,
+//     Admin: AdminNavigator
+// },
+//     {
+//      contentOptions: {
+//         activeTintColor: Colors.primary
+//      },
+//      contentComponent: props => {
+//          const dispatch = useDispatch();
+//          return (
+//              <View style={{flex: 1, paddingTop: 20}}>
+//                  <SafeAreaView forceInset={{top: 'always', horizontal: 'never'}}>
+//                      <DrawerItems {...props} />
+//                      <Button 
+//                         title="Logout" 
+//                         color={Colors.primary} 
+//                         onPress={() => {
+//                             dispatch(authActions.logout());
+//                             // props.navigation.navigate('Auth');
+//                         }} 
+//                      />
+//                  </SafeAreaView>
+//              </View>
+//          )
+//      }
+//     }
+// );
 
 const OrdersStackNavigator = createStackNavigator();
 
