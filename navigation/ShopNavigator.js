@@ -135,6 +135,10 @@ const ShopNavigator = () => {
                 name="Products" 
                 component={ProductsNavigator}
             />
+            <ShopDrawerNavigator.Screen 
+                name="Orders" 
+                component={OrdersNavigator}
+            />
         </ShopDrawerNavigator.Navigator>
     )
 };
