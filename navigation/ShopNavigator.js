@@ -33,7 +33,6 @@ const defaultNavOptions = {
 
 const ProductsStackNavigator = createStackNavigator();
 
-
 export const ProductsNavigator = () => {
     return (
      <ProductsStackNavigator.Navigator screenOptions={defaultNavOptions} >
