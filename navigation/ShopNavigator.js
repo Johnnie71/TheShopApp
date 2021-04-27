@@ -139,6 +139,10 @@ const ShopNavigator = () => {
                 name="Orders" 
                 component={OrdersNavigator}
             />
+            <ShopDrawerNavigator.Screen 
+                name="Admin" 
+                component={AdminNavigator}
+            />
         </ShopDrawerNavigator.Navigator>
     )
 };
