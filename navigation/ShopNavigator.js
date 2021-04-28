@@ -135,11 +135,11 @@ const ShopNavigator = () => {
                 name="Products" 
                 component={ProductsNavigator}
                 options={{
-                    drawerIcon: drawerConfig => (
+                    drawerIcon: props => (
                         <Ionicons 
                             name={Platform.OS === 'android' ? 'md-cart' : 'ios-cart'} 
                             size={23}
-                            color={drawerConfig.tintColor}
+                            color={props.color}
                         />
                    )
                 }}
