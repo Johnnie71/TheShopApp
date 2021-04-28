@@ -134,7 +134,15 @@ const ShopNavigator = () => {
             <ShopDrawerNavigator.Screen 
                 name="Products" 
                 component={ProductsNavigator}
-                options={}
+                options={{
+                    drawerIcon: drawerConfig => (
+                        <Ionicons 
+                            name={Platform.OS === 'android' ? 'md-cart' : 'ios-cart'} 
+                            size={23}
+                            color={drawerConfig.tintColor}
+                        />
+                   )
+                }}
             />
             <ShopDrawerNavigator.Screen 
                 name="Orders" 
