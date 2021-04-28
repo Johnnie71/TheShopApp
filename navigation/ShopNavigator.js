@@ -145,7 +145,7 @@ const ShopNavigator = () => {
                             size={23}
                             color={props.color}
                         />
-                                )
+                    )
                 }}
             />
             <ShopDrawerNavigator.Screen 
