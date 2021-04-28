@@ -134,6 +134,7 @@ const ShopNavigator = () => {
             <ShopDrawerNavigator.Screen 
                 name="Products" 
                 component={ProductsNavigator}
+                options={}
             />
             <ShopDrawerNavigator.Screen 
                 name="Orders" 
