@@ -130,7 +130,7 @@ const ShopDrawerNavigator = createDrawerNavigator();
 
 const ShopNavigator = () => {
     return (
-        <ShopDrawerNavigator.Navigator>
+        <ShopDrawerNavigator.Navigator drawerContent={} >
             <ShopDrawerNavigator.Screen 
                 name="Products" 
                 component={ProductsNavigator}
