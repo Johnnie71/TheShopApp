@@ -143,11 +143,11 @@ const ShopNavigator = () => {
                 name="Admin" 
                 component={AdminNavigator}
                 options={{
-                    drawerIcon: drawerConfig => (
+                    drawerIcon: props => (
                       <Ionicons 
                            name={Platform.OS === 'android' ? 'md-create' : 'ios-create'} 
                            size={23}
-                           color={drawerConfig.tintColor}
+                           color={props.color}
                       />
                     )
               }}
