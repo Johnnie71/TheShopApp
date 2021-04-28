@@ -142,6 +142,15 @@ const ShopNavigator = () => {
             <ShopDrawerNavigator.Screen 
                 name="Admin" 
                 component={AdminNavigator}
+                options={{
+                    drawerIcon: drawerConfig => (
+                      <Ionicons 
+                           name={Platform.OS === 'android' ? 'md-create' : 'ios-create'} 
+                           size={23}
+                           color={drawerConfig.tintColor}
+                      />
+                    )
+              }}
             />
         </ShopDrawerNavigator.Navigator>
     )
