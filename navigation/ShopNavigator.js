@@ -138,6 +138,15 @@ const ShopNavigator = () => {
             <ShopDrawerNavigator.Screen 
                 name="Orders" 
                 component={OrdersNavigator}
+                options={{
+                    drawerIcon: props => (
+                        <Ionicons 
+                            name={Platform.OS === 'android' ? 'md-list' : 'ios-list'} 
+                            size={23}
+                            color={props.color}
+                        />
+                                )
+                }}
             />
             <ShopDrawerNavigator.Screen 
                 name="Admin" 
