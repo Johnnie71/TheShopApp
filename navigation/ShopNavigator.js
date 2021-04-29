@@ -239,16 +239,18 @@ export const OrdersNavigator = () => {
     )
 };
 
-const AuthNavigator = createStackNavigator({
-    Auth: AuthScreen
-}, {
-    defaultNavigationOptions: defaultNavOptions
-})
+const AuthStackNavigator = createStackNavigator();
 
-const MainNavigator = createSwitchNavigator({
-    Startup: StartupScreen,
-    Auth: AuthNavigator,
-    Shop: ShopNavigator
-});
+// const AuthNavigator = createStackNavigator({
+//     Auth: AuthScreen
+// }, {
+//     defaultNavigationOptions: defaultNavOptions
+// })
+
+// const MainNavigator = createSwitchNavigator({
+//     Startup: StartupScreen,
+//     Auth: AuthNavigator,
+//     Shop: ShopNavigator
+// });
 
 export default createAppContainer(MainNavigator);
