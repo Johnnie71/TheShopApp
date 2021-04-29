@@ -131,7 +131,24 @@ const ShopDrawerNavigator = createDrawerNavigator();
 const ShopNavigator = () => {
     return (
         <ShopDrawerNavigator.Navigator 
-          drawerContent={} 
+          drawerContent={props => {
+            const dispatch = useDispatch();
+            return (
+                <View style={{flex: 1, paddingTop: 20}}>
+                    <SafeAreaView forceInset={{top: 'always', horizontal: 'never'}}>
+                        <DrawerItems {...props} />
+                        <Button 
+                           title="Logout" 
+                           color={Colors.primary} 
+                           onPress={() => {
+                               dispatch(authActions.logout());
+                               // props.navigation.navigate('Auth');
+                           }} 
+                        />
+                    </SafeAreaView>
+                </View>
+            )
+          }} 
           drawerContentOptions={{
               activeTintColor: Colors.primary
           }} >
