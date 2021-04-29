@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createDrawerNavigator, DrawerItemList } from '@react-navigation/drawer';
 import { Platform, SafeAreaView, Button, View } from 'react-native';
 import { useDispatch } from 'react-redux';
 import * as authActions from '../store/actions/auth';
@@ -137,7 +137,7 @@ const ShopNavigator = () => {
             return (
                 <View style={{flex: 1, paddingTop: 20}}>
                     <SafeAreaView forceInset={{top: 'always', horizontal: 'never'}}>
-                        <DrawerItems {...props} />
+                        <DrawerItemList {...props} />
                         <Button 
                            title="Logout" 
                            color={Colors.primary} 
