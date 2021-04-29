@@ -13,7 +13,7 @@ import CartScreen, { screenOptions as cartScreenOptions} from '../screens/shop/C
 import OrdersScreen, { screenOptions as orderScreenOptions } from '../screens/shop/OrdersScreen';
 import UserProductsScreen, { screenOptions as userProductsScreenOptions } from '../screens/user/UserProductScreen';
 import EditProductScreen, { screenOptions as editProductsScreenOptions } from '../screens/user/EditProductScreen';
-import AuthScreen from '../screens/user/AuthScreen';
+import AuthScreen, { screenOptions as authScreenOptions} from '../screens/user/AuthScreen';
 import StartupScreen from '../screens/StartUpScreen';
 import Colors from '../constants/Colors';
 
@@ -247,6 +247,7 @@ export const AuthNavigator = () => {
             <AuthStackNavigator.Screen 
                 name="Auth"
                 component={AuthScreen}
+                options={authScreenOptions}
             />
         </AuthStackNavigator.Navigator>
     )
