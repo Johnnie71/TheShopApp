@@ -241,6 +241,10 @@ export const OrdersNavigator = () => {
 
 const AuthStackNavigator = createStackNavigator();
 
+export const AuthNavigator = () => {
+
+};
+
 // const AuthNavigator = createStackNavigator({
 //     Auth: AuthScreen
 // }, {
