@@ -129,6 +129,7 @@ export const AdminNavigator = () => {
 const ShopDrawerNavigator = createDrawerNavigator();
 
 const ShopNavigator = () => {
+    const dispatch = useDispatch();
     return (
         <ShopDrawerNavigator.Navigator 
           drawerContent={props => {
