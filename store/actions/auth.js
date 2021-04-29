@@ -7,6 +7,10 @@ export const TRY_AUTO_LOGIN = 'TRY_AUTO_LOGIN';
 
 let timer;
 
+export const setTryAutoLoginn = () => {
+    return { type: TRY_AUTO_LOGIN }
+};
+
 export const authenticate = (userId, token, expirTime) => {
         return dispatch => {
             dispatch(setLogoutTimer(expirTime));
