@@ -244,7 +244,11 @@ const AuthStackNavigator = createStackNavigator();
 export const AuthNavigator = () => {
     return (
         <AuthStackNavigator.Navigator >
-            <AuthStackNavigator.Screen />
+            <AuthStackNavigator.Screen 
+                name="Auth"
+                component={AuthScreen}
+                options={defaultNavOptions}
+             />
         </AuthStackNavigator.Navigator>
     )
 };
