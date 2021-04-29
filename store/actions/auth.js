@@ -3,6 +3,7 @@ import { AsyncStorageStatic } from '@react-native-async-storage/async-storage';
 // export const LOGIN = 'LOGIN';
 export const AUTHENTICATE = 'AUTHENTICATE';
 export const LOGOUT = 'LOGOUT';
+export const TRY_AUTO_LOGIN = 'TRY_AUTO_LOGIN';
 
 let timer;
 
