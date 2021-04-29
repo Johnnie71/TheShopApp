@@ -244,7 +244,7 @@ const AuthStackNavigator = createStackNavigator();
 export const AuthNavigator = () => {
     return (
         <AuthStackNavigator.Navigator >
-
+            <AuthStackNavigator.Screen />
         </AuthStackNavigator.Navigator>
     )
 };
