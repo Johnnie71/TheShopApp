@@ -1,4 +1,4 @@
-import { AUTHENTICATE, LOGOUT } from "../actions/auth";
+import { AUTHENTICATE, LOGOUT, TRY_AUTO_LOGIN } from "../actions/auth";
 
 const initialState = {
     token: null,
@@ -14,6 +14,11 @@ export default (state = initialState, action) => {
                 userId: action.userId,
                 didTryAutoLogin: true
             };
+        case TRY_AUTO_LOGIN:
+            return {
+                ...state,
+                setTryAutoLogin: true
+            }
         case LOGOUT:
             return initialState;
         // case SIGNUP:
