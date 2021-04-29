@@ -242,7 +242,11 @@ export const OrdersNavigator = () => {
 const AuthStackNavigator = createStackNavigator();
 
 export const AuthNavigator = () => {
+    return (
+        <AuthStackNavigator.Navigator >
 
+        </AuthStackNavigator.Navigator>
+    )
 };
 
 // const AuthNavigator = createStackNavigator({
