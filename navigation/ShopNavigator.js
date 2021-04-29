@@ -132,7 +132,9 @@ const ShopNavigator = () => {
     return (
         <ShopDrawerNavigator.Navigator 
           drawerContent={} 
-          drawerContentOptions={} >
+          drawerContentOptions={{
+              activeTintColor: Colors.primary
+          }} >
             <ShopDrawerNavigator.Screen 
                 name="Products" 
                 component={ProductsNavigator}
