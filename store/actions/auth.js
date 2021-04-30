@@ -7,7 +7,7 @@ export const TRY_AUTO_LOGIN = 'TRY_AUTO_LOGIN';
 
 let timer;
 
-export const setTryAutoLoginn = () => {
+export const setTryAutoLogin = () => {
     return { type: TRY_AUTO_LOGIN }
 };
 
