@@ -13,7 +13,7 @@ const ApplicationNavigator = props => {
 
     return (
         <NavigationContainer>
-            <ShopNavigator />
+            {isAuth && <ShopNavigator />}
             <AuthNavigator />
             <StartupScreen />
         </NavigationContainer>
