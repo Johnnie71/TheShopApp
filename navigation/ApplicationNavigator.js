@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import { ShopNavigator, AuthNavigator } from './ShopNavigator';
 import StartUpScreen from '../screens/StartUpScreen';
+import StartupScreen from '../screens/StartUpScreen';
 
 
 const ApplicationNavigator = props => {
@@ -12,6 +13,8 @@ const ApplicationNavigator = props => {
     return (
         <NavigationContainer>
             <ShopNavigator />
+            <AuthNavigator />
+            <StartupScreen />
         </NavigationContainer>
     );
 };
