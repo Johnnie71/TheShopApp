@@ -26,7 +26,7 @@ const StartupScreen = props => {
 
             if(expirationDate <= new Date() || !token || !userId) {
                 // props.navigation.navigate('Auth');
-                dispatch(authActions.setTryAutoLogin()):
+                dispatch(authActions.setTryAutoLogin());
                 return;
             };
 
