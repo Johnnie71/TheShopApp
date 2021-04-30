@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { ShopNavigator, AuthNavigator } from './ShopNavigator';
-import StartUpScreen from '../screens/StartUpScreen';
 import StartupScreen from '../screens/StartUpScreen';
 
 
@@ -14,7 +13,7 @@ const ApplicationNavigator = props => {
     return (
         <NavigationContainer>
             {isAuth && <ShopNavigator />}
-            <AuthNavigator />
+            {!isAuth && didTryAutoLogin && <AuthNavigator />}
             <StartupScreen />
         </NavigationContainer>
     );
