@@ -220,8 +220,7 @@ export const screenOptions = navData => {
     return {
         headerTitle: routeParams.productId
          ? 'Edit Product' 
-         : 'Add Product',
-         
+         : 'Add Product'
     };
 };
 
