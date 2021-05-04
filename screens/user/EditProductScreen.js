@@ -116,7 +116,17 @@ const EditProductScreen = props => {
     }, [dispatch, productId, formState]);
 
     useEffect(() => {
-        props.navigation.setOptions({});
+        props.navigation.setOptions({
+            headerRight: () => (
+                <HeaderButtons HeaderButtonComponent={HeaderButton}>
+                <Item 
+                    title="Save" 
+                    iconName={ Platform.OS === 'android' ? 'md-checkmark' : 'ios-checkmark' } 
+                    onPress={submitHandler} 
+                />
+            </HeaderButtons>
+            ) 
+        });
     },[submitHandler]);
 
     const inputChangeHandler = useCallback(
@@ -211,15 +221,7 @@ export const screenOptions = navData => {
         headerTitle: routeParams.productId
          ? 'Edit Product' 
          : 'Add Product',
-         headerRight: () => (
-            <HeaderButtons HeaderButtonComponent={HeaderButton}>
-            <Item 
-                title="Save" 
-                iconName={ Platform.OS === 'android' ? 'md-checkmark' : 'ios-checkmark' } 
-                onPress={submitFunction} 
-            />
-        </HeaderButtons>
-        ) 
+         
     };
 };
 
