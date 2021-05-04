@@ -46,7 +46,7 @@ const EditProductScreen = props => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState();
 
-    const productId = props.navigation.getParam('productId');
+    const productId = props.route.params.productId;
     const editedProduct = useSelector(state => 
         state.products.userProducts.find(prod => prod.id === productId)
     );
