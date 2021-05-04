@@ -36,7 +36,7 @@ const ProductDetailsScreen = props => {
 
 export const screenOptions = navData => {
     return {
-        headerTitle: navData.navigation.getParam('productTitle')
+        headerTitle: navData.route.params.productTitle
     }
 };
 
