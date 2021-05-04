@@ -20,7 +20,10 @@ export default (state = initialState, action) => {
                 setTryAutoLogin: true
             }
         case LOGOUT:
-            return initialState;
+            return {
+                ...initialState,
+                didTryAutoLogin: true
+            };
         // case SIGNUP:
         //     return {
         //         token: action.token,
