@@ -206,7 +206,7 @@ const EditProductScreen = props => {
 
 
 export const screenOptions = navData => {
-    const submitFunction = navData.route.params.submit;
+    const submitFunction = navData.route.params ? navData.route.params.submit : null;
     return {
         headerTitle: navData.route.params.productId
          ? 'Edit Product' 
