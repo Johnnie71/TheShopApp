@@ -116,7 +116,7 @@ const EditProductScreen = props => {
     }, [dispatch, productId, formState]);
 
     useEffect(() => {
-        props.navigation.setOptions();
+        props.navigation.setOptions({});
     },[submitHandler]);
 
     const inputChangeHandler = useCallback(
