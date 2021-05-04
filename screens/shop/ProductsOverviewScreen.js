@@ -42,7 +42,7 @@ const ProductsOverviewScreen = props => {
         );
 
         return () => {
-            willFocus.remove();
+            unsubscribe();
         };
     }, [loadProducts])
 
