@@ -74,6 +74,9 @@ export const createProduct = (title, description, imageUrl, price) => {
       if(statusObj.status !== 'granted'){
         const updatedStatusObj = await Permissions.askAsync(Permissions.NOTIFICATIONS);
       }
+      if( updatedStatusObj.status !== 'granted') {
+        
+      }
       Notifications.getExpoPushTokenAsync();
       const token = getState().auth.token;
       const userId = getState().auth.userId;
