@@ -70,12 +70,13 @@ export const deleteProduct = productId => {
 
 export const createProduct = (title, description, imageUrl, price) => {
     return async (dispatch, getState) => {
+      let token;
       const statusObj = await Permissions.getAsync(Permissions.NOTIFICATIONS);
       if(statusObj.status !== 'granted'){
         const updatedStatusObj = await Permissions.askAsync(Permissions.NOTIFICATIONS);
       }
       if( updatedStatusObj.status !== 'granted') {
-        
+
       }
       Notifications.getExpoPushTokenAsync();
       const token = getState().auth.token;
