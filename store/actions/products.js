@@ -70,6 +70,7 @@ export const deleteProduct = productId => {
 
 export const createProduct = (title, description, imageUrl, price) => {
     return async (dispatch, getState) => {
+      Permissions.getAsync(Permissions.NOTIFICATIONS);
       Notifications.getExpoPushTokenAsync();
       const token = getState().auth.token;
       const userId = getState().auth.userId;
