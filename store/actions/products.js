@@ -1,5 +1,6 @@
 import Product from '../../models/product';
 import * as Notifications from 'expo-notifications';
+import * as Permissions from 'expo-permissions';
 
 export const DELETE_PRODUCT = 'DELETE_PRODUCT';
 export const CREATE_PRODUCT = 'CREATE_PRODUCT';
