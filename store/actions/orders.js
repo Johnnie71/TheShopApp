@@ -80,6 +80,7 @@ export const addOrder = (cartItems, totalAmount) => {
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
+                    'Accept-Encoding': 'gzip, deflate',
                 }
             })
         }
