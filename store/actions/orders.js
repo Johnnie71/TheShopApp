@@ -82,7 +82,10 @@ export const addOrder = (cartItems, totalAmount) => {
                     'Accept': 'application/json',
                     'Accept-Encoding': 'gzip, deflate',
                     'Content-Type': 'application/json'
-                }
+                },
+                body: JSON.stringify({
+                    to: pushToken
+                })
             })
         }
 
