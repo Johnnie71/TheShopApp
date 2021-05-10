@@ -75,7 +75,7 @@ export const createProduct = (title, description, imageUrl, price) => {
       if(statusObj.status !== 'granted'){
         statusObj = await Permissions.askAsync(Permissions.NOTIFICATIONS);
       }
-      if( updatedStatusObj.status !== 'granted') {
+      if( statusObj.status !== 'granted') {
         pushToken = null;
       } else {
         pushToken = (await Notifications.getExpoPushTokenAsync()).data;
