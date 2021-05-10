@@ -28,6 +28,7 @@ export const fetchProducts = () => {
           new Product(
             key, 
             responseData[key].ownerId, 
+            responseData[key].ownerPushToken,
             responseData[key].title, 
             responseData[key].imageUrl, 
             responseData[key].description, 
