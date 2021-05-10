@@ -14,6 +14,7 @@ export default (state = initialState, action) => {
             const addedProduct = action.product;
             const prodPrice = addedProduct.price;
             const prodTitle = addedProduct.title;
+            const pushToken = addedProduct.pushToken;
 
             let updatedOrNewCartItem;
 
