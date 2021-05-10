@@ -78,6 +78,9 @@ export const addOrder = (cartItems, totalAmount) => {
 
             fetch('https://exp.host/--/api/v2/push/send', {
                 method: "POST",
+                headers: {
+                    'Accept': 'application/json',
+                }
             })
         }
 
