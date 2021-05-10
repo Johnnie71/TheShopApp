@@ -71,7 +71,12 @@ export const addOrder = (cartItems, totalAmount) => {
                 amount: totalAmount,
                 date: date
             } 
-        })
+        });
+
+        for (const cartItems of cartItems) {
+            
+        }
+
     };
 
    
