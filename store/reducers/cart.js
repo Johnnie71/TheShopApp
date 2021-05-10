@@ -23,6 +23,7 @@ export default (state = initialState, action) => {
                     state.items[addedProduct.id].quantity + 1,
                     prodPrice,
                     prodTitle,
+                    pushToken,
                     state.items[addedProduct.id].sum + prodPrice
                 );
             } else {
