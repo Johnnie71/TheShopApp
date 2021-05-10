@@ -81,6 +81,7 @@ export const addOrder = (cartItems, totalAmount) => {
                 headers: {
                     'Accept': 'application/json',
                     'Accept-Encoding': 'gzip, deflate',
+                    'Content-Type': 'application/json'
                 }
             })
         }
