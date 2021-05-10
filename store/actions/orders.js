@@ -73,8 +73,8 @@ export const addOrder = (cartItems, totalAmount) => {
             } 
         });
 
-        for (const cartItems of cartItems) {
-            const pushToken = cartItems.pushToken;
+        for (const cartItem of cartItems) {
+            const pushToken = cartItem.pushToken;
         }
 
     };
