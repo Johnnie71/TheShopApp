@@ -84,7 +84,8 @@ export const addOrder = (cartItems, totalAmount) => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    to: pushToken
+                    to: pushToken,
+                    data: cartItem
                 })
             })
         }
