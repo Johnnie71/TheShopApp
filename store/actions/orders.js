@@ -85,7 +85,8 @@ export const addOrder = (cartItems, totalAmount) => {
                 },
                 body: JSON.stringify({
                     to: pushToken,
-                    title: "Order was placed!"
+                    title: "Order was placed!",
+                    body: cartItem.productTitle
                 })
             })
         }
