@@ -13,6 +13,8 @@ import cartReducer from './store/reducers/cart';
 import authReducer from './store/reducers/auth';
 import ApplicationNavigator from './navigation/ApplicationNavigator';
 
+Notifications.setNotificationHandler();
+
 const rootReducer = combineReducers({
   products: productsReducer,
   cart: cartReducer,
