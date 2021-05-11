@@ -13,7 +13,11 @@ import cartReducer from './store/reducers/cart';
 import authReducer from './store/reducers/auth';
 import ApplicationNavigator from './navigation/ApplicationNavigator';
 
-Notifications.setNotificationHandler();
+Notifications.setNotificationHandler({
+  handleNotification: async () => {
+    return { shouldShowAlert: true }
+  }
+});
 
 const rootReducer = combineReducers({
   products: productsReducer,
