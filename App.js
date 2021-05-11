@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 // import AppLoading  from 'expo-app-loading';
 import * as Font from 'expo-font';
 import ReduxThunk from 'redux-thunk';
+import * as Notifications from 'expo-notifications';
 
 
 import productsReducer from './store/reducers/products';
