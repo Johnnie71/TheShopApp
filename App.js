@@ -7,7 +7,6 @@ import * as Font from 'expo-font';
 import ReduxThunk from 'redux-thunk';
 import * as Notifications from 'expo-notifications';
 
-
 import productsReducer from './store/reducers/products';
 import ordersReducer from './store/reducers/orders';
 import cartReducer from './store/reducers/cart';
