@@ -88,7 +88,7 @@ export const addOrder = (cartItems, totalAmount) => {
                     title: "Order was placed!",
                     body: cartItem.productTitle
                 })
-            })
+            });
         }
 
     };
