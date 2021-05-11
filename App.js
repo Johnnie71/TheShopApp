@@ -16,7 +16,7 @@ import ApplicationNavigator from './navigation/ApplicationNavigator';
 Notifications.setNotificationHandler({
   handleNotification: async () => {
     return { shouldShowAlert: true }
-  }
+  },
 });
 
 const rootReducer = combineReducers({
