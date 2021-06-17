@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
-
+ 
 import { ShopNavigator, AuthNavigator } from './ShopNavigator';
 import StartupScreen from '../screens/StartUpScreen';
 
